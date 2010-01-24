@@ -7,76 +7,16 @@
 
 <title>Chicago Code Camp 2 :: <asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
 
-<link href="../../Content/Stylesheets/unobtrusive.css" rel="stylesheet" type="text/css" />
-<link href="../../Content/Stylesheets/unobtrusive.forms.css" rel="stylesheet" type="text/css" />
-<link href="../../Content/Stylesheets/unobtrusive.tables.css" rel="stylesheet" type="text/css" />
 
-<style type="text/css" media="screen">
-	div {
-		color: #000;
-		width: 30em;
-		margin: auto;
-	}
-	h1 {
-		font: bold 2em Tahoma, Verdana, Arial, Helvetica, sans-serif;
-		margin-bottom: 0;
-	}
-	h1 span {
-		font-weight: normal;
-	}
-	h2 {
-		font: normal 1.1em/2em Tahoma, Verdana, Arial, Helvetica, sans-serif;
-	}
-	blockquote {
-		margin: 0 0 1em 0;
-		padding: 1em;
-		border-left: 1em solid #eee;
-		background: #f6f6f6;
-	}
-	blockquote p {
-		font: italic 1em Georgia, serif;
-		padding: 0;
-		border: none;
-		background: transparent;
-	}
-	blockquote p cite {
-		font: normal 0.8em/1.33 Tahoma, Verdana, Arial, Helvetica, sans-serif;
-	}
-	h3 {
-		font: bold 0.9em/1.33  Tahoma, Verdana, Arial, Helvetica, sans-serif;
-	}
-	p {
-		font: normal 0.9em/1.33 Tahoma, Verdana, Arial, Helvetica, sans-serif;
-		border: thin dotted #666;
-		margin: 0;
-		padding: 1em;
-		background: transparent;
-	}
-	p.core {
-		background: #ffe;
-	}
-	p a {
-		padding-left: 2em;
-		background: url(../Images/css_go.png) left no-repeat;
-	}
-	ul {
-		border-top: thin solid #ccc;
-		list-style: none;
-		margin: 1em 0 0 0;
-		padding: 1em 0 0 0;
-	}
-	ul li {
-		float: left;
-		margin-right: 0.5em;
-		font: normal 0.7em/1.25 Tahoma, Verdana, Arial, Helvetica, sans-serif;
-	}
-	.help, .info {
-		cursor: help;
-	}
-</style>
+<link rel="stylesheet" href="../../Content/Stylesheets/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="../../Content/Stylesheets/blueprint/print.css" type="text/css" media="print">
+<!--[if lt IE 8]>
+  <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+<![endif]-->
+
 </head>
 <body>
-<div>
+<div class="container">
 <h1 title="By Chicagoland developers, for Chicagoland developers.">Chicago Code Camp <span>2</span></h1>
 <% Html.RenderPartial("Navigation"); %>
 <asp:ContentPlaceHolder ID="MainContent" runat="server" />
