@@ -6,131 +6,86 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
 <title>Chicago Code Camp 2 :: <asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
-<link href="../../Content/Stylesheets/common.css" rel="stylesheet" type="text/css" />
+
+<link href="../../Content/Stylesheets/unobtrusive.css" rel="stylesheet" type="text/css" />
+<link href="../../Content/Stylesheets/unobtrusive.forms.css" rel="stylesheet" type="text/css" />
+<link href="../../Content/Stylesheets/unobtrusive.tables.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css" media="screen">
+	div {
+		color: #000;
+		width: 30em;
+		margin: auto;
+	}
+	h1 {
+		font: bold 2em Tahoma, Verdana, Arial, Helvetica, sans-serif;
+		margin-bottom: 0;
+	}
+	h1 span {
+		font-weight: normal;
+	}
+	h2 {
+		font: normal 1.1em/2em Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	}
+	blockquote {
+		margin: 0 0 1em 0;
+		padding: 1em;
+		border-left: 1em solid #eee;
+		background: #f6f6f6;
+	}
+	blockquote p {
+		font: italic 1em Georgia, serif;
+		padding: 0;
+		border: none;
+		background: transparent;
+	}
+	blockquote p cite {
+		font: normal 0.8em/1.33 Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	}
+	h3 {
+		font: bold 0.9em/1.33  Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	}
+	p {
+		font: normal 0.9em/1.33 Tahoma, Verdana, Arial, Helvetica, sans-serif;
+		border: thin dotted #666;
+		margin: 0;
+		padding: 1em;
+		background: transparent;
+	}
+	p.core {
+		background: #ffe;
+	}
+	p a {
+		padding-left: 2em;
+		background: url(../Images/css_go.png) left no-repeat;
+	}
+	ul {
+		border-top: thin solid #ccc;
+		list-style: none;
+		margin: 1em 0 0 0;
+		padding: 1em 0 0 0;
+	}
+	ul li {
+		float: left;
+		margin-right: 0.5em;
+		font: normal 0.7em/1.25 Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	}
+	.help, .info {
+		cursor: help;
+	}
+</style>
 </head>
 <body>
-	<!-- Start Header -->
-	<div id="header">
-		<div class="container">
-			<h1><a href="#" title="Chicago Code Camp 2">Chicago Code Camp 2<span></span></a></h1>
-			<hr />
-			<!-- top navigation -->
-			<ul id="navigation">
-				<li class="active"><%= Html.ActionLink("Home","Index", "Home") %></li>
-				<li><%= Html.ActionLink("Sessions","Index", "Session") %></li>
-				<li><%= Html.ActionLink("Agenda","Agenda", "Session") %></li>
-				<li><%= Html.ActionLink("Contact","Contact", "Home") %></li>
-				<li><%= Html.ActionLink("About","About", "Home") %></li>
-			</ul>
-			<hr />
-			<!-- banner message and building background -->
-			<div id="banner">
-				Chicago Code Camp. An unconference by Chicagoland developers, for Chicagoland developers. Come, speak, share.
-			</div>
-			<hr />
-		</div>
-	</div>
-	<!-- Start Main Content -->
-	<div id="main" class="container">
-		<!-- left column (products and features) -->
-		<div id="leftcolumn">
-      <asp:ContentPlaceHolder ID="LeftContent" runat="server" />	
-		</div>
-		<!-- main content area -->
-		<div id="center">
-      <asp:ContentPlaceHolder ID="CenterContent" runat="server" />
-      	<hr />
-		</div>
-		<!-- product sales boxes -->
-		<div id="rightcolumn">
-		  <asp:ContentPlaceHolder ID="RightContent" runat="server" />
-		  <div class="rightbox_wrapper">
-        <h3 class="leftbox">Links</h3>
-        <ul class="leftbox borderedlist">
-          <li><a href="http://chicagocodecamp.pbwiki.com/">CodeCamp Wiki</a></li>
-          <li><a href="http://chicagoalt.net/Home">Alt.Net</a></li>
-          <li><a href="http://lcnug.org">Lake County .Net Users Group (LCNUG)</a></li>
-          <li><a href="http://www.cnug.org">Chicago .Net Users Group (CNUG)</a></li>
-        </ul>
-        <h3 class="leftbox">Quick Links</h3>
-        <ul class="leftbox borderedlist">
-          <li><a href="#" title="Volunteer Info">Volunteer Info</a></li>
-          <li><a href="#" title="Speaker Bios">Speaker Bios</a></li>
-          <li><a href="#" title="Location">Location</a></li>
-          <li><a href="#" title="Help Sponsor">Help Sponsor</a></li>
-        </ul>
-        <h3 class="leftbox">Communities</h3>
-        <ul class="leftbox borderedlist">
-          <li><a href="#" title="PHP">PHP</a></li>
-          <li><a href="#" title="Ruby">Ruby</a></li>
-          <li><a href="#" title="Python">Python</a></li>
-          <li><a href="#" title="Scala">Scala</a></li>
-          <li><a href="#" title="Clojure">Clojure</a></li>
-          <li><a href="#" title="Java">Java</a></li>
-          <li><a href="#" title="JavaScript">JavaScript</a></li>
-        </ul>
-      </div>
-		  <hr />
-		</div>
-	</div>
-	<!-- Start Bottom Information -->
-	<div id="bottominfo">
-		<div class="container">
-			<!-- bottom left information -->
-			<div class="bottomcolumn">
-				<h3>Links to Help You Succeed</h3>
-				<p>Follow these links to learn more great business tips</p>
-				<ul class="borderedlist iconlist">
-					<li><a href="#" title="Keep your clients in the know">Keep your clients in the know</a></li>
-					<li><a href="#" title="Current specials and discounts">Current specials and discounts</a></li>
-					<li><a href="#" title="Links to your services and promos">Links to your services and promos</a></li>
-				</ul>
-			</div>
-			<!-- bottom center information -->
-			<div class="bottomcolumn">
-				<h3>Recent Client Lists</h3>
-				<p>Here is a list of some of our satisfied customers.</p>
-				<ul class="borderedlist iconlist">
-					<li><a href="#" title="Keep your clients in the know">Keep your clients in the know</a></li>
-					<li><a href="#" title="Current specials and discounts">Current specials and discounts</a></li>
-					<li><a href="#" title="Links to your services and promos">Links to your services and promos</a></li>
-				</ul>
-			</div>
-			<!-- bottom right information -->
-			<div class="bottomcolumn bottomright">
-				<h3>Stay Informed</h3>
-				<p>Subscribe to our e-news. Every month you recieve all the latest info, straight to your inbox.</p>
-				<form action="#">
-					<input type="text" name="email" class="enewsbox" />
-					<input type="button" class="button" value="Submit" />
-				</form>
-			</div>
-			<hr />
-		</div>
-	</div>
-	<!-- Start Footer -->
-	<div id="footer">
-		<div class="container">
-			<a id="designby" href="http://www.studio7designs.com/" title="Design by STUDIO7DESIGNS">WEB DESIGN BY STUDIO7DESIGNS</a>
-			<ul id="footer_navigation">
-				<li><%= Html.ActionLink("Home","Index", "Home") %></li>
-				<li><%= Html.ActionLink("Sessions","Index", "Session") %></li>
-				<li><%= Html.ActionLink("Agenda","Agenda", "Session") %></li>
-				<li><%= Html.ActionLink("Contact","Contact", "Home") %></li>
-				<li><%= Html.ActionLink("About","About", "Home") %></li>
-			</ul>
-			<br/>
-		</div>
-		<div class="container" style="text-align: center;">
-		  <br/>
-		  <p>
-			<!-- Creative Commons License -->
+<div>
+<h1 title="By Chicagoland developers, for Chicagoland developers.">Chicago Code Camp <span>2</span></h1>
+<% Html.RenderPartial("Navigation"); %>
+<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+<% Html.RenderPartial("Navigation"); %>
+<ul>
+<li>
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/GPL/2.0/">Creative Commons GNU General Public License License</a>.
-<br/>
-<a rel="license" href="http://creativecommons.org/licenses/GPL/2.0/"><img alt="Creative Commons License" style="border-width:0; padding-top: 3px;" src="http://i.creativecommons.org/l/GPL/2.0/88x62.png" /></a>
-<!-- /Creative Commons License -->
-      </p>
-		</div>
-	</div>
+</li>
+</ul>
+</div>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 <asp:Content ID="aboutTitle" ContentPlaceHolderID="TitleContent" runat="server">About</asp:Content>
 
-<asp:Content ID="aboutContent" ContentPlaceHolderID="CenterContent" runat="server">
+<asp:Content ID="aboutContent" ContentPlaceHolderID="MainContent" runat="server">
    <div class="article_wrapper">
 		<h2>About</h2>
 	  <p style="font-weight: bold;">Date: Spring/Summer 2010</p>		
@@ -15,5 +15,3 @@
 	</div>
 </asp:Content>
 
-<asp:content ID="indexLeft" ContentPlaceHolderID="LeftContent" runat="server"/>
-<asp:content ID="indexRight" ContentPlaceHolderID="RightContent" runat="server"/>
