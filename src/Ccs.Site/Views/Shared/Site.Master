@@ -13,19 +13,35 @@
 <!--[if lt IE 8]>
   <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
 <![endif]-->
+<link rel="stylesheet" href="../../Content/Stylesheets/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
 
+
+<style type="text/css">
+body {background-color: #eeeeee;}
+#masterContainer {background-color: white; padding: 8px 8px 8px 8px;}
+</style>
 </head>
 <body>
-<div class="container">
-<h1 title="By Chicagoland developers, for Chicagoland developers.">Chicago Code Camp <span>2</span></h1>
-<% Html.RenderPartial("Navigation"); %>
-<asp:ContentPlaceHolder ID="MainContent" runat="server" />
-<% Html.RenderPartial("Navigation"); %>
-<ul>
-<li>
-This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/GPL/2.0/">Creative Commons GNU General Public License License</a>.
-</li>
-</ul>
+<hr class="space"/>
+<div class="container" id="masterContainer">
+  <!-- header -->
+  <h1 title="By Chicagoland developers, for Chicagoland developers.">Chicago Code Camp <span>2</span></h1>
+  
+  <% Html.RenderPartial("Navigation"); %>
+  <hr class="space"/>
+  
+  <div class="container span-16 colborder" id="content">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+  </div>
+  
+  <div class="container span-7 last">
+    <% Html.RenderPartial("Links"); %>
+  </div>
+  
+
+  <!-- footer -->
+  <hr class="space"/>
+  <% Html.RenderPartial("Footer"); %>
 </div>
 </body>
 </html>

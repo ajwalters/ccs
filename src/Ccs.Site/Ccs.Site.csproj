@@ -113,9 +113,12 @@
       <DependentUpon>CodeCampDb.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Images\css_go.png" />
+    <Content Include="Content\Images\mvc-logo-landing-page.png" />
     <Content Include="Content\Stylesheets\blueprint\ie.css" />
     <Content Include="Content\Stylesheets\blueprint\plugins\buttons\icons\cross.png" />
     <Content Include="Content\Stylesheets\blueprint\plugins\buttons\icons\key.png" />
+    <Content Include="Content\Stylesheets\blueprint\plugins\fancy-type\readme.txt" />
+    <Content Include="Content\Stylesheets\blueprint\plugins\fancy-type\screen.css" />
     <Content Include="Content\Stylesheets\blueprint\plugins\link-icons\icons\doc.png" />
     <Content Include="Content\Stylesheets\blueprint\plugins\link-icons\icons\external.png" />
     <Content Include="Content\Stylesheets\blueprint\print.css" />
@@ -126,15 +129,15 @@
     <Content Include="Content\Stylesheets\blueprint\src\ie.css" />
     <Content Include="Content\Stylesheets\blueprint\src\print.css" />
     <Content Include="Content\Stylesheets\blueprint\src\reset.css" />
-    <Content Include="Content\Stylesheets\css_tabs.css" />
-    <Content Include="Content\Stylesheets\unobtrusive.css" />
-    <Content Include="Content\Stylesheets\unobtrusive.forms.css" />
-    <Content Include="Content\Stylesheets\unobtrusive.tables.css" />
     <Content Include="Global.asax" />
     <Content Include="Views\Home\Contact.aspx" />
     <Content Include="Views\Session\Agenda.aspx" />
     <Content Include="Views\Session\Index.aspx" />
+    <Content Include="Views\Session\Details.aspx" />
+    <Content Include="Views\Shared\Footer.ascx" />
+    <Content Include="Views\Shared\Links.ascx" />
     <Content Include="Views\Shared\Navigation.ascx" />
+    <Content Include="Views\Speaker\Details.aspx" />
     <Content Include="Views\Speaker\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.3.2.js" />

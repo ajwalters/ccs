@@ -16,10 +16,5 @@ namespace Ccs.Site.Controllers
     {
       return View();
     }
-
-    public ActionResult About()
-    {
-      return View();
-    }
   }
 }

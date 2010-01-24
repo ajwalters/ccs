@@ -17,7 +17,7 @@ namespace Ccs.Tests.Controllers
         var controller = new HomeController();
 
         // Act
-        var result = controller.About();
+        var result = controller.Index();
 
         // Assert
         var viewResult = Assert.IsType<ViewResult>(result);
@@ -31,7 +31,7 @@ namespace Ccs.Tests.Controllers
         var controller = new HomeController();
 
         // Act
-        var result = controller.About();
+        var result = controller.Index();
 
         // Assert
         var viewResult = Assert.IsType<ViewResult>(result);

@@ -1,5 +1,7 @@
 ﻿using System.Web.Mvc;
 
+using Ccs.Site.Models;
+
 namespace Ccs.Site.Controllers
 {
   public class SpeakerController : Controller
@@ -15,9 +17,15 @@ namespace Ccs.Site.Controllers
     //
     // GET: /Speaker/Details/5
 
-    public ActionResult Details(int id)
+    public ActionResult Details(string id)
     {
-      return View();
+      var model = new Speaker
+                  {
+                    Name = "Michael D. Hall",
+                    Biography = "Mike is a cool guy."
+                  };
+
+      return View(model);
     }
 
     //

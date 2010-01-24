@@ -8,7 +8,20 @@ namespace Ccs.Site.Controllers
   public class SessionController : Controller
   {
     //
-    // GET: /Session/
+    // GET: /Session/Details/the_session_name
+
+    public ActionResult Details(string id)
+    {
+      var model = new Session
+                    {
+                      Abstract = "This will be a fun session.",
+                      Description = "Here is a really long description of what the session will be about.",
+                      Name = "Happy Fun Time Session",
+                      Speaker = "Michael D. Hall"
+                    };
+
+      return View(model);
+    }
 
     public ActionResult Index()
     {
@@ -45,13 +58,6 @@ namespace Ccs.Site.Controllers
       return View(model);
     }
 
-    //
-    // GET: /Session/Details/5
-
-    public ActionResult Details(int id)
-    {
-      return View();
-    }
 
     //
     // GET: /Session/Create

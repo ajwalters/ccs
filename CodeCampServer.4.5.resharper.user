@@ -1,0 +1,137 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Scripts/f:jquery-1.3.2-vsdoc.js" caret="98539" fromTop="19" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Scripts/f:jquery-1.3.2.js" caret="59227" fromTop="19" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Scripts/f:jquery-1.3.2.min-vsdoc.js" caret="98539" fromTop="19" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:RegisterModel.cs" caret="295" fromTop="4" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:ISpeaker.cs" caret="86" fromTop="4" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:ChangePasswordModel.cs" caret="286" fromTop="8" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:LogOnModel.cs" caret="281" fromTop="12" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:Speaker.cs" caret="208" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Account/f:ChangePassword.aspx" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Account/f:ChangePasswordSuccess.aspx" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Account/f:LogOn.aspx" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Home/f:Contact.aspx" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Error.aspx" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Index.aspx" caret="153" fromTop="1" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Scripts/f:MicrosoftAjax.debug.js" caret="305292" fromTop="9" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Links.ascx" caret="761" fromTop="23" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Navigation.ascx" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:HomeController.cs" caret="329" fromTop="18" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Controllers/f:HomeControllerFacts.cs" caret="741" fromTop="13" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Footer.ascx" caret="77" fromTop="1" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Site.Master" caret="700" fromTop="8" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Account/f:Register.aspx" caret="1377" fromTop="22" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Agenda.aspx" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Show.aspx" caret="371" fromTop="9" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Detail.aspx" caret="373" fromTop="8" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Home/f:Index.aspx" caret="196" fromTop="3" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SessionController.cs" caret="2755" fromTop="22" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/f:Web.config" caret="188" fromTop="8" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SpeakerController.cs" caret="1385" fromTop="22" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="592" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Navigation.ascx" caret="567" fromTop="5" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Site.Master" caret="1680" fromTop="22" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Footer.ascx" caret="1173" fromTop="17" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Site.Master" caret="859" fromTop="15" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:HomeController.cs" caret="324" fromTop="17" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="693" fromTop="11" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Controllers/f:HomeControllerFacts.cs" caret="384" fromTop="11" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Controllers/f:HomeControllerFacts.cs" caret="717" fromTop="11" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SessionController.cs" caret="637" fromTop="12" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Footer.ascx" caret="997" fromTop="14" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Footer.ascx" caret="77" fromTop="1" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Site.Master" caret="1603" fromTop="31" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="351" fromTop="7" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="901" fromTop="14" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SpeakerController.cs" caret="1385" fromTop="2" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SpeakerController.cs" caret="1385" fromTop="7" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SpeakerController.cs" caret="1385" fromTop="14" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SpeakerController.cs" caret="490" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="693" fromTop="16" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SessionController.cs" caret="1917" fromTop="23" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="578" fromTop="12" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SpeakerController.cs" caret="315" fromTop="6" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SessionController.cs" caret="254" fromTop="12" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Detail.aspx" caret="238" fromTop="3" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Show.aspx" caret="238" fromTop="3" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Agenda.aspx" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Show.aspx" caret="369" fromTop="8" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Detail.aspx" caret="359" fromTop="8" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Home/f:Index.aspx" caret="195" fromTop="3" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="250" fromTop="3" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="string" priority="13" />
+      <Item value="public" priority="8" />
+      <Item value="interface" priority="3" />
+      <Item value="bool" priority="0" />
+      <Item value="ISessionModel" priority="2" />
+      <Item value="class" priority="0" />
+      <Item value="ISpeaker" priority="0" />
+      <Item value="ListChangedEventArgs" priority="0" />
+      <Item value="List" priority="1" />
+      <Item value="new" priority="4" />
+      <Item value="List&lt;Session&gt;" priority="0" />
+      <Item value="sessions" priority="1" />
+      <Item value="Session" priority="1" />
+      <Item value="Abstract" priority="0" />
+      <Item value="Description" priority="0" />
+      <Item value="Name" priority="1" />
+      <Item value="Speaker" priority="0" />
+      <Item value="View" priority="3" />
+      <Item value="Html" priority="4" />
+      <Item value="ActionResult" priority="3" />
+      <Item value="return" priority="1" />
+      <Item value="DateTime" priority="0" />
+      <Item value="DisplayName" priority="0" />
+      <Item value="IAgenda" priority="0" />
+      <Item value="var" priority="1" />
+      <Item value="Agenda" priority="0" />
+      <Item value="agenda" priority="1" />
+      <Item value="Render" priority="1" />
+      <Item value="RenderPartialExtensions" priority="0" />
+      <Item value="Biography" priority="0" />
+      <Item value="item" priority="1" />
+      <Item value="Items" priority="0" />
+      <Item value="Model" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
+      <Item value="ActionLink" priority="1" />
+      <Item value="RenderPartial" priority="1" />
+      <Item value="RenderAction" priority="0" />
+      <Item value="Encode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Site.Models.Agenda">
+      <Item value="Sessions" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.Html.RenderPartialExtensions">
+      <Item value="RenderPartial" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Site.Models.Session">
+      <Item value="Name" priority="3" />
+      <Item value="Speaker" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
