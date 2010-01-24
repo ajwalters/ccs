@@ -93,7 +93,7 @@ namespace Ccs.Site.Controllers {
       if (ModelState.IsValid) {
         if (MembershipService.ValidateUser(model.UserName, model.Password)) {
           FormsService.SignIn(model.UserName, model.RememberMe);
-          if (!String.IsNullOrEmpty(returnUrl)) {
+          if (!string.IsNullOrEmpty(returnUrl)) {
             return Redirect(returnUrl);
           } else {
             return RedirectToAction("Index", "Home");
