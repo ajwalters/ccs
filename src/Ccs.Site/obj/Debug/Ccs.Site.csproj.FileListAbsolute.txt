@@ -1,0 +1,11 @@
+C:\Users\mhall\Projects\mine\ccs\src\CodeCampServer\bin\Ccs.Site.dll
+C:\Users\mhall\Projects\mine\ccs\src\CodeCampServer\bin\Ccs.Site.pdb
+C:\Users\mhall\Projects\mine\ccs\src\CodeCampServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mhall\Projects\mine\ccs\src\CodeCampServer\obj\Debug\Ccs.Site.dll
+C:\Users\mhall\Projects\mine\ccs\src\CodeCampServer\obj\Debug\Ccs.Site.pdb
+C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Ccs.Site.dll
+C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Ccs.Site.pdb
+C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\obj\Debug\Ccs.Site.dll
+C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\obj\Debug\Ccs.Site.pdb
+C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\SubSonic.Core.dll

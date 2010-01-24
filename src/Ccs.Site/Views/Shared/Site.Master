@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title>Chicago Code Camp 2 :: <asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+<link href="../../Content/Stylesheets/common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<!-- Start Header -->
+	<div id="header">
+		<div class="container">
+			<h1><a href="#" title="ECOBUSINESS">Chicago Code Camp 2<span></span></a></h1>
+			<hr />
+			<!-- top navigation -->
+			<ul id="navigation">
+				<li class="active"><a href="#" title="Home">Home</a></li>
+				<li><a href="#" title="About">About</a></li>
+				<li><a href="#" title="Services">Services</a></li>
+				<li><a href="#" title="Portofolio">Portofolio</a></li>
+				<li><a href="#" title="Contact">Contact</a></li>
+			</ul>
+			<hr />
+			<!-- banner message and building background -->
+			<div id="banner">
+				This is where your welcome message would appear, or perhaps a company description. Welcome to Eco Business - environmentally friendly solutions for the business world.
+			</div>
+			<hr />
+		</div>
+	</div>
+	<!-- Start Main Content -->
+	<div id="main" class="container">
+		<!-- left column (products and features) -->
+		<div id="leftcolumn">
+			<asp:ContentPlaceHolder ID="LeftContent" runat="server" />
+		</div>
+		<!-- main content area -->
+		<div id="center">
+      <asp:ContentPlaceHolder ID="CenterContent" runat="server" />
+		</div>
+		<!-- product sales boxes -->
+		<div id="rightcolumn">
+		  <asp:ContentPlaceHolder ID="RightContent" runat="server" />
+		</div>
+	</div>
+	<!-- Start Bottom Information -->
+	<div id="bottominfo">
+		<div class="container">
+			<!-- bottom left information -->
+			<div class="bottomcolumn">
+				<h3>Links to Help You Succeed</h3>
+				<p>Follow these links to learn more great business tips</p>
+				<ul class="borderedlist iconlist">
+					<li><a href="#" title="Keep your clients in the know">Keep your clients in the know</a></li>
+					<li><a href="#" title="Current specials and discounts">Current specials and discounts</a></li>
+					<li><a href="#" title="Links to your services and promos">Links to your services and promos</a></li>
+				</ul>
+			</div>
+			<!-- bottom center information -->
+			<div class="bottomcolumn">
+				<h3>Recent Client Lists</h3>
+				<p>Here is a list of some of our satisfied customers.</p>
+				<ul class="borderedlist iconlist">
+					<li><a href="#" title="Keep your clients in the know">Keep your clients in the know</a></li>
+					<li><a href="#" title="Current specials and discounts">Current specials and discounts</a></li>
+					<li><a href="#" title="Links to your services and promos">Links to your services and promos</a></li>
+				</ul>
+			</div>
+			<!-- bottom right information -->
+			<div class="bottomcolumn bottomright">
+				<h3>Stay Informed</h3>
+				<p>Subscribe to our e-news. Every month you recieve all the latest info, straight to your inbox.</p>
+				<form action="#">
+					<input type="text" name="email" class="enewsbox" />
+					<input type="button" class="button" value="Submit" />
+				</form>
+			</div>
+			<hr />
+		</div>
+	</div>
+	<!-- Start Footer -->
+	<div id="footer">
+		<div class="container">
+			<a id="designby" href="http://www.studio7designs.com/" title="Design by STUDIO7DESIGNS">WEB DESIGN BY STUDIO7DESIGNS</a>
+			<ul id="footer_navigation">
+				<li><a href="#" title="Home">Home</a></li>
+				<li><a href="#" title="About">About</a></li>
+				<li><a href="#" title="Services">Services</a></li>
+				<li><a href="#" title="Portofolio">Portofolio</a></li>
+				<li><a href="#" title="Contact">Contact</a></li>
+			</ul>
+			<br/>
+		</div>
+		<div class="container" style="text-align: center;">
+		  <br/>
+		  <p>
+			<!-- Creative Commons License -->
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/GPL/2.0/">Creative Commons GNU General Public License License</a>.
+<br/>
+<a rel="license" href="http://creativecommons.org/licenses/GPL/2.0/"><img alt="Creative Commons License" style="border-width:0; padding-top: 3px;" src="http://i.creativecommons.org/l/GPL/2.0/88x62.png" /></a>
+<!-- /Creative Commons License -->
+      </p>
+		</div>
+	</div>
+</body>
+</html>
