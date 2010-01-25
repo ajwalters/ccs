@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Web.Mvc;
 
 using Ccs.Site.Models;
@@ -7,22 +7,28 @@ namespace Ccs.Site.Controllers
 {
   public class SessionController : Controller
   {
-    //
-    // GET: /Session/Details/the_session_name
-
+    /// <summary>
+    /// Detailses the specified id.
+    /// </summary>
+    /// <param name="id">The id.</param>
+    /// <returns></returns>
     public ActionResult Details(string id)
     {
       var model = new Session
-                    {
-                      Abstract = "This will be a fun session.",
-                      Description = "Here is a really long description of what the session will be about.",
-                      Name = "Happy Fun Time Session",
-                      Speaker = "Michael D. Hall"
-                    };
+                  {
+                    Abstract = "This will be a fun session.",
+                    Description = "Here is a really long description of what the session will be about.",
+                    Name = "Happy Fun Time Session",
+                    Speaker = "Michael D. Hall"
+                  };
 
       return View(model);
     }
 
+    /// <summary>
+    /// Indexes this instance.
+    /// </summary>
+    /// <returns></returns>
     public ActionResult Index()
     {
       var model = new List<Session>
@@ -39,6 +45,10 @@ namespace Ccs.Site.Controllers
       return View(model);
     }
 
+    /// <summary>
+    /// Agendas this instance.
+    /// </summary>
+    /// <returns></returns>
     public ActionResult Agenda()
     {
       var model = new Agenda
@@ -58,25 +68,25 @@ namespace Ccs.Site.Controllers
       return View(model);
     }
 
-
-    //
-    // GET: /Session/Create
-
+    /// <summary>
+    /// Creates this instance.
+    /// </summary>
+    /// <returns></returns>
     public ActionResult Create()
     {
       return View();
     }
 
-    //
-    // POST: /Session/Create
-
+    /// <summary>
+    /// Creates the specified collection.
+    /// </summary>
+    /// <param name="collection">The collection.</param>
+    /// <returns></returns>
     [HttpPost]
     public ActionResult Create(FormCollection collection)
     {
       try
       {
-        // TODO: Add insert logic here
-
         return RedirectToAction("Index");
       }
       catch
@@ -85,24 +95,27 @@ namespace Ccs.Site.Controllers
       }
     }
 
-    //
-    // GET: /Session/Edit/5
-
+    /// <summary>
+    /// Edits the specified id.
+    /// </summary>
+    /// <param name="id">The id.</param>
+    /// <returns></returns>
     public ActionResult Edit(int id)
     {
       return View();
     }
 
-    //
-    // POST: /Session/Edit/5
-
+    /// <summary>
+    /// Edits the specified id.
+    /// </summary>
+    /// <param name="id">The id.</param>
+    /// <param name="collection">The collection.</param>
+    /// <returns></returns>
     [HttpPost]
     public ActionResult Edit(int id, FormCollection collection)
     {
       try
       {
-        // TODO: Add update logic here
-
         return RedirectToAction("Index");
       }
       catch

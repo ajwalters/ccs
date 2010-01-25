@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
 
 using Ccs.Site.Models;
 
@@ -6,46 +7,61 @@ namespace Ccs.Site.Controllers
 {
   public class SpeakerController : Controller
   {
-    //
-    // GET: /Speaker/
-
+    /// <summary>
+    /// Indexes this instance.
+    /// </summary>
+    /// <returns></returns>
     public ActionResult Index()
     {
-      return View();
-    }
-
-    //
-    // GET: /Speaker/Details/5
-
-    public ActionResult Details(string id)
-    {
-      var model = new Speaker
+      var model = new List<Speaker>
                   {
-                    Name = "Michael D. Hall",
-                    Biography = "Mike is a cool guy."
+                    new Speaker
+                    {
+                      Name = "Michael D. Hall",
+                      Biography = "Mike is a cool guy.",
+                      ImageName = "michaeldhall.jpg"
+                    }
                   };
 
       return View(model);
     }
 
-    //
-    // GET: /Speaker/Create
+    /// <summary>
+    /// Detailses the specified id.
+    /// </summary>
+    /// <param name="id">The id.</param>
+    /// <returns></returns>
+    public ActionResult Details(string id)
+    {
+      var model = new Speaker
+                  {
+                    Name = "Michael D. Hall",
+                    Biography = "Mike is a cool guy.",
+                    ImageName = "michaeldhall.jpg"
+                  };
 
+      return View(model);
+    }
+
+    /// <summary>
+    /// Creates this instance.
+    /// </summary>
+    /// <returns></returns>
     public ActionResult Create()
     {
       return View();
     }
 
-    //
-    // POST: /Speaker/Create
-
+    /// <summary>
+    /// Creates the specified collection.
+    /// </summary>
+    /// <param name="collection">The collection.</param>
+    /// <returns></returns>
     [HttpPost]
     public ActionResult Create(FormCollection collection)
     {
       try
       {
-        // TODO: Add insert logic here
-
         return RedirectToAction("Index");
       }
       catch
@@ -54,24 +70,27 @@ namespace Ccs.Site.Controllers
       }
     }
 
-    //
-    // GET: /Speaker/Edit/5
-
+    /// <summary>
+    /// Edits the specified id.
+    /// </summary>
+    /// <param name="id">The id.</param>
+    /// <returns></returns>
     public ActionResult Edit(int id)
     {
       return View();
     }
 
-    //
-    // POST: /Speaker/Edit/5
-
+    /// <summary>
+    /// Edits the specified id.
+    /// </summary>
+    /// <param name="id">The id.</param>
+    /// <param name="collection">The collection.</param>
+    /// <returns></returns>
     [HttpPost]
     public ActionResult Edit(int id, FormCollection collection)
     {
       try
       {
-        // TODO: Add update logic here
-
         return RedirectToAction("Index");
       }
       catch

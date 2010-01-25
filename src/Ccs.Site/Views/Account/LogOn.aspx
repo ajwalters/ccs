@@ -10,7 +10,6 @@
         Please enter your username and password. <%= Html.ActionLink("Register", "Register") %> if you don't have an account.
     </p>
     <%= Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.") %>
-
     <% using (Html.BeginForm()) { %>
         <div>
             <fieldset>

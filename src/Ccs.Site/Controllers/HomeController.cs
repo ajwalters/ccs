@@ -5,6 +5,10 @@ namespace Ccs.Site.Controllers
   [HandleError]
   public class HomeController : Controller
   {
+    /// <summary>
+    /// Indexes this instance.
+    /// </summary>
+    /// <returns></returns>
     public ActionResult Index()
     {
       ViewData["Message"] = "Welcome to ASP.NET MVC!";
@@ -12,6 +16,10 @@ namespace Ccs.Site.Controllers
       return View();
     }
 
+    /// <summary>
+    /// Contacts this instance.
+    /// </summary>
+    /// <returns></returns>
     public ActionResult Contact()
     {
       return View();

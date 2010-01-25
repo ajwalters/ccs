@@ -1,50 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<Ccs.Site.Models.Session>>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<Ccs.Site.Models.Speaker>>" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Index
-</asp:Content>
+<asp:Content ID="SpeakerTitle" ContentPlaceHolderID="TitleContent" runat="server">Speakers</asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
-    <h2>Index</h2>
-
-    <table>
-        <tr>
-            <th></th>
-            <th>
-                Name
-            </th>
-            <th>
-                Speaker
-            </th>
-            <th>
-                Abstract
-            </th>
-            <th>
-                Description
-            </th>
-        </tr>
-
+<asp:Content ID="SpeakerContent" ContentPlaceHolderID="MainContent" runat="server">
+    <h2>Speakers</h2>
     <% foreach (var item in Model) { %>
-    
-        <tr>
-            <td>
-                <%= Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%= Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })%>
-            </td>
-            <td>
-                <%= Html.Encode(item.Name) %>
-            </td>
-            <td>
-                <%= Html.Encode(item.Speaker) %>
-            </td>
-            <td>
-                <%= Html.Encode(item.Abstract) %>
-            </td>
-            <td>
-                <%= Html.Encode(item.Description) %>
-            </td>
-        </tr>
+        <% Html.RenderPartial("Profile", item); %>
     
     <% } %>
 

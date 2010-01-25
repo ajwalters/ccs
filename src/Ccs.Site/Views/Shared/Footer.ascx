@@ -13,6 +13,6 @@
   </div>
   <div class="span-2 colborder">Fork me on github! <a href="http://www.github.com/just3ws/ccs">ccs</a>.</div>
   <div class="span-4 colborder">Layout enabled by <a href="http://www.blueprintcss.org/">Blueprint CSS</a>.</div>
-  <div class="span-4 last"><img src="../../Content/Images/mvc-logo-landing-page.png"
+  <div class="span-4 last" style="text-align: left;"><img src="../../Content/Images/mvc-logo-landing-page.png"
                                 alt="Powered by ASP.NET MVC" /></div>
 </div>
