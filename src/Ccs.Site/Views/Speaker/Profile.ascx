@@ -1,16 +1,16 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Ccs.Site.Models.Speaker>" %>
+<%@ Import Namespace="Ccs.Site.Models"%>
 
-<div class="container">
-<div class="span-3"><img src="../../Content/Images/Speakers/<%= Model.ImageName %>" style="width: 100%;" /></div>
-<div class="span=7">
-  <h3><%= Html.Encode(Model.Name) %></h3>
-  <p><%= Html.Encode(Model.Biography) %></p>
-      <p>
-        <%=Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) %> |
-        <%=Html.ActionLink("Back to List", "Index") %>
-    </p>
-
+<div class="container span-17">
+  <div class="span-3"><img src="../../Content/Images/Speakers/<%= Model.ImageName %>" style="width: 100%;" /></div>
+  <% if(Page.User.IsInRole(Role.Administrators)) { %>
+  <div class="span=7 last">
+    <%= Html.ActionLink("EDIT", "Edit", new {id=Html.Encode(Model.Name)})%> | 
+    <%= Html.ActionLink("DELETE", "Delete", new {id=Html.Encode(Model.Name)})%>
+  </div>
+  <% } %>
+  <div class="span-7 last">
+    <h3><%= Html.Encode(Model.Name) %></h3>
+    <p><%= Html.Encode(Model.Biography) %></p>
+  </div>
 </div>
-</div>
-
-

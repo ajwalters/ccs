@@ -1,0 +1,447 @@
+Updating RubyGems
+Nothing to update
+Updating installed gems
+Nothing to update
+Cleaning up installed gems...
+Clean Up Complete
+Restoring gem(s) to pristine condition...
+Restored mongrel-1.1.5-x86-mswin32-60
+Restored polyglot-0.2.9
+Restored will_paginate-2.3.12
+
+----------------------------------------------------------------------------
+
+*  If you're upgrading from a version <= 0.1.1, you'll want to delete the pik.bat file
+   from all of your ruby versions. Gem uninstall should do the trick.
+
+*  Install pik to a location that's in your path, but someplace other than your ruby\bin dir
+   If you're upgrading from a more recent version, pik_install will overwrite the older files as needed.
+
+    >path
+      PATH=C:\tools\;C:\ruby\186-p368-mingw32\bin;C:\WINDOWS\system32;C:\WINDOWS
+
+    >pik_install C:\tools
+
+*  If this is a first-time install, add all the versions of ruby that you want to use with pik
+
+    >pik add
+    Adding:  186: ruby 1.8.6 (2009-03-31 patchlevel 368) [i386-mingw32]
+     Located at:  c:/ruby/186-p368-mingw32/bin
+
+    >pik add C:\ruby\IronRuby-091\bin
+    Adding:  091: IronRuby 0.9.1.0 on .NET 2.0.0.0
+     Located at:  C:/ruby/IronRuby-091/bin
+
+    >pik add C:\ruby\jruby-1.4.0RC1\bin
+    Adding:  140: jruby 1.4.0RC1 (ruby 1.8.7 patchlevel 174) (2009-09-30 80c263b) (Java HotSpot(TM) Client VM 1.6.0_14) [x86-java]
+     Located at:  C:/ruby/jruby-1.4.0RC1/bin
+
+
+----------------------------------------------------------------------------  
+
+Restored pik-0.2.6
+Restored rubyzip-0.9.1
+Restored activerecord-sqlserver-adapter-2.3
+Restored win32console-1.2.0-x86-mingw32
+Restored mysql-2.8.1-x86-mingw32
+Restored net-ssh-gateway-1.0.1
+Restored sqlite3-ruby-1.2.5-x86-mingw32
+
+(::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::)
+
+                     (::)   U P G R A D I N G    (::)
+
+Thank you for installing cucumber-0.6.2.
+Please be sure to read http://wiki.github.com/aslakhellesoy/cucumber/upgrading
+for important information about this release. Happy cuking!
+
+(::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::)
+
+Restored cucumber-0.6.2
+Restored treetop-1.4.3
+Restored cgi_multipart_eof_fix-2.5.0
+Restored net-scp-1.0.2
+Building native extensions.  This could take a while...
+Restored RedCloth-4.2.2
+Building native extensions.  This could take a while...
+Restored win32-api-1.4.5
+Restored mongrel-1.1.5-x86-mingw32
+Restored ironruby-sqlserver-0.1.0
+Restored rubyforge-2.0.3
+Restored activerecord-2.3.5
+Restored windows-pr-1.0.8
+Restored mislav-will_paginate-2.3.11
+Restored s4t-utils-1.0.4
+Building native extensions.  This could take a while...
+Restored fastthread-1.0.7
+Restored capistrano-2.5.14
+Restored rake-compiler-0.7.0
+Building native extensions.  This could take a while...
+Restored ruby-debug-ide-0.4.9
+Restored dbd-odbc-0.2.5
+Restored rack-1.1.0
+Restored activeresource-2.3.5
+Restored liquid-2.0.0
+Restored cuke4nuke-0.3.0
+Restored gem_plugin-0.2.3
+Restored nokogiri-1.4.1-x86-mingw32
+Restored linecache-0.43-x86-mswin32
+Restored rake-0.8.7
+Restored exceptional-2.0.5
+Restored term-ansicolor-1.0.4
+Restored jeweler-1.4.0
+Restored dbi-0.4.3
+Restored win32-process-0.6.2
+Restored webrat-0.7.0
+Building native extensions.  This could take a while...
+Restored ruby-debug-base-0.10.3
+Building native extensions.  This could take a while...
+Restored json-1.2.0
+Restored hoe-2.5.0
+Restored net-ssh-2.0.19
+Restored highline-1.5.1
+Restored authlogic-2.1.3
+Restored ironruby-dbi-0.1.0
+Restored systemu-1.2.0
+Restored mechanize-0.9.3
+
+========================================================================
+
+           Thanks for installing Gemcutter! You can now run:
+
+    gem push          publish your gems for the world to use and enjoy
+    gem owner         allow/disallow others to push to your gems
+    gem webhook       register urls to be pinged when gems are pushed
+
+========================================================================
+
+Restored gemcutter-0.3.0
+Restored diff-lcs-1.1.2
+Restored actionpack-2.3.5
+Restored builder-2.1.2
+Building native extensions.  This could take a while...
+Restored hpricot-0.8.2
+Restored xml-simple-1.0.12
+Restored shoulda-2.10.3
+Restored recaptcha-0.2.3
+Restored actionmailer-2.3.5
+Restored albacore-0.1.0
+Building native extensions.  This could take a while...
+Restored ferret-0.11.6
+Restored net-sftp-2.0.4
+Restored git-1.2.5
+Restored ZenTest-4.2.1
+Restored akitaonrails-activerecord-sqlserver-adapter-1.1.1
+Restored json_pure-1.2.0
+Restored windows-api-0.4.0
+Restored watir-1.6.5
+Restored rails-2.3.5
+Restored activesupport-2.3.5
+**************************************************
+
+  Thank you for installing rspec-1.3.0
+
+  Please be sure to read History.rdoc and Upgrade.rdoc
+  for useful information about this release.
+
+**************************************************
+Restored rspec-1.3.0
+Restored deprecated-2.0.1
+Restored mocha-0.9.8
+Restored user-choices-1.1.6.1
+Restored commonwatir-1.6.5
+Restored firewatir-1.6.5
+Restored ruby-debug-base-0.10.3-x86-mswin32
+Restored rack-test-0.5.3
++++ 
+Updating RubyGems
+Nothing to update
++++ 
+Updating installed gems
+Nothing to update
++++ 
+Cleaning up installed gems...
+Clean Up Complete
++++ 
+Restoring gem(s) to pristine condition...
+Restored mongrel-1.1.5-x86-mswin32-60
+Restored polyglot-0.2.9
+Restored will_paginate-2.3.12
+
+----------------------------------------------------------------------------
+
+*  If you're upgrading from a version <= 0.1.1, you'll want to delete the pik.bat file
+   from all of your ruby versions. Gem uninstall should do the trick.
+
+*  Install pik to a location that's in your path, but someplace other than your ruby\bin dir
+   If you're upgrading from a more recent version, pik_install will overwrite the older files as needed.
+
+    >path
+      PATH=C:\tools\;C:\ruby\186-p368-mingw32\bin;C:\WINDOWS\system32;C:\WINDOWS
+
+    >pik_install C:\tools
+
+*  If this is a first-time install, add all the versions of ruby that you want to use with pik
+
+    >pik add
+    Adding:  186: ruby 1.8.6 (2009-03-31 patchlevel 368) [i386-mingw32]
+     Located at:  c:/ruby/186-p368-mingw32/bin
+
+    >pik add C:\ruby\IronRuby-091\bin
+    Adding:  091: IronRuby 0.9.1.0 on .NET 2.0.0.0
+     Located at:  C:/ruby/IronRuby-091/bin
+
+    >pik add C:\ruby\jruby-1.4.0RC1\bin
+    Adding:  140: jruby 1.4.0RC1 (ruby 1.8.7 patchlevel 174) (2009-09-30 80c263b) (Java HotSpot(TM) Client VM 1.6.0_14) [x86-java]
+     Located at:  C:/ruby/jruby-1.4.0RC1/bin
+
+
+----------------------------------------------------------------------------  
+
+Restored pik-0.2.6
+Restored rubyzip-0.9.1
+Restored activerecord-sqlserver-adapter-2.3
+Restored win32console-1.2.0-x86-mingw32
+Restored mysql-2.8.1-x86-mingw32
+Restored net-ssh-gateway-1.0.1
+Restored sqlite3-ruby-1.2.5-x86-mingw32
+
+(::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::)
+
+                     (::)   U P G R A D I N G    (::)
+
+Thank you for installing cucumber-0.6.2.
+Please be sure to read http://wiki.github.com/aslakhellesoy/cucumber/upgrading
+for important information about this release. Happy cuking!
+
+(::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::)
+
+Restored cucumber-0.6.2
+Restored treetop-1.4.3
+Restored cgi_multipart_eof_fix-2.5.0
+Restored net-scp-1.0.2
+Building native extensions.  This could take a while...
+Restored RedCloth-4.2.2
+Building native extensions.  This could take a while...
+Restored win32-api-1.4.5
+Restored mongrel-1.1.5-x86-mingw32
+Restored ironruby-sqlserver-0.1.0
+Restored rubyforge-2.0.3
+Restored activerecord-2.3.5
+Restored windows-pr-1.0.8
+Restored mislav-will_paginate-2.3.11
+Restored s4t-utils-1.0.4
+Building native extensions.  This could take a while...
+Restored fastthread-1.0.7
+Restored capistrano-2.5.14
+Restored rake-compiler-0.7.0
+Building native extensions.  This could take a while...
+Restored ruby-debug-ide-0.4.9
+Restored dbd-odbc-0.2.5
+Restored rack-1.1.0
+Restored activeresource-2.3.5
+Restored liquid-2.0.0
+Restored cuke4nuke-0.3.0
+Restored gem_plugin-0.2.3
+Restored nokogiri-1.4.1-x86-mingw32
+Restored linecache-0.43-x86-mswin32
+Restored rake-0.8.7
+Restored exceptional-2.0.5
+Restored term-ansicolor-1.0.4
+Restored jeweler-1.4.0
+Restored dbi-0.4.3
+Restored win32-process-0.6.2
+Restored webrat-0.7.0
+Building native extensions.  This could take a while...
+Restored ruby-debug-base-0.10.3
+Building native extensions.  This could take a while...
+Restored json-1.2.0
+Restored hoe-2.5.0
+Restored net-ssh-2.0.19
+Restored highline-1.5.1
+Restored authlogic-2.1.3
+Restored ironruby-dbi-0.1.0
+Restored systemu-1.2.0
+Restored mechanize-0.9.3
+
+========================================================================
+
+           Thanks for installing Gemcutter! You can now run:
+
+    gem push          publish your gems for the world to use and enjoy
+    gem owner         allow/disallow others to push to your gems
+    gem webhook       register urls to be pinged when gems are pushed
+
+========================================================================
+
+Restored gemcutter-0.3.0
+Restored diff-lcs-1.1.2
+Restored actionpack-2.3.5
+Restored builder-2.1.2
+Building native extensions.  This could take a while...
+Restored hpricot-0.8.2
+Restored xml-simple-1.0.12
+Restored shoulda-2.10.3
+Restored recaptcha-0.2.3
+Restored actionmailer-2.3.5
+Restored albacore-0.1.0
+Building native extensions.  This could take a while...
+Restored ferret-0.11.6
+Restored net-sftp-2.0.4
+Restored git-1.2.5
+Restored ZenTest-4.2.1
+Restored akitaonrails-activerecord-sqlserver-adapter-1.1.1
+Restored json_pure-1.2.0
+Restored windows-api-0.4.0
+Restored watir-1.6.5
+Restored rails-2.3.5
+Restored activesupport-2.3.5
+**************************************************
+
+  Thank you for installing rspec-1.3.0
+
+  Please be sure to read History.rdoc and Upgrade.rdoc
+  for useful information about this release.
+
+**************************************************
+Restored rspec-1.3.0
+Restored deprecated-2.0.1
+Restored mocha-0.9.8
+Restored user-choices-1.1.6.1
+Restored commonwatir-1.6.5
+Restored firewatir-1.6.5
+Restored ruby-debug-base-0.10.3-x86-mswin32
+Restored rack-test-0.5.3
+Step 1 
+Updating RubyGems
+Nothing to update
+Step 2 
+Updating installed gems
+Nothing to update
+Step 3 
+Cleaning up installed gems...
+Clean Up Complete
+Step 4 
+Restoring gem(s) to pristine condition...
+Restored mongrel-1.1.5-x86-mswin32-60
+Restored polyglot-0.2.9
+Restored will_paginate-2.3.12
+
+----------------------------------------------------------------------------
+
+*  If you're upgrading from a version <= 0.1.1, you'll want to delete the pik.bat file
+   from all of your ruby versions. Gem uninstall should do the trick.
+
+*  Install pik to a location that's in your path, but someplace other than your ruby\bin dir
+   If you're upgrading from a more recent version, pik_install will overwrite the older files as needed.
+
+    >path
+      PATH=C:\tools\;C:\ruby\186-p368-mingw32\bin;C:\WINDOWS\system32;C:\WINDOWS
+
+    >pik_install C:\tools
+
+*  If this is a first-time install, add all the versions of ruby that you want to use with pik
+
+    >pik add
+    Adding:  186: ruby 1.8.6 (2009-03-31 patchlevel 368) [i386-mingw32]
+     Located at:  c:/ruby/186-p368-mingw32/bin
+
+    >pik add C:\ruby\IronRuby-091\bin
+    Adding:  091: IronRuby 0.9.1.0 on .NET 2.0.0.0
+     Located at:  C:/ruby/IronRuby-091/bin
+
+    >pik add C:\ruby\jruby-1.4.0RC1\bin
+    Adding:  140: jruby 1.4.0RC1 (ruby 1.8.7 patchlevel 174) (2009-09-30 80c263b) (Java HotSpot(TM) Client VM 1.6.0_14) [x86-java]
+     Located at:  C:/ruby/jruby-1.4.0RC1/bin
+
+
+----------------------------------------------------------------------------  
+
+Restored pik-0.2.6
+Restored rubyzip-0.9.1
+Restored activerecord-sqlserver-adapter-2.3
+Restored win32console-1.2.0-x86-mingw32
+Restored mysql-2.8.1-x86-mingw32
+Restored net-ssh-gateway-1.0.1
+Restored sqlite3-ruby-1.2.5-x86-mingw32
+
+(::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::)
+
+                     (::)   U P G R A D I N G    (::)
+
+Thank you for installing cucumber-0.6.2.
+Please be sure to read http://wiki.github.com/aslakhellesoy/cucumber/upgrading
+for important information about this release. Happy cuking!
+
+(::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::) (::)
+
+Restored cucumber-0.6.2
+Restored treetop-1.4.3
+Restored cgi_multipart_eof_fix-2.5.0
+Restored net-scp-1.0.2
+Building native extensions.  This could take a while...
+Restored RedCloth-4.2.2
+Building native extensions.  This could take a while...
+Restored win32-api-1.4.5
+Restored mongrel-1.1.5-x86-mingw32
+Restored ironruby-sqlserver-0.1.0
+Restored rubyforge-2.0.3
+Restored activerecord-2.3.5
+Restored windows-pr-1.0.8
+Restored mislav-will_paginate-2.3.11
+Restored s4t-utils-1.0.4
+Building native extensions.  This could take a while...
+Restored fastthread-1.0.7
+Restored capistrano-2.5.14
+Restored rake-compiler-0.7.0
+Building native extensions.  This could take a while...
+Restored ruby-debug-ide-0.4.9
+Restored dbd-odbc-0.2.5
+Restored rack-1.1.0
+Restored activeresource-2.3.5
+Restored liquid-2.0.0
+Restored cuke4nuke-0.3.0
+Restored gem_plugin-0.2.3
+Restored nokogiri-1.4.1-x86-mingw32
+Restored linecache-0.43-x86-mswin32
+Restored rake-0.8.7
+Restored exceptional-2.0.5
+Restored term-ansicolor-1.0.4
+Restored jeweler-1.4.0
+Restored dbi-0.4.3
+Restored win32-process-0.6.2
+Restored webrat-0.7.0
+Building native extensions.  This could take a while...
+Restored ruby-debug-base-0.10.3
+Building native extensions.  This could take a while...
+Restored json-1.2.0
+Restored hoe-2.5.0
+Restored net-ssh-2.0.19
+Restored highline-1.5.1
+Restored authlogic-2.1.3
+Restored ironruby-dbi-0.1.0
+Restored systemu-1.2.0
+Restored mechanize-0.9.3
+
+========================================================================
+
+           Thanks for installing Gemcutter! You can now run:
+
+    gem push          publish your gems for the world to use and enjoy
+    gem owner         allow/disallow others to push to your gems
+    gem webhook       register urls to be pinged when gems are pushed
+
+========================================================================
+
+Restored gemcutter-0.3.0
+Restored diff-lcs-1.1.2
+Restored actionpack-2.3.5
+Restored builder-2.1.2
+Building native extensions.  This could take a while...
+Restored hpricot-0.8.2
+Restored xml-simple-1.0.12
+Restored shoulda-2.10.3
+Restored recaptcha-0.2.3
+Restored actionmailer-2.3.5
+Restored albacore-0.1.0
+Building native extensions.  This could take a while...

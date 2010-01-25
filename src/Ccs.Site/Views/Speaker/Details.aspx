@@ -5,23 +5,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
-    <%= Html.Encode(Model.Name) %>
-
-    <fieldset>
-        <legend>Fields</legend>
-        
-        <div class="display-label">Name</div>
-        <div class="display-field"><%= Html.Encode(Model.Name) %></div>
-        
-        <div class="display-label">Biography</div>
-        <div class="display-field"><%= Html.Encode(Model.Biography) %></div>
-        
-    </fieldset>
-    <p>
-        <%=Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) %> |
-        <%=Html.ActionLink("Back to List", "Index") %>
-    </p>
-
+  <% Html.RenderPartial("Profile", Model);%>
 </asp:Content>
 

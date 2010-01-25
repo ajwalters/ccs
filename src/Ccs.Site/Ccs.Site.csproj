@@ -41,6 +41,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\dependencies\Db4objects.Db4o.Linq.dll</HintPath>
     </Reference>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dependencies\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.ComponentModel.DataAnnotations">
@@ -133,6 +137,7 @@
     <Content Include="Content\Stylesheets\blueprint\src\print.css" />
     <Content Include="Content\Stylesheets\blueprint\src\reset.css" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Admin\Console.aspx" />
     <Content Include="Views\Home\Contact.aspx" />
     <Content Include="Views\Session\Agenda.aspx" />
     <Content Include="Views\Session\Create.aspx" />
@@ -174,9 +179,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />

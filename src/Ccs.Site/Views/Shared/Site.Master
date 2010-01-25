@@ -18,7 +18,7 @@
 </head>
 <body>
 <hr class="space"/>
-<div class="container" id="masterContainer">
+<div class="container showgrid" id="masterContainer">
   <!-- header -->
   <div class="span-12"><img alt="Chicago Code Camp 2: By Chicagoland developers, for Chicagoland developers." src="../../Content/Images/logo.png"/></div>
   <div class="container span-12 last" style="text-align: right;"><% Html.RenderPartial("LogOnUserControl"); %></div>

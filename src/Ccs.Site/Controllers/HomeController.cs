@@ -1,10 +1,14 @@
 using System.Web.Mvc;
 
+using NLog;
+
 namespace Ccs.Site.Controllers
 {
   [HandleError]
   public class HomeController : Controller
   {
+    public static readonly Logger log = LogManager.GetCurrentClassLogger();
+
     /// <summary>
     /// Indexes this instance.
     /// </summary>

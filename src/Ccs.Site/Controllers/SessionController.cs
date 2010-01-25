@@ -3,10 +3,14 @@ using System.Web.Mvc;
 
 using Ccs.Site.Models;
 
+using NLog;
+
 namespace Ccs.Site.Controllers
 {
   public class SessionController : Controller
   {
+    public static readonly Logger log = LogManager.GetCurrentClassLogger();
+
     /// <summary>
     /// Detailses the specified id.
     /// </summary>

@@ -7,6 +7,8 @@ namespace Ccs.Site.Controllers
 {
   public class SpeakerController : Controller
   {
+    public static readonly NLog.Logger log = NLog.LogManager.GetCurrentClassLogger();
+
     /// <summary>
     /// Indexes this instance.
     /// </summary>
@@ -53,6 +55,16 @@ namespace Ccs.Site.Controllers
     }
 
     /// <summary>
+    /// Deletes the specified id.
+    /// </summary>
+    /// <param name="id">The id.</param>
+    /// <returns></returns>
+    public ActionResult Delete(string id)
+    {
+      return View();
+    }
+
+    /// <summary>
     /// Creates the specified collection.
     /// </summary>
     /// <param name="collection">The collection.</param>
@@ -75,7 +87,7 @@ namespace Ccs.Site.Controllers
     /// </summary>
     /// <param name="id">The id.</param>
     /// <returns></returns>
-    public ActionResult Edit(int id)
+    public ActionResult Edit(string id)
     {
       return View();
     }

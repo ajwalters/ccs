@@ -7,11 +7,15 @@ using System.Web.Security;
 
 using Ccs.Site.Models;
 
+using NLog;
+
 namespace Ccs.Site.Controllers
 {
   [HandleError]
   public class AccountController : Controller
   {
+    public static readonly Logger log = LogManager.GetCurrentClassLogger();
+
     /// <summary>
     /// Initializes a new instance of the <see cref="AccountController"/> class.
     /// </summary>
