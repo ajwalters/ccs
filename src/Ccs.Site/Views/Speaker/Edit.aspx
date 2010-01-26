@@ -8,6 +8,7 @@ Edit
   <h2>Edit Speaker</h2>
   <% using (Html.BeginForm()) {%>
   <fieldset>
+    <%= Html.HiddenFor(model => model.Id) %>
     <legend>Edit Speaker</legend>
     <div>
       <%= Html.LabelFor(model => model.Name) %>

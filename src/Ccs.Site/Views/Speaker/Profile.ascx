@@ -5,8 +5,8 @@
   <div class="span-3"><img src="../../Content/Images/Speakers/<%= Model.ImageName %>" style="width: 100%;" /></div>
   <% if(Page.User.IsInRole(Role.Administrators)) { %>
   <div class="span=7 last">
-    <%= Html.ActionLink("EDIT", "Edit", new {id=Html.Encode(Model.Name)})%> | 
-    <%= Html.ActionLink("DELETE", "Delete", new {id=Html.Encode(Model.Name)})%>
+    <%= Html.ActionLink("EDIT", "Edit", new {id=Html.Encode(Model.Id)})%> | 
+    <%= Html.ActionLink("DELETE", "Delete", new {id=Html.Encode(Model.Id)})%>
   </div>
   <% } %>
   <div class="span-7 last">

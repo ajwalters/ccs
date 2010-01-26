@@ -56,5 +56,22 @@ namespace Ccs.Site.Models
     {
       ObjectDatabase.Container.Delete(item);
     }
+
+    public void Update(T entity, Action<T> action)
+    {
+      var o = ObjectDatabase.Container.QueryByExample(entity);
+      var s = (T) o.Next();
+      action.Invoke(s);
+      ObjectDatabase.Container.Store(s);
+    }
+
+    public void DeleteBy(Guid id)
+    {
+      var q = (from Speaker s in ObjectDatabase.Container
+               where s.Id == id
+               select s).First();
+
+      ObjectDatabase.Container.Delete(q);
+    }
   }
 }

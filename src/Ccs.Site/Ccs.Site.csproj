@@ -33,6 +33,10 @@
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Cecil.FlowAnalysis, Version=0.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dependencies\Cecil.FlowAnalysis.dll</HintPath>
+    </Reference>
     <Reference Include="Db4objects.Db4o, Version=7.12.126.14142, Culture=neutral, PublicKeyToken=6199cd4f203aa8eb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\dependencies\Db4objects.Db4o.dll</HintPath>
@@ -80,6 +84,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LinkController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
     <Compile Include="Controllers\SpeakerController.cs" />
     <Compile Include="Extensions\IPagedList.cs" />
@@ -90,7 +95,11 @@
     </Compile>
     <Compile Include="Models\AccountMembershipService.cs" />
     <Compile Include="Models\Agenda.cs" />
+    <Compile Include="Models\ILink.cs" />
+    <Compile Include="Models\ILinkItem.cs" />
     <Compile Include="Models\ISpeaker.cs" />
+    <Compile Include="Models\LinkItem.cs" />
+    <Compile Include="Models\Links.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\Speaker.cs" />
     <Compile Include="Models\Sponsor.cs" />
@@ -144,7 +153,9 @@
     <Content Include="Views\Session\Edit.aspx" />
     <Content Include="Views\Session\Index.aspx" />
     <Content Include="Views\Session\Details.aspx" />
+    <Content Include="Views\Session\Profile.ascx" />
     <Content Include="Views\Shared\Footer.ascx" />
+    <Content Include="Views\Shared\LinkList.ascx" />
     <Content Include="Views\Shared\Links.ascx" />
     <Content Include="Views\Shared\Navigation.ascx" />
     <Content Include="Views\Speaker\Create.aspx" />
@@ -179,6 +190,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Links\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />

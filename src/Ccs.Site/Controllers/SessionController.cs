@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
 
@@ -16,10 +17,11 @@ namespace Ccs.Site.Controllers
     /// </summary>
     /// <param name="id">The id.</param>
     /// <returns></returns>
-    public ActionResult Details(string id)
+    public ActionResult Details(Guid id)
     {
       var model = new Session
                   {
+                    Id = Guid.NewGuid(),
                     Abstract = "This will be a fun session.",
                     Description = "Here is a really long description of what the session will be about.",
                     Name = "Happy Fun Time Session",
@@ -39,6 +41,7 @@ namespace Ccs.Site.Controllers
                   {
                     new Session
                     {
+                      Id = Guid.NewGuid(),
                       Abstract = "This will be a fun session.",
                       Description = "Here is a really long description of what the session will be about.",
                       Name = "Happy Fun Time Session",
@@ -61,6 +64,7 @@ namespace Ccs.Site.Controllers
                                {
                                  new Session
                                  {
+                                   Id = Guid.NewGuid(),
                                    Abstract = "This will be a fun session.",
                                    Description = "Here is a really long description of what the session will be about.",
                                    Name = "Happy Fun Time Session",
@@ -104,7 +108,7 @@ namespace Ccs.Site.Controllers
     /// </summary>
     /// <param name="id">The id.</param>
     /// <returns></returns>
-    public ActionResult Edit(int id)
+    public ActionResult Edit(Guid id)
     {
       return View();
     }
@@ -116,7 +120,7 @@ namespace Ccs.Site.Controllers
     /// <param name="collection">The collection.</param>
     /// <returns></returns>
     [HttpPost]
-    public ActionResult Edit(int id, FormCollection collection)
+    public ActionResult Edit(Guid id, FormCollection collection)
     {
       try
       {

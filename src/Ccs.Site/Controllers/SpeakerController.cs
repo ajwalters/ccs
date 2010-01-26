@@ -1,13 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Linq;
+using System.Net;
 using System.Web.Mvc;
 
 using Ccs.Site.Models;
+
+using NLog;
 
 namespace Ccs.Site.Controllers
 {
   public class SpeakerController : Controller
   {
-    public static readonly NLog.Logger log = NLog.LogManager.GetCurrentClassLogger();
+    public static readonly Logger log = LogManager.GetCurrentClassLogger();
 
     /// <summary>
     /// Indexes this instance.
@@ -15,16 +19,8 @@ namespace Ccs.Site.Controllers
     /// <returns></returns>
     public ActionResult Index()
     {
-      var model = new List<Speaker>
-                  {
-                    new Speaker
-                    {
-                      Name = "Michael D. Hall",
-                      Biography = "Mike is a cool guy.",
-                      ImageName = "michaeldhall.jpg"
-                    }
-                  };
-
+      var repository = new ObjectRepository<Speaker>();
+      var model = repository.GetAll();
       return View(model);
     }
 
@@ -33,15 +29,10 @@ namespace Ccs.Site.Controllers
     /// </summary>
     /// <param name="id">The id.</param>
     /// <returns></returns>
-    public ActionResult Details(string id)
+    public ActionResult Details(Guid id)
     {
-      var model = new Speaker
-                  {
-                    Name = "Michael D. Hall",
-                    Biography = "Mike is a cool guy.",
-                    ImageName = "michaeldhall.jpg"
-                  };
-
+      var repository = new ObjectRepository<Speaker>();
+      var model = repository.Find(m => m.Id == id).First();
       return View(model);
     }
 
@@ -59,21 +50,32 @@ namespace Ccs.Site.Controllers
     /// </summary>
     /// <param name="id">The id.</param>
     /// <returns></returns>
-    public ActionResult Delete(string id)
+    public void Delete(Guid id)
     {
-      return View();
+      var repository = new ObjectRepository<Speaker>();
+      repository.DeleteBy(id);
+
+      RedirectToAction("Index");
     }
 
     /// <summary>
-    /// Creates the specified collection.
+    /// Creates the specified model.
     /// </summary>
-    /// <param name="collection">The collection.</param>
+    /// <param name="model">The model.</param>
     /// <returns></returns>
     [HttpPost]
-    public ActionResult Create(FormCollection collection)
+    public ActionResult Create(Speaker model)
     {
       try
       {
+        var repository = new ObjectRepository<Speaker>();
+        if (0 < (repository.Find(s => s.Name == model.Name)).Count())
+        {
+          throw new WebException("The speaker already exists.");
+        }
+        model.Id = Guid.NewGuid();
+        repository.Save(model);
+
         return RedirectToAction("Index");
       }
       catch
@@ -87,22 +89,27 @@ namespace Ccs.Site.Controllers
     /// </summary>
     /// <param name="id">The id.</param>
     /// <returns></returns>
-    public ActionResult Edit(string id)
+    public ActionResult Edit(Guid id)
     {
-      return View();
+      var repository = new ObjectRepository<Speaker>();
+      var model = repository.Find(s => s.Id == id);
+      return View(model);
     }
 
     /// <summary>
     /// Edits the specified id.
     /// </summary>
     /// <param name="id">The id.</param>
-    /// <param name="collection">The collection.</param>
+    /// <param name="speaker">The speaker.</param>
     /// <returns></returns>
     [HttpPost]
-    public ActionResult Edit(int id, FormCollection collection)
+    public ActionResult Edit(Guid id, Speaker speaker)
     {
       try
       {
+        var repository = new ObjectRepository<Speaker>();
+        repository.Save(speaker);
+
         return RedirectToAction("Index");
       }
       catch

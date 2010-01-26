@@ -15,7 +15,7 @@ namespace Ccs.Site.Models
 
     static string _dbPath = ConfigurationManager.ConnectionStrings["ObjectStore"].ConnectionString;
 
-    public static string DBPath
+    public static string DbPath
     {
       get { return _dbPath; }
       set { _dbPath = value; }

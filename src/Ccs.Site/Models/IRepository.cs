@@ -13,8 +13,12 @@ namespace Ccs.Site.Models
 
     IQueryable<T> Find(Expression<Func<T, bool>> expression);
 
-    void Save(T item);
+    void Save(T entity);
 
-    void Delete(T item);
+    void Delete(T entity);
+
+    void DeleteBy(Guid id);
+
+    void Update(T entity, Action<T> updateAction);
   }
 }

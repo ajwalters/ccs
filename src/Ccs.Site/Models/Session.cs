@@ -1,10 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Ccs.Site.Models
 {
   public class Session : ISession
   {
+    [Required]
+    public Guid Id { get; set; }
+
     [DisplayName("Session name")]
     public string Name { get; set; }
 
