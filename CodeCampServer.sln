@@ -10,6 +10,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{208D55E8
 		rakefile.rb = rakefile.rb
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "features", "features", "{5044332B-9474-49A7-8466-6ABA5FE119EC}"
+	ProjectSection(SolutionItems) = preProject
+		features\admin.feature = features\admin.feature
+		features\guest_user_viewing_speakers.feature = features\guest_user_viewing_speakers.feature
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "step_definitions", "step_definitions", "{BB559B59-5D2B-4D9F-9E4A-5E64745011FB}"
+	ProjectSection(SolutionItems) = preProject
+		features\step_definitions\login.rb = features\step_definitions\login.rb
+		features\step_definitions\page_navigation.rb = features\step_definitions\page_navigation.rb
+		steps.rb = steps.rb
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,5 +40,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB559B59-5D2B-4D9F-9E4A-5E64745011FB} = {5044332B-9474-49A7-8466-6ABA5FE119EC}
 	EndGlobalSection
 EndGlobal

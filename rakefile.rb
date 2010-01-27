@@ -12,8 +12,8 @@ end
 
 desc "Publish the website."
 msbuild :publish => [] do |msb|
-	msb.properties = {:configuration=>:debug}
-	msb.targets [:ResolveReferences,:_CopyWebApplication]
+	msb.properties = {:configuration => :debug}
+	msb.targets [:ResolveReferences, :_CopyWebApplication]
 	msb.properties = {
 		:webprojectoutputdir => "c:/temp/CodeCampServer/",
 		:outdir => "c:/temp/CodeCampServer/bin/"    
