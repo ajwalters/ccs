@@ -14,7 +14,7 @@ namespace Ccs.Tests.Routes
       // Arrange
       var context = new StubContext("~/controller1");
       var routes = new RouteCollection();
-      MvcApplication.RegisterRoutes(routes);
+      Global.RegisterRoutes(routes);
 
       // Act
       var routeData = routes.GetRouteData(context);
@@ -32,7 +32,7 @@ namespace Ccs.Tests.Routes
       // Arrange
       var context = new StubContext("~/controller1/action2");
       var routes = new RouteCollection();
-      MvcApplication.RegisterRoutes(routes);
+      Global.RegisterRoutes(routes);
 
       // Act
       var routeData = routes.GetRouteData(context);
@@ -50,7 +50,7 @@ namespace Ccs.Tests.Routes
       // Arrange
       var context = new StubContext("~/controller1/action2/id3");
       var routes = new RouteCollection();
-      MvcApplication.RegisterRoutes(routes);
+      Global.RegisterRoutes(routes);
 
       // Act
       var routeData = routes.GetRouteData(context);
@@ -68,7 +68,7 @@ namespace Ccs.Tests.Routes
       // Arrange
       var context = new StubContext("~/a/b/c/d");
       var routes = new RouteCollection();
-      MvcApplication.RegisterRoutes(routes);
+      Global.RegisterRoutes(routes);
 
       // Act
       var routeData = routes.GetRouteData(context);
@@ -83,7 +83,7 @@ namespace Ccs.Tests.Routes
       // Arrange
       var context = new StubContext("~/foo.axd/bar/baz/biff");
       var routes = new RouteCollection();
-      MvcApplication.RegisterRoutes(routes);
+      Global.RegisterRoutes(routes);
 
       // Act
       var routeData = routes.GetRouteData(context);

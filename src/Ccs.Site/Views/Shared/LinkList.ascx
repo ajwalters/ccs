@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Links>" %>
+<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Links>" %>
 <%@ Import Namespace="Ccs.Site.Models"%>
 
     <ul>
@@ -15,8 +15,10 @@
           }%>
         
     </ul>
-    <% if(Page.User.IsInRole(Role.Administrators)) { %>
-        <%=Html.ActionLink("EDIT", "Edit", new {id=Model.Id})%> |
+    <%
+          if (Page.User.IsInRole(Role.Administrators))
+          {%>
+        <%=Html.ActionLink("EDIT", "Edit", new {id = Model.Id})%> |
     <%
           }%>
 

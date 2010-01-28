@@ -10,18 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{208D55E8
 		rakefile.rb = rakefile.rb
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "features", "features", "{5044332B-9474-49A7-8466-6ABA5FE119EC}"
-	ProjectSection(SolutionItems) = preProject
-		features\admin.feature = features\admin.feature
-		features\guest_user_viewing_speakers.feature = features\guest_user_viewing_speakers.feature
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "step_definitions", "step_definitions", "{BB559B59-5D2B-4D9F-9E4A-5E64745011FB}"
-	ProjectSection(SolutionItems) = preProject
-		features\step_definitions\login.rb = features\step_definitions\login.rb
-		features\step_definitions\page_navigation.rb = features\step_definitions\page_navigation.rb
-		steps.rb = steps.rb
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ccs", "src\Ccs\Ccs.csproj", "{954D420F-998A-456C-9586-0F57F3A13F11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,11 +26,12 @@ Global
 		{F37DEA9D-757B-4E40-A077-19070FE21B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F37DEA9D-757B-4E40-A077-19070FE21B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F37DEA9D-757B-4E40-A077-19070FE21B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{954D420F-998A-456C-9586-0F57F3A13F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{954D420F-998A-456C-9586-0F57F3A13F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{954D420F-998A-456C-9586-0F57F3A13F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{954D420F-998A-456C-9586-0F57F3A13F11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{BB559B59-5D2B-4D9F-9E4A-5E64745011FB} = {5044332B-9474-49A7-8466-6ABA5FE119EC}
 	EndGlobalSection
 EndGlobal

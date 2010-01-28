@@ -129,58 +129,36 @@
   <RecentFiles>
     <RecentFiles>
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Profile.ascx" caret="0" fromTop="0" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SessionController.cs" caret="3654" fromTop="115" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Create.aspx" caret="1183" fromTop="18" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Edit.aspx" caret="622" fromTop="16" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Index.aspx" caret="506" fromTop="7" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="738" fromTop="11" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:LinkList.ascx" caret="209" fromTop="8" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:ILink.cs" caret="86" fromTop="4" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:ILinkItem.cs" caret="49" fromTop="2" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:LinkItem.cs" caret="123" fromTop="6" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:LinkController.cs" caret="143" fromTop="0" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Controllers/f:SpeakerController.cs" caret="1343" fromTop="16" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:ObjectRepository.cs" caret="193" fromTop="9" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:IRepository.cs" caret="155" fromTop="7" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:LinkList.ascx" caret="598" fromTop="8" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Site.Master" caret="1866" fromTop="19" />
       <File id="208D55E8-5B49-4808-9383-EB61CFEFFCA5/f:rakefile.rb/l:C!?Users?mhall?Projects?mine?ccs?rakefile.rb" caret="140" fromTop="6" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:login.rb/l:C!?Users?mhall?Projects?mine?ccs?features?step_definitions?login.rb" caret="0" fromTop="0" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:steps.rb/l:C!?Users?mhall?Projects?mine?ccs?steps.rb" caret="0" fromTop="0" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:page_navigation.rb/l:C!?Users?mhall?Projects?mine?ccs?features?step_definitions?page_navigation.rb" caret="0" fromTop="0" />
-      <File id="5044332B-9474-49A7-8466-6ABA5FE119EC/f:admin.feature/l:C!?Users?mhall?Projects?mine?ccs?features?admin.feature" caret="338" fromTop="8" />
-      <File id="5044332B-9474-49A7-8466-6ABA5FE119EC/f:speaker.Xfeatures/l:C!?Users?mhall?Projects?mine?ccs?features?speaker.Xfeatures" caret="1127" fromTop="31" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Controllers/f:HomeControllerFacts.cs" caret="46" fromTop="2" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/f:Global.asax" caret="59" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:ValidatePasswordLengthAttribute.cs" caret="1071" fromTop="3" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Routes/f:RouteFacts.cs" caret="1659" fromTop="19" />
+      <File id="d:&amp;/f:Global.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Site?Global.cs" caret="387" fromTop="7" />
     </RecentFiles>
     <RecentEdits>
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:ObjectRepository.cs" caret="2010" fromTop="18" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:IRepository.cs" caret="464" fromTop="18" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Models/f:IRepository.cs" caret="373" fromTop="17" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Site.Master" caret="1157" fromTop="9" />
       <File id="208D55E8-5B49-4808-9383-EB61CFEFFCA5/f:rakefile.rb/l:C!?Users?mhall?Projects?mine?ccs?rakefile.rb" caret="684" fromTop="18" />
       <File id="208D55E8-5B49-4808-9383-EB61CFEFFCA5/f:rakefile.rb/l:C!?Users?mhall?Projects?mine?ccs?rakefile.rb" caret="664" fromTop="18" />
       <File id="208D55E8-5B49-4808-9383-EB61CFEFFCA5/f:rakefile.rb/l:C!?Users?mhall?Projects?mine?ccs?rakefile.rb" caret="48" fromTop="2" />
       <File id="208D55E8-5B49-4808-9383-EB61CFEFFCA5/f:rakefile.rb/l:C!?Users?mhall?Projects?mine?ccs?rakefile.rb" caret="275" fromTop="8" />
       <File id="208D55E8-5B49-4808-9383-EB61CFEFFCA5/f:rakefile.rb/l:C!?Users?mhall?Projects?mine?ccs?rakefile.rb" caret="481" fromTop="15" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:page_navigation.rb/l:C!?Users?mhall?Projects?mine?ccs?features?step_definitions?page_navigation.rb" caret="116" fromTop="6" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:page_navigation.rb/l:C!?Users?mhall?Projects?mine?ccs?features?step_definitions?page_navigation.rb" caret="148" fromTop="7" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:page_navigation.rb/l:C!?Users?mhall?Projects?mine?ccs?features?step_definitions?page_navigation.rb" caret="412" fromTop="19" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:page_navigation.rb/l:C!?Users?mhall?Projects?mine?ccs?features?step_definitions?page_navigation.rb" caret="412" fromTop="19" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:login.rb/l:C!?Users?mhall?Projects?mine?ccs?features?step_definitions?login.rb" caret="927" fromTop="26" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:login.rb/l:C!?Users?mhall?Projects?mine?ccs?features?step_definitions?login.rb" caret="478" fromTop="13" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:login.rb/l:C!?Users?mhall?Projects?mine?ccs?features?step_definitions?login.rb" caret="577" fromTop="18" />
-      <File id="5044332B-9474-49A7-8466-6ABA5FE119EC/f:admin.feature/l:C!?Users?mhall?Projects?mine?ccs?features?admin.feature" caret="128" fromTop="2" />
-      <File id="5044332B-9474-49A7-8466-6ABA5FE119EC/f:speaker.Xfeatures/l:C!?Users?mhall?Projects?mine?ccs?features?speaker.Xfeatures" caret="510" fromTop="14" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:login.rb/l:C!?Users?mhall?Projects?mine?ccs?features?step_definitions?login.rb" caret="0" fromTop="0" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:steps.rb/l:C!?Users?mhall?Projects?mine?ccs?steps.rb" caret="0" fromTop="41" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:steps.rb/l:C!?Users?mhall?Projects?mine?ccs?steps.rb" caret="0" fromTop="20" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:steps.rb/l:C!?Users?mhall?Projects?mine?ccs?steps.rb" caret="0" fromTop="28" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:steps.rb/l:C!?Users?mhall?Projects?mine?ccs?steps.rb" caret="0" fromTop="19" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:steps.rb/l:C!?Users?mhall?Projects?mine?ccs?steps.rb" caret="0" fromTop="9" />
-      <File id="BB559B59-5D2B-4D9F-9E4A-5E64745011FB/f:steps.rb/l:C!?Users?mhall?Projects?mine?ccs?steps.rb" caret="0" fromTop="0" />
-      <File id="5044332B-9474-49A7-8466-6ABA5FE119EC/f:admin.feature/l:C!?Users?mhall?Projects?mine?ccs?features?admin.feature" caret="476" fromTop="12" />
-      <File id="5044332B-9474-49A7-8466-6ABA5FE119EC/f:admin.feature/l:C!?Users?mhall?Projects?mine?ccs?features?admin.feature" caret="338" fromTop="8" />
-      <File id="5044332B-9474-49A7-8466-6ABA5FE119EC/f:speaker.Xfeatures/l:C!?Users?mhall?Projects?mine?ccs?features?speaker.Xfeatures" caret="891" fromTop="23" />
-      <File id="5044332B-9474-49A7-8466-6ABA5FE119EC/f:speaker.Xfeatures/l:C!?Users?mhall?Projects?mine?ccs?features?speaker.Xfeatures" caret="1171" fromTop="31" />
-      <File id="5044332B-9474-49A7-8466-6ABA5FE119EC/f:speaker.Xfeatures/l:C!?Users?mhall?Projects?mine?ccs?features?speaker.Xfeatures" caret="1127" fromTop="27" />
+      <File id="d:&amp;/f:Global.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Site?Global.cs" caret="140" fromTop="9" />
+      <File id="d:&amp;/f:Global.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Site?Global.cs" caret="48" fromTop="4" />
+      <File id="d:&amp;/f:Global.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Site?Global.cs" caret="424" fromTop="7" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/f:Global.asax" caret="16" fromTop="0" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Routes/f:RouteFacts.cs" caret="325" fromTop="11" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Routes/f:RouteFacts.cs" caret="865" fromTop="11" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Routes/f:RouteFacts.cs" caret="1309" fromTop="13" />
+      <File id="d:&amp;/f:Global.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Site?Global.cs" caret="795" fromTop="21" />
+      <File id="d:&amp;/f:Global.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Site?Global.cs" caret="524" fromTop="11" />
+      <File id="d:&amp;/f:Global.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Site?Global.cs" caret="626" fromTop="15" />
     </RecentEdits>
   </RecentFiles>
   <UnitTestRunner>

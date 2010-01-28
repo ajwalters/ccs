@@ -33,34 +33,11 @@
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Cecil.FlowAnalysis, Version=0.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\dependencies\Cecil.FlowAnalysis.dll</HintPath>
-    </Reference>
-    <Reference Include="Db4objects.Db4o, Version=7.12.126.14142, Culture=neutral, PublicKeyToken=6199cd4f203aa8eb, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\dependencies\Db4objects.Db4o.dll</HintPath>
-    </Reference>
-    <Reference Include="Db4objects.Db4o.Linq, Version=7.12.126.14142, Culture=neutral, PublicKeyToken=6199cd4f203aa8eb, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\dependencies\Db4objects.Db4o.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\dependencies\NLog.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
     <Reference Include="System.ComponentModel.DataAnnotations">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Data.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -82,42 +59,6 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LinkController.cs" />
-    <Compile Include="Controllers\SessionController.cs" />
-    <Compile Include="Controllers\SpeakerController.cs" />
-    <Compile Include="Extensions\IPagedList.cs" />
-    <Compile Include="Extensions\PagedList.cs" />
-    <Compile Include="Extensions\Pagination.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AccountMembershipService.cs" />
-    <Compile Include="Models\Agenda.cs" />
-    <Compile Include="Models\ILink.cs" />
-    <Compile Include="Models\ILinkItem.cs" />
-    <Compile Include="Models\ISpeaker.cs" />
-    <Compile Include="Models\LinkItem.cs" />
-    <Compile Include="Models\Links.cs" />
-    <Compile Include="Models\Role.cs" />
-    <Compile Include="Models\Speaker.cs" />
-    <Compile Include="Models\Sponsor.cs" />
-    <Compile Include="Models\ValidatePasswordLengthAttribute.cs" />
-    <Compile Include="Models\ChangePasswordModel.cs" />
-    <Compile Include="Models\FormsAuthenticationService.cs" />
-    <Compile Include="Models\IFormsAuthenticationService.cs" />
-    <Compile Include="Models\IMembershipService.cs" />
-    <Compile Include="Models\ISession.cs" />
-    <Compile Include="Models\IUser.cs" />
-    <Compile Include="Models\LogOnModel.cs" />
-    <Compile Include="Models\ObjectDatabase.cs" />
-    <Compile Include="Models\IRepository.cs" />
-    <Compile Include="Models\ObjectRepository.cs" />
-    <Compile Include="Models\PropertiesMustMatchAttribute.cs" />
-    <Compile Include="Models\RegisterModel.cs" />
-    <Compile Include="Models\Session.cs" />
-    <Compile Include="Models\ValidationUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ccs\Ccs.csproj">
+      <Project>{954D420F-998A-456C-9586-0F57F3A13F11}</Project>
+      <Name>Ccs</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Links\" />

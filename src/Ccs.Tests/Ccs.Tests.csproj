@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\build\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -27,7 +27,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\build\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -64,9 +64,9 @@
     <None Include="3rdParty\xunit.dll" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ccs.Site\Ccs.Site.csproj">
-      <Project>{3B09157A-6B72-433A-A82A-28EFE08E8FB0}</Project>
-      <Name>Ccs.Site</Name>
+    <ProjectReference Include="..\Ccs\Ccs.csproj">
+      <Project>{954D420F-998A-456C-9586-0F57F3A13F11}</Project>
+      <Name>Ccs</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

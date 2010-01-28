@@ -12,3 +12,5 @@ C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Db4objects.Db4o.dll
 C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Db4objects.Db4o.Linq.dll
 C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\NLog.dll
 C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Cecil.FlowAnalysis.dll
+C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Ccs.dll
+C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Ccs.pdb
