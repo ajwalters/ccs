@@ -12,3 +12,8 @@ Feature: Logging on as an Administrator
     Given I am on the LogOn page
     When I enter the username/pw "test_admin/correct"
     Then I should see the "Welcome" message
+    
+  Scenario: Logging out
+    Given I am logged in as an Administrator
+    When I click the LogOff link
+    Then I should see the LogOn link
