@@ -12,3 +12,4 @@ C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\NLog.dll
 C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\Cecil.FlowAnalysis.dll
 C:\Users\mhall\Projects\mine\ccs\build\Debug\Ccs.Tests.dll
 C:\Users\mhall\Projects\mine\ccs\build\Debug\Ccs.Tests.pdb
+C:\Users\mhall\Projects\mine\ccs\build\Debug\Ccs.Tests.dll.config

@@ -13,13 +13,12 @@ namespace Ccs.Site.Models
     // static object container variable 
     static IObjectContainer _db;
 
-    static string _dbPath = ConfigurationManager.ConnectionStrings["ObjectStore"].ConnectionString;
-
-    public static string DbPath
+    static ObjectDatabase()
     {
-      get { return _dbPath; }
-      set { _dbPath = value; }
+      DbPath = ConfigurationManager.ConnectionStrings["ObjectStore"].ConnectionString;
     }
+
+    public static string DbPath { get; set; }
 
     public static IObjectContainer Container
     {
@@ -31,23 +30,32 @@ namespace Ccs.Site.Models
           {
             //check to see if this is pointing to data directory
             //change as you need btw
-            if (_dbPath.Contains("|DataDirectory|"))
-            {
-              //we know, then, that this is a web project
-              //and HttpContext is hopefully not null...
+            DbPath = ExpandDataDirectory(DbPath);
 
-              _dbPath = _dbPath.Replace("|DataDirectory|", "");
-              var appDir = HttpContext.Current.Server.MapPath("~/App_Data/");
-              _dbPath = Path.Combine(appDir, _dbPath);
-            }
-
-            _db = Db4oFactory.OpenFile(_dbPath);
+            _db = Db4oFactory.OpenFile(DbPath);
           }
           return _db;
         }
       }
     }
 
+    /// <summary>
+    /// Gets the db path.
+    /// </summary>
+    public static string ExpandDataDirectory(string connectionString)
+    {
+      if (!connectionString.Contains("|DataDirectory|"))
+      {
+        return connectionString;
+      }
+      connectionString = connectionString.Replace("|DataDirectory|", "");
+      var appDir = HttpContext.Current.Server.MapPath("~/App_Data/");
+      return Path.Combine(appDir, connectionString);
+    }
+
+    /// <summary>
+    /// Closes the container.
+    /// </summary>
     public static void CloseContainer()
     {
       if (_db != null)

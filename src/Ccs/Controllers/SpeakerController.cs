@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 
 using Ccs.Site.Models;
+
+using Db4objects.Db4o;
+using Db4objects.Db4o.Linq;
 
 using NLog;
 
@@ -11,7 +15,23 @@ namespace Ccs.Site.Controllers
 {
   public class SpeakerController : Controller
   {
+    static readonly IObjectContainer _db = Db4oFactory.OpenFile(
+      ObjectDatabase.ExpandDataDirectory(ConfigurationManager.ConnectionStrings["ObjectStore"].ConnectionString));
+
+    public static readonly object _padlock = new object();
+
     public static readonly Logger log = LogManager.GetCurrentClassLogger();
+
+    public IObjectContainer Db
+    {
+      get
+      {
+        lock (_padlock)
+        {
+          return _db;
+        }
+      }
+    }
 
     /// <summary>
     /// Indexes this instance.
@@ -19,9 +39,8 @@ namespace Ccs.Site.Controllers
     /// <returns></returns>
     public ActionResult Index()
     {
-      var repository = new ObjectRepository<Speaker>();
-      var model = repository.GetAll();
-      return View(model);
+      return View((from Speaker o in Db
+                   select o).ToList());
     }
 
     /// <summary>
@@ -31,9 +50,9 @@ namespace Ccs.Site.Controllers
     /// <returns></returns>
     public ActionResult Details(Guid id)
     {
-      var repository = new ObjectRepository<Speaker>();
-      var model = repository.Find(m => m.Id == id).First();
-      return View(model);
+      return View((from Speaker o in Db
+                   where o.Id == id
+                   select o).First());
     }
 
     /// <summary>
@@ -52,10 +71,15 @@ namespace Ccs.Site.Controllers
     /// <returns></returns>
     public void Delete(Guid id)
     {
-      var repository = new ObjectRepository<Speaker>();
-      repository.DeleteBy(id);
+      var query = from Speaker o in Db
+                  where o.Id == id
+                  select o;
+      if (0 < query.Count())
+      {
+        Db.Delete(query.First());
+      }
 
-      RedirectToAction("Index");
+      RedirectToAction("Index", "Speaker");
     }
 
     /// <summary>
@@ -68,13 +92,15 @@ namespace Ccs.Site.Controllers
     {
       try
       {
-        var repository = new ObjectRepository<Speaker>();
-        if (0 < (repository.Find(s => s.Name == model.Name)).Count())
+        var q = (from Speaker o in Db
+                 where o.Id == model.Id
+                 select o);
+        if (0 < q.Count())
         {
           throw new WebException("The speaker already exists.");
         }
         model.Id = Guid.NewGuid();
-        repository.Save(model);
+        Db.Store(model);
 
         return RedirectToAction("Index");
       }
@@ -91,9 +117,9 @@ namespace Ccs.Site.Controllers
     /// <returns></returns>
     public ActionResult Edit(Guid id)
     {
-      var repository = new ObjectRepository<Speaker>();
-      var model = repository.Find(s => s.Id == id);
-      return View(model);
+      return View((from Speaker o in Db
+                   where o.Id == id
+                   select o).First());
     }
 
     /// <summary>
@@ -107,10 +133,17 @@ namespace Ccs.Site.Controllers
     {
       try
       {
-        var repository = new ObjectRepository<Speaker>();
-        repository.Save(speaker);
+        var model = (from Speaker o in Db
+                     where o.Id == id
+                     select o).First();
 
-        return RedirectToAction("Index");
+        model.Name = speaker.Name;
+        model.ImageName = speaker.ImageName;
+        model.Biography = speaker.Biography;
+
+        Db.Store(model);
+
+        return RedirectToAction("Details", new {speaker.Id});
       }
       catch
       {

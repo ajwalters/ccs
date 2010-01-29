@@ -7,6 +7,8 @@ namespace Ccs.Site.Models
 {
   public interface IRepository<T>
   {
+    int Count { get; }
+
     IQueryable<T> GetAll();
 
     PagedList<T> GetPaged(int pageIndex, int pageSize);
@@ -17,8 +19,6 @@ namespace Ccs.Site.Models
 
     void Delete(T entity);
 
-    void DeleteBy(Guid id);
-
-    void Update(T entity, Action<T> updateAction);
+    void Update(T entity);
   }
 }
