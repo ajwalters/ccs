@@ -6,7 +6,7 @@
   <%
     if (Page.User.IsInRole(Role.Administrators))
     {%>
-  <div class="span=7 last">
+  <div class="span-7 last">
     <%=Html.ActionLink("EDIT", "Edit", new {id = Html.Encode(Model.Id)})%> | 
     <%=Html.ActionLink("DELETE", "Delete", new {id = Html.Encode(Model.Id)})%>
   </div>

@@ -69,7 +69,7 @@ namespace Ccs.Site.Controllers
     /// </summary>
     /// <param name="id">The id.</param>
     /// <returns></returns>
-    public void Delete(Guid id)
+    public ActionResult Delete(Guid id)
     {
       var query = from Speaker o in Db
                   where o.Id == id
@@ -79,7 +79,7 @@ namespace Ccs.Site.Controllers
         Db.Delete(query.First());
       }
 
-      RedirectToAction("Index", "Speaker");
+      return RedirectToAction("Index");
     }
 
     /// <summary>

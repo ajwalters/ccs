@@ -1,0 +1,194 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="ItShouldSaveAnObject" priority="0" />
+      <Item value="var" priority="8" />
+      <Item value="new" priority="10" />
+      <Item value="ObjectRepository" priority="2" />
+      <Item value="r" priority="5" />
+      <Item value="Guid" priority="4" />
+      <Item value="x" priority="0" />
+      <Item value="Assert" priority="2" />
+      <Item value="p" priority="3" />
+      <Item value="using" priority="1" />
+      <Item value="System" priority="0" />
+      <Item value="Linq" priority="0" />
+      <Item value="public" priority="3" />
+      <Item value="object" priority="3" />
+      <Item value="void" priority="0" />
+      <Item value="T" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="Speaker" priority="2" />
+      <Item value="ObjectDatabase" priority="0" />
+      <Item value="container" priority="11" />
+      <Item value="from" priority="3" />
+      <Item value="in" priority="2" />
+      <Item value="select" priority="2" />
+      <Item value="o" priority="3" />
+      <Item value="orderby" priority="1" />
+      <Item value="where" priority="1" />
+      <Item value="id" priority="0" />
+      <Item value="QueryStringValueProvider" priority="1" />
+      <Item value="model" priority="14" />
+      <Item value="if" priority="1" />
+      <Item value="q" priority="1" />
+      <Item value="entity" priority="0" />
+      <Item value="speaker" priority="4" />
+      <Item value="ModelBinderAttribute" priority="0" />
+      <Item value="IQueryable" priority="0" />
+      <Item value="View" priority="1" />
+      <Item value="Db4objects" priority="0" />
+      <Item value="Db4o" priority="0" />
+      <Item value="Db4oFactory" priority="2" />
+      <Item value="string" priority="0" />
+      <Item value="DbPath" priority="0" />
+      <Item value="return" priority="3" />
+      <Item value="connectionString" priority="0" />
+      <Item value="static" priority="1" />
+      <Item value="readonly" priority="1" />
+      <Item value="IObjectContainer" priority="1" />
+      <Item value="private" priority="0" />
+      <Item value="_db" priority="0" />
+      <Item value="lock" priority="0" />
+      <Item value="Db" priority="0" />
+      <Item value="RedirectToRoute" priority="1" />
+      <Item value="RedirectToAction" priority="1" />
+      <Item value="HttpPost" priority="0" />
+      <Item value="HttpDelete" priority="0" />
+      <Item value="ActionResult" priority="1" />
+      <Item value="List&lt;Speaker&gt;" priority="0" />
+      <Item value="Redirect" priority="0" />
+      <Item value="RedirectResult" priority="0" />
+      <Item value="query" priority="0" />
+      <Item value="session" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Site.Models.ObjectRepository`1">
+      <Item value="Delete" priority="0" />
+      <Item value="Find" priority="2" />
+      <Item value="Update" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Tests.Specs.Person">
+      <Item value="Key" priority="1" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Xunit.Assert">
+      <Item value="Equal" priority="0" />
+      <Item value="True" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="First" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Ccs.Site.Models.ObjectDatabase">
+      <Item value="Container" priority="0" />
+      <Item value="ExpandDataDirectory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Db4objects.Db4o.IObjectContainer">
+      <Item value="Activate" priority="0" />
+      <Item value="QueryByExample" priority="1" />
+      <Item value="Query" priority="1" />
+      <Item value="Delete" priority="2" />
+      <Item value="Store" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Db4objects.Db4o.IObjectSet">
+      <Item value="AsQueryable" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Db4objects.Db4o.Query.IQuery">
+      <Item value="Constrain" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Site.Models.Speaker">
+      <Item value="Id" priority="5" />
+      <Item value="Name" priority="2" />
+      <Item value="ImageName" priority="1" />
+      <Item value="Biography" priority="1" />
+      <Item value="Sessions" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Db4objects.Db4o.Linq.IDb4oLinqQuery`1">
+      <Item value="First" priority="2" />
+      <Item value="Count" priority="1" />
+      <Item value="AsEnumerable" priority="0" />
+      <Item value="AsQueryable" priority="0" />
+      <Item value="ToList" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Db4objects.Db4o.Db4oFactory">
+      <Item value="OpenFile" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="NewGuid" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Site.Models.Session">
+      <Item value="Abstract" priority="8" />
+      <Item value="Room" priority="1" />
+      <Item value="Speaker" priority="3" />
+      <Item value="Start" priority="2" />
+      <Item value="End" priority="1" />
+      <Item value="Description" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Controllers/f:HomeControllerFacts.cs" caret="0" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:IRepository.cs" caret="184" fromTop="9" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Speaker.cs" caret="173" fromTop="7" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:ObjectRepository.cs" caret="546" fromTop="20" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:ObjectDatabase.cs" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Home/f:Index.aspx" caret="243" fromTop="6" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Scripts/f:jquery-1.3.2-vsdoc.js" caret="10036" fromTop="4" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="237" fromTop="14" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3162" fromTop="13" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Profile.ascx" caret="357" fromTop="8" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Index.aspx" caret="197" fromTop="3" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="635" fromTop="8" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Profile.ascx" caret="420" fromTop="10" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Edit.aspx" caret="1145" fromTop="34" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Edit.aspx" caret="590" fromTop="15" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Create.aspx" caret="410" fromTop="8" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Details.aspx" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Create.aspx" caret="426" fromTop="9" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3799" fromTop="19" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="0" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3799" fromTop="22" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3799" fromTop="33" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3708" fromTop="19" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3244" fromTop="16" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="2922" fromTop="5" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="2404" fromTop="7" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="1876" fromTop="15" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="1569" fromTop="3" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="1321" fromTop="16" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="1034" fromTop="5" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="823" fromTop="18" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Profile.ascx" caret="0" fromTop="0" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Profile.ascx" caret="559" fromTop="38" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Profile.ascx" caret="156" fromTop="3" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Profile.ascx" caret="244" fromTop="7" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Profile.ascx" caret="357" fromTop="8" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="197" fromTop="18" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="767" fromTop="14" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Edit.aspx" caret="234" fromTop="3" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Edit.aspx" caret="142" fromTop="40" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Edit.aspx" caret="1142" fromTop="34" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Edit.aspx" caret="957" fromTop="24" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Create.aspx" caret="237" fromTop="3" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Create.aspx" caret="142" fromTop="39" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Create.aspx" caret="1369" fromTop="39" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Create.aspx" caret="1032" fromTop="23" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Create.aspx" caret="364" fromTop="5" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Create.aspx" caret="360" fromTop="5" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+</Configuration>

@@ -1,8 +1,13 @@
 using System;
-using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Net;
 using System.Web.Mvc;
 
 using Ccs.Site.Models;
+
+using Db4objects.Db4o;
+using Db4objects.Db4o.Linq;
 
 using NLog;
 
@@ -10,25 +15,26 @@ namespace Ccs.Site.Controllers
 {
   public class SessionController : Controller
   {
+    static readonly IObjectContainer _db = Db4oFactory.OpenFile(
+      ObjectDatabase.ExpandDataDirectory(ConfigurationManager.ConnectionStrings["ObjectStore"].ConnectionString));
+
+    public static readonly object _padlock = new object();
+
     public static readonly Logger log = LogManager.GetCurrentClassLogger();
 
     /// <summary>
-    /// Detailses the specified id.
+    /// Gets the db.
     /// </summary>
-    /// <param name="id">The id.</param>
-    /// <returns></returns>
-    public ActionResult Details(Guid id)
+    /// <value>The db.</value>
+    public IObjectContainer Db
     {
-      var model = new Session
-                  {
-                    Id = Guid.NewGuid(),
-                    Abstract = "This will be a fun session.",
-                    Description = "Here is a really long description of what the session will be about.",
-                    Name = "Happy Fun Time Session",
-                    Speaker = "Michael D. Hall"
-                  };
-
-      return View(model);
+      get
+      {
+        lock (_padlock)
+        {
+          return _db;
+        }
+      }
     }
 
     /// <summary>
@@ -37,43 +43,20 @@ namespace Ccs.Site.Controllers
     /// <returns></returns>
     public ActionResult Index()
     {
-      var model = new List<Session>
-                  {
-                    new Session
-                    {
-                      Id = Guid.NewGuid(),
-                      Abstract = "This will be a fun session.",
-                      Description = "Here is a really long description of what the session will be about.",
-                      Name = "Happy Fun Time Session",
-                      Speaker = "Michael D. Hall"
-                    }
-                  };
-
-      return View(model);
+      return View((from Session o in Db
+                   select o).ToList());
     }
 
     /// <summary>
-    /// Agendas this instance.
+    /// Detailses the specified id.
     /// </summary>
+    /// <param name="id">The id.</param>
     /// <returns></returns>
-    public ActionResult Agenda()
+    public ActionResult Details(Guid id)
     {
-      var model = new Agenda
-                  {
-                    Sessions = new List<Session>
-                               {
-                                 new Session
-                                 {
-                                   Id = Guid.NewGuid(),
-                                   Abstract = "This will be a fun session.",
-                                   Description = "Here is a really long description of what the session will be about.",
-                                   Name = "Happy Fun Time Session",
-                                   Speaker = "Michael D. Hall"
-                                 }
-                               }
-                  };
-
-      return View(model);
+      return View((from Session o in Db
+                   where o.Id == id
+                   select o).First());
     }
 
     /// <summary>
@@ -86,15 +69,43 @@ namespace Ccs.Site.Controllers
     }
 
     /// <summary>
-    /// Creates the specified collection.
+    /// Deletes the specified id.
     /// </summary>
-    /// <param name="collection">The collection.</param>
+    /// <param name="id">The id.</param>
+    /// <returns></returns>
+    public ActionResult Delete(Guid id)
+    {
+      var query = from Session o in Db
+                  where o.Id == id
+                  select o;
+      if (0 < query.Count())
+      {
+        Db.Delete(query.First());
+      }
+
+      return RedirectToAction("Index");
+    }
+
+    /// <summary>
+    /// Creates the specified model.
+    /// </summary>
+    /// <param name="model">The model.</param>
     /// <returns></returns>
     [HttpPost]
-    public ActionResult Create(FormCollection collection)
+    public ActionResult Create(Session model)
     {
       try
       {
+        var q = (from Session o in Db
+                 where o.Id == model.Id
+                 select o);
+        if (0 < q.Count())
+        {
+          throw new WebException("The Session already exists.");
+        }
+        model.Id = Guid.NewGuid();
+        Db.Store(model);
+
         return RedirectToAction("Index");
       }
       catch
@@ -110,21 +121,36 @@ namespace Ccs.Site.Controllers
     /// <returns></returns>
     public ActionResult Edit(Guid id)
     {
-      return View();
+      return View((from Session o in Db
+                   where o.Id == id
+                   select o).First());
     }
 
     /// <summary>
     /// Edits the specified id.
     /// </summary>
     /// <param name="id">The id.</param>
-    /// <param name="collection">The collection.</param>
+    /// <param name="session">The session.</param>
     /// <returns></returns>
     [HttpPost]
-    public ActionResult Edit(Guid id, FormCollection collection)
+    public ActionResult Edit(Guid id, Session session)
     {
       try
       {
-        return RedirectToAction("Index");
+        var model = (from Session o in Db
+                     where o.Id == id
+                     select o).First();
+
+        model.Name = session.Name;
+        model.Abstract = session.Abstract;
+        model.Room = session.Room;
+        model.Speaker = session.Speaker;
+        model.Start = session.Start;
+        model.End = session.End;
+
+        Db.Store(model);
+
+        return RedirectToAction("Details", new {session.Id});
       }
       catch
       {

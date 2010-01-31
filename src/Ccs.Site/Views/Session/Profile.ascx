@@ -1,34 +1,19 @@
 <%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Session>" %>
 <%@ Import Namespace="Ccs.Site.Models"%>
 
-    <fieldset>
-        <legend>Fields</legend>
-        
-        <div class="display-label">Name</div>
-        <div class="display-field"><%=Html.Encode(Model.Name)%></div>
-        
-        <div class="display-label">Speaker</div>
-        <div class="display-field"><%=Html.Encode(Model.Speaker)%></div>
-        
-        <div class="display-label">Abstract</div>
-        <div class="display-field"><%=Html.Encode(Model.Abstract)%></div>
-        
-        <div class="display-label">Description</div>
-        <div class="display-field"><%=Html.Encode(Model.Description)%></div>
-        
-        <div class="display-label">Room</div>
-        <div class="display-field"><%=Html.Encode(Model.Room)%></div>
-        
-        <div class="display-label">Start</div>
-        <div class="display-field"><%=Html.Encode(String.Format("{0:g}", Model.Start))%></div>
-        
-        <div class="display-label">End</div>
-        <div class="display-field"><%=Html.Encode(String.Format("{0:g}", Model.End))%></div>
-        
-    </fieldset>
-    <p>
-        <%=Html.ActionLink("Edit", "Edit", new {/* id=Model.PrimaryKey */})%> |
-        <%=Html.ActionLink("Back to List", "Index")%>
-    </p>
-
-
+<div class="container span-17">
+  <%
+    if (Page.User.IsInRole(Role.Administrators))
+    {%>
+  <div class="span-10 last">
+    <%=Html.ActionLink("EDIT", "Edit", new {id = Html.Encode(Model.Id)})%> | 
+    <%=Html.ActionLink("DELETE", "Delete", new {id = Html.Encode(Model.Id)})%>
+  </div>
+  <%
+    }%>
+  <div class="span-7 last">
+    <h3><%=Html.Encode(Model.Name)%></h3>
+        <p><%=Html.Encode(Model.Description)%></p>
+    <p><%=Html.Encode(Model.Abstract)%></p>
+  </div>
+</div>
