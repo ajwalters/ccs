@@ -67,6 +67,8 @@
     <Content Include="App_Data\CodeCampDb_log.ldf">
       <DependentUpon>CodeCampDb.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\Images\somerights20.png" />
+    <Content Include="Content\Images\Speakers\default_image.jpg" />
     <Content Include="Content\Images\Speakers\michaeldhall.jpg" />
     <Content Include="Content\Images\css_go.png" />
     <Content Include="Content\Images\logo.png" />
@@ -88,8 +90,8 @@
     <Content Include="Content\Stylesheets\blueprint\src\reset.css" />
     <Content Include="Global.asax" />
     <Content Include="Views\Admin\Console.aspx" />
+    <Content Include="Views\Agenda\Index.aspx" />
     <Content Include="Views\Home\Contact.aspx" />
-    <Content Include="Views\Session\Agenda.aspx" />
     <Content Include="Views\Session\Create.aspx" />
     <Content Include="Views\Session\Edit.aspx" />
     <Content Include="Views\Session\Index.aspx" />

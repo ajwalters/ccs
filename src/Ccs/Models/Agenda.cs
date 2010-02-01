@@ -1,14 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
-namespace Ccs.Site.Models
+namespace Ccs.Models
 {
-  public interface IAgenda
+  public class Agenda
   {
-    List<Session> Sessions { get; set; }
-  }
-
-  public class Agenda : IAgenda
-  {
-    public List<Session> Sessions { get; set; }
+    public List<Guid> Sessions { get; set; }
   }
 }

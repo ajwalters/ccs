@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AgendaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LinkController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
@@ -88,26 +89,22 @@
     <Compile Include="Models\AccountMembershipService.cs" />
     <Compile Include="Models\Agenda.cs" />
     <Compile Include="Models\ChangePasswordModel.cs" />
+    <Compile Include="Models\Db.cs" />
     <Compile Include="Models\FormsAuthenticationService.cs" />
+    <Compile Include="Models\IDb.cs" />
     <Compile Include="Models\IFormsAuthenticationService.cs" />
-    <Compile Include="Models\ILink.cs" />
-    <Compile Include="Models\ILinkItem.cs" />
+    <Compile Include="Models\IKeyable.cs" />
     <Compile Include="Models\IMembershipService.cs" />
-    <Compile Include="Models\IRepository.cs" />
-    <Compile Include="Models\ISession.cs" />
-    <Compile Include="Models\ISpeaker.cs" />
     <Compile Include="Models\IUser.cs" />
     <Compile Include="Models\LinkItem.cs" />
     <Compile Include="Models\Links.cs" />
     <Compile Include="Models\LogOnModel.cs" />
-    <Compile Include="Models\ObjectDatabase.cs" />
-    <Compile Include="Models\ObjectRepository.cs" />
     <Compile Include="Models\PropertiesMustMatchAttribute.cs" />
     <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Room.cs" />
     <Compile Include="Models\Session.cs" />
     <Compile Include="Models\Speaker.cs" />
-    <Compile Include="Models\Sponsor.cs" />
     <Compile Include="Models\ValidatePasswordLengthAttribute.cs" />
     <Compile Include="Models\ValidationUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

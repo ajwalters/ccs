@@ -1,13 +1,13 @@
 <%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Session>" %>
-<%@ Import Namespace="Ccs.Site.Models"%>
+<%@ Import Namespace="Ccs.Models"%>
 
 <div class="container span-17">
   <%
     if (Page.User.IsInRole(Role.Administrators))
     {%>
   <div class="span-10 last">
-    <%=Html.ActionLink("EDIT", "Edit", new {id = Html.Encode(Model.Id)})%> | 
-    <%=Html.ActionLink("DELETE", "Delete", new {id = Html.Encode(Model.Id)})%>
+    <%=Html.ActionLink("EDIT", "Edit", new {key = Html.Encode(Model.Key)})%> | 
+    <%=Html.ActionLink("DELETE", "Delete", new {key = Html.Encode(Model.Key)})%>
   </div>
   <%
     }%>

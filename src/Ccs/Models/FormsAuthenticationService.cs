@@ -1,6 +1,8 @@
 using System.Web.Security;
 
-namespace Ccs.Site.Models
+using Ccs.Site.Models;
+
+namespace Ccs.Models
 {
   public class FormsAuthenticationService : IFormsAuthenticationService
   {

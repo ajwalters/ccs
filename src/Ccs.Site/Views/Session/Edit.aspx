@@ -1,34 +1,29 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<Ccs.Site.Models.Session>" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<Session>" %>
+<%@ Import Namespace="Ccs.Models"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-Edit Session
+Update Session
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-  <h2>Edit Session</h2>
+
   <% using (Html.BeginForm()) {%>
-  <fieldset>
-    <%= Html.HiddenFor(model => model.Id) %>
-    <legend>Edit Session</legend>
-    <div>
-      <%= Html.LabelFor(model => model.Name) %>
-    </div>
-    <div class="editor-field">
-      <%= Html.TextBoxFor(model => model.Name) %>
-      <%= Html.ValidationMessageFor(model => model.Name) %>
-    </div>
-    <div class="editor-label">
-    <%= Html.LabelFor(model => model.Abstract) %>
-    </div>
-    <div class="editor-field">
-      <%= Html.TextBoxFor(model => model.Abstract) %>
-      <%= Html.ValidationMessageFor(model => model.Abstract) %>
-    </div>
-    <p><input type="submit" value="Save" /></p>
+
+  <%= Html.HiddenFor(model => model.Key) %>
+  <legend>Edit Session</legend>
+  <div><%= Html.LabelFor(model => model.Name) %></div>
+  <div class="editor-field">
+    <%= Html.TextBoxFor(model => model.Name) %>
+    <%= Html.ValidationMessageFor(model => model.Name) %>
+  </div>
+  <div class="editor-label"><%= Html.LabelFor(model => model.Abstract) %></div>
+  <div class="editor-field">
+    <%= Html.TextBoxFor(model => model.Abstract) %>
+    <%= Html.ValidationMessageFor(model => model.Abstract) %>
+  </div>
+  <p><input type="submit" value="Update Session" /></p>
   </fieldset>
   <% } %>
-  <div>
-  <%=Html.ActionLink("Back to Sessions.", "Index") %>
-  </div>
+  <div><%=Html.ActionLink("Back to Sessions.", "Index") %></div>
 </asp:Content>
 

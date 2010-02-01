@@ -1,7 +1,7 @@
 using System;
 using System.Web.Security;
 
-namespace Ccs.Site.Models
+namespace Ccs.Models
 {
   public class AccountMembershipService : IMembershipService
   {

@@ -1,6 +1,6 @@
-namespace Ccs.Site.Models
+namespace Ccs.Models
 {
-  public class LinkItem : ILinkItem
+  public class LinkItem
   {
     public string Text { get; set; }
 

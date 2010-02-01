@@ -1,4 +1,4 @@
-namespace Ccs.Site.Models
+namespace Ccs.Models
 {
   public static class Role
   {

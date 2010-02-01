@@ -1,12 +1,10 @@
 using System;
-using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 
-using Ccs.Site.Models;
+using Ccs.Models;
 
-using Db4objects.Db4o;
 using Db4objects.Db4o.Linq;
 
 using NLog;
@@ -15,27 +13,7 @@ namespace Ccs.Site.Controllers
 {
   public class SessionController : Controller
   {
-    static readonly IObjectContainer _db = Db4oFactory.OpenFile(
-      ObjectDatabase.ExpandDataDirectory(ConfigurationManager.ConnectionStrings["ObjectStore"].ConnectionString));
-
-    public static readonly object _padlock = new object();
-
     public static readonly Logger log = LogManager.GetCurrentClassLogger();
-
-    /// <summary>
-    /// Gets the db.
-    /// </summary>
-    /// <value>The db.</value>
-    public IObjectContainer Db
-    {
-      get
-      {
-        lock (_padlock)
-        {
-          return _db;
-        }
-      }
-    }
 
     /// <summary>
     /// Indexes this instance.
@@ -43,19 +21,19 @@ namespace Ccs.Site.Controllers
     /// <returns></returns>
     public ActionResult Index()
     {
-      return View((from Session o in Db
+      return View((from Session o in Db.Container
                    select o).ToList());
     }
 
     /// <summary>
-    /// Detailses the specified id.
+    /// Detailses the specified key.
     /// </summary>
-    /// <param name="id">The id.</param>
+    /// <param name="key">The key.</param>
     /// <returns></returns>
-    public ActionResult Details(Guid id)
+    public ActionResult Details(Guid key)
     {
-      return View((from Session o in Db
-                   where o.Id == id
+      return View((from Session o in Db.Container
+                   where o.Key == key
                    select o).First());
     }
 
@@ -69,42 +47,42 @@ namespace Ccs.Site.Controllers
     }
 
     /// <summary>
-    /// Deletes the specified id.
+    /// Deletes the specified key.
     /// </summary>
-    /// <param name="id">The id.</param>
+    /// <param name="key">The id.</param>
     /// <returns></returns>
-    public ActionResult Delete(Guid id)
+    public ActionResult Delete(Guid key)
     {
-      var query = from Session o in Db
-                  where o.Id == id
+      var query = from Session o in Db.Container
+                  where o.Key == key
                   select o;
       if (0 < query.Count())
       {
-        Db.Delete(query.First());
+        Db.Container.Delete(query.First());
       }
 
       return RedirectToAction("Index");
     }
 
     /// <summary>
-    /// Creates the specified model.
+    /// Creates the specified session.
     /// </summary>
-    /// <param name="model">The model.</param>
+    /// <param name="session">The model.</param>
     /// <returns></returns>
     [HttpPost]
-    public ActionResult Create(Session model)
+    public ActionResult Create(Session session)
     {
       try
       {
-        var q = (from Session o in Db
-                 where o.Id == model.Id
+        var q = (from Session o in Db.Container
+                 where o.Key == session.Key
                  select o);
         if (0 < q.Count())
         {
           throw new WebException("The Session already exists.");
         }
-        model.Id = Guid.NewGuid();
-        Db.Store(model);
+        session.Key = Guid.NewGuid();
+        Db.Container.Store(session);
 
         return RedirectToAction("Index");
       }
@@ -115,42 +93,42 @@ namespace Ccs.Site.Controllers
     }
 
     /// <summary>
-    /// Edits the specified id.
+    /// Edits the specified key.
     /// </summary>
-    /// <param name="id">The id.</param>
+    /// <param name="key">The id.</param>
     /// <returns></returns>
-    public ActionResult Edit(Guid id)
+    public ActionResult Edit(Guid key)
     {
-      return View((from Session o in Db
-                   where o.Id == id
+      return View((from Session o in Db.Container
+                   where o.Key == key
                    select o).First());
     }
 
     /// <summary>
-    /// Edits the specified id.
+    /// Edits the specified key.
     /// </summary>
-    /// <param name="id">The id.</param>
+    /// <param name="key">The id.</param>
     /// <param name="session">The session.</param>
     /// <returns></returns>
     [HttpPost]
-    public ActionResult Edit(Guid id, Session session)
+    public ActionResult Edit(Guid key, Session session)
     {
       try
       {
-        var model = (from Session o in Db
-                     where o.Id == id
+        var model = (from Session o in Db.Container
+                     where o.Key == key
                      select o).First();
 
         model.Name = session.Name;
         model.Abstract = session.Abstract;
         model.Room = session.Room;
-        model.Speaker = session.Speaker;
+        //model.Speaker = session.Speaker;
         model.Start = session.Start;
         model.End = session.End;
 
-        Db.Store(model);
+        Db.Container.Store(model);
 
-        return RedirectToAction("Details", new {session.Id});
+        return RedirectToAction("Details", new {session.Key});
       }
       catch
       {

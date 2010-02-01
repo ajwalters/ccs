@@ -57,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeControllerFacts.cs" />
+    <Compile Include="Facts\RoomFacts.cs" />
+    <Compile Include="Facts\SessionFacts.cs" />
+    <Compile Include="Facts\SpeakerFacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routes\RouteFacts.cs" />
     <Compile Include="Facts\ObjectRepositoryFacts.cs" />

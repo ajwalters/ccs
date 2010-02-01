@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Ccs.Site.Models
+namespace Ccs.Models
 {
   [PropertiesMustMatch("NewPassword", "ConfirmPassword",
     ErrorMessage = "The new password and confirmation password do not match.")]
