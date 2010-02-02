@@ -1,11 +1,8 @@
 using System;
 using System.Linq;
-using System.Net;
 using System.Web.Mvc;
 
-using Ccs.Models;
-
-using Db4objects.Db4o.Linq;
+using Ccs.Domain;
 
 using NLog;
 
@@ -15,74 +12,41 @@ namespace Ccs.Site.Controllers
   {
     public static readonly Logger log = LogManager.GetCurrentClassLogger();
 
-    /// <summary>
-    /// Indexes this instance.
-    /// </summary>
-    /// <returns></returns>
+    readonly SpeakerRepository repository;
+
+    public SpeakerController()
+    {
+      repository = new SpeakerRepository();
+    }
+
     public ActionResult Index()
     {
-      return View((from Speaker o in Db.Container
-                   select o).ToList());
+      return View(repository.FetchAll().ToList());
     }
 
-    /// <summary>
-    /// Detailses the specified key.
-    /// </summary>
-    /// <param name="key">The key.</param>
-    /// <returns></returns>
     public ActionResult Details(Guid key)
     {
-      return View((from Speaker o in Db.Container
-                   where o.Key == key
-                   select o).First());
+      return View(repository.FetchByKey(key));
     }
 
-    /// <summary>
-    /// Creates this instance.
-    /// </summary>
-    /// <returns></returns>
     public ActionResult Create()
     {
       return View();
     }
 
-    /// <summary>
-    /// Deletes the specified key.
-    /// </summary>
-    /// <param name="key">The key.</param>
-    /// <returns></returns>
     public ActionResult Delete(Guid key)
     {
-      var query = from Speaker o in Db.Container
-                  where o.Key == key
-                  select o;
-      if (0 < query.Count())
-      {
-        Db.Container.Delete(query.First());
-      }
+      repository.DeleteByKey(key);
 
       return RedirectToAction("Index");
     }
 
-    /// <summary>
-    /// Creates the specified model.
-    /// </summary>
-    /// <param name="model">The model.</param>
-    /// <returns></returns>
     [HttpPost]
-    public ActionResult Create(Speaker model)
+    public ActionResult Create(Speaker viewModel)
     {
       try
       {
-        var q = (from Speaker o in Db.Container
-                 where o.Key == model.Key
-                 select o);
-        if (0 < q.Count())
-        {
-          throw new WebException("The speaker already exists.");
-        }
-        model.Key = Guid.NewGuid();
-        Db.Container.Store(model);
+        repository.Add(viewModel);
 
         return RedirectToAction("Index");
       }
@@ -92,40 +56,19 @@ namespace Ccs.Site.Controllers
       }
     }
 
-    /// <summary>
-    /// Edits the specified key.
-    /// </summary>
-    /// <param name="key">The id.</param>
-    /// <returns></returns>
     public ActionResult Edit(Guid key)
     {
-      return View((from Speaker o in Db.Container
-                   where o.Key == key
-                   select o).First());
+      return View(repository.FetchByKey(key));
     }
 
-    /// <summary>
-    /// Edits the specified key.
-    /// </summary>
-    /// <param name="key">The id.</param>
-    /// <param name="speaker">The speaker.</param>
-    /// <returns></returns>
     [HttpPost]
-    public ActionResult Edit(Guid key, Speaker speaker)
+    public ActionResult Edit(Guid key, Speaker viewModel)
     {
       try
       {
-        var model = (from Speaker o in Db.Container
-                     where o.Key == key
-                     select o).First();
+        repository.Update(key, viewModel);
 
-        model.Name = speaker.Name;
-        model.ImageName = speaker.ImageName;
-        model.Biography = speaker.Biography;
-
-        Db.Container.Store(model);
-
-        return RedirectToAction("Details", new {speaker.Key});
+        return RedirectToAction("Details", new {viewModel.Key});
       }
       catch
       {

@@ -13,21 +13,21 @@
     <ItemStatistics item="Default">
       <Item value="ItShouldSaveAnObject" priority="0" />
       <Item value="var" priority="13" />
-      <Item value="new" priority="23" />
+      <Item value="new" priority="25" />
       <Item value="ObjectRepository" priority="2" />
       <Item value="r" priority="5" />
-      <Item value="Guid" priority="12" />
+      <Item value="Guid" priority="14" />
       <Item value="x" priority="0" />
       <Item value="Assert" priority="2" />
       <Item value="p" priority="4" />
       <Item value="using" priority="2" />
       <Item value="System" priority="0" />
       <Item value="Linq" priority="0" />
-      <Item value="public" priority="11" />
+      <Item value="public" priority="20" />
       <Item value="object" priority="5" />
-      <Item value="void" priority="5" />
-      <Item value="T" priority="2" />
-      <Item value="class" priority="2" />
+      <Item value="void" priority="6" />
+      <Item value="T" priority="6" />
+      <Item value="class" priority="3" />
       <Item value="Speaker" priority="2" />
       <Item value="ObjectDatabase" priority="0" />
       <Item value="container" priority="11" />
@@ -36,13 +36,13 @@
       <Item value="select" priority="2" />
       <Item value="o" priority="3" />
       <Item value="orderby" priority="1" />
-      <Item value="where" priority="5" />
+      <Item value="where" priority="7" />
       <Item value="id" priority="0" />
       <Item value="QueryStringValueProvider" priority="1" />
-      <Item value="model" priority="14" />
+      <Item value="model" priority="15" />
       <Item value="if" priority="2" />
       <Item value="q" priority="1" />
-      <Item value="entity" priority="1" />
+      <Item value="entity" priority="5" />
       <Item value="speaker" priority="4" />
       <Item value="ModelBinderAttribute" priority="0" />
       <Item value="IQueryable" priority="0" />
@@ -54,10 +54,10 @@
       <Item value="DbPath" priority="0" />
       <Item value="return" priority="4" />
       <Item value="connectionString" priority="0" />
-      <Item value="static" priority="2" />
-      <Item value="readonly" priority="2" />
+      <Item value="static" priority="4" />
+      <Item value="readonly" priority="4" />
       <Item value="IObjectContainer" priority="1" />
-      <Item value="private" priority="1" />
+      <Item value="private" priority="2" />
       <Item value="_db" priority="0" />
       <Item value="lock" priority="1" />
       <Item value="Db" priority="3" />
@@ -76,7 +76,7 @@
       <Item value="DateTime" priority="1" />
       <Item value="ValidationUtil" priority="0" />
       <Item value="DisplayName" priority="0" />
-      <Item value="List" priority="1" />
+      <Item value="List" priority="3" />
       <Item value="ListSortDirection" priority="0" />
       <Item value="Page" priority="0" />
       <Item value="SpeakerFacts" priority="0" />
@@ -88,11 +88,11 @@
       <Item value="List&lt;Guid&gt;" priority="1" />
       <Item value="Room" priority="0" />
       <Item value="Speakers" priority="0" />
-      <Item value="interface" priority="0" />
+      <Item value="interface" priority="2" />
       <Item value="Object" priority="0" />
       <Item value="Queryable" priority="0" />
       <Item value="Query" priority="0" />
-      <Item value="IKeyable" priority="4" />
+      <Item value="IKeyable" priority="6" />
       <Item value="IDb" priority="0" />
       <Item value="_padlock" priority="0" />
       <Item value="TimeZoneInfo" priority="0" />
@@ -105,6 +105,20 @@
       <Item value="Response" priority="0" />
       <Item value="DefaultValue" priority="0" />
       <Item value="Controllers" priority="0" />
+      <Item value="GetByKey" priority="1" />
+      <Item value="Repository" priority="0" />
+      <Item value="Func" priority="0" />
+      <Item value="abstract" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="override" priority="0" />
+      <Item value="SessionRepository" priority="1" />
+      <Item value="SessionController" priority="0" />
+      <Item value="repository" priority="1" />
+      <Item value="SpeakerRepository" priority="1" />
+      <Item value="key" priority="0" />
+      <Item value="stored" priority="3" />
+      <Item value="SpeakerController" priority="0" />
+      <Item value="Data" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Ccs.Site.Models.ObjectRepository`1">
       <Item value="Delete" priority="0" />
@@ -150,7 +164,7 @@
       <Item value="First" priority="2" />
       <Item value="Count" priority="1" />
       <Item value="AsEnumerable" priority="0" />
-      <Item value="AsQueryable" priority="0" />
+      <Item value="AsQueryable" priority="1" />
       <Item value="ToList" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Db4objects.Db4o.Db4oFactory">
@@ -196,73 +210,91 @@
       <Item value="WriteLine" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Ccs.Models.Speaker">
-      <Item value="ImageName" priority="2" />
+      <Item value="ImageName" priority="4" />
+      <Item value="Biography" priority="1" />
+      <Item value="SessionKeys" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Controllers.SessionRepository">
+      <Item value="FetchAll" priority="0" />
+      <Item value="FetchByKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Models.Session">
+      <Item value="SpeakerKeys" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Domain.SpeakerRepository">
+      <Item value="FetchAll" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:IUser.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:LinkItem.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Links.cs" caret="228" fromTop="8" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Role.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Room.cs" caret="147" fromTop="6" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Session.cs" caret="274" fromTop="12" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:AccountController.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
-      <File id="d:&amp;/f:IDb.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Models?IDb.cs" caret="0" fromTop="0" />
-      <File id="d:&amp;/f:IKeyable.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Models?IKeyable.cs" caret="175" fromTop="8" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:IMembershipService.cs" caret="90" fromTop="4" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:DB4O.cs" caret="195" fromTop="11" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Speaker.cs" caret="903" fromTop="35" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Create.aspx" caret="0" fromTop="0" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Index.aspx" caret="579" fromTop="7" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Profile.ascx" caret="541" fromTop="12" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Edit.aspx" caret="0" fromTop="0" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Details.aspx" caret="0" fromTop="0" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Profile.ascx" caret="623" fromTop="19" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="0" fromTop="0" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Edit.aspx" caret="0" fromTop="0" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Details.aspx" caret="0" fromTop="0" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Create.aspx" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3291" fromTop="38" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="1859" fromTop="46" />
-      <File id="d:&amp;/f:AgendaController.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Controllers?AgendaController.cs" caret="172" fromTop="9" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Footer.ascx" caret="1057" fromTop="15" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Navigation.ascx" caret="552" fromTop="4" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Site.Master" caret="1248" fromTop="22" />
       <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Agenda/f:Index.aspx" caret="235" fromTop="3" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:RegisterModel.cs" caret="0" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:ObjectRepository.cs" caret="107" fromTop="7" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:IKeyedRepository.cs" caret="87" fromTop="6" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="1456" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="1461" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Db.cs" caret="110" fromTop="6" />
+      <File id="d:&amp;/f:SpeakerRepository.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Domain?SpeakerRepository.cs" caret="53" fromTop="4" />
+      <File id="d:&amp;/f:Class1.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Domain?Class1.cs" caret="75" fromTop="5" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Role.cs" caret="20" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:LinkItem.cs" caret="20" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Agenda.cs" caret="20" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Room.cs" caret="166" fromTop="8" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Links.cs" caret="146" fromTop="8" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Session.cs" caret="205" fromTop="9" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Speaker.cs" caret="226" fromTop="11" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:RoomFacts.cs" caret="215" fromTop="14" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:SpeakerFacts.cs" caret="258" fromTop="15" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:SessionFacts.cs" caret="258" fromTop="15" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:IKeyable.cs" caret="181" fromTop="10" />
     </RecentFiles>
     <RecentEdits>
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Create.aspx" caret="356" fromTop="8" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Create.aspx" caret="516" fromTop="13" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Create.aspx" caret="800" fromTop="19" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Create.aspx" caret="1000" fromTop="27" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="844" fromTop="15" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="846" fromTop="20" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Index.aspx" caret="850" fromTop="22" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Index.aspx" caret="696" fromTop="12" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Speaker.cs" caret="924" fromTop="35" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="387" fromTop="6" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Profile.ascx" caret="333" fromTop="7" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Profile.ascx" caret="149" fromTop="3" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Create.aspx" caret="1175" fromTop="30" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Create.aspx" caret="1159" fromTop="29" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3384" fromTop="32" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3384" fromTop="32" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3384" fromTop="36" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3384" fromTop="40" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3384" fromTop="31" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3384" fromTop="38" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="3294" fromTop="38" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="3269" fromTop="32" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="3269" fromTop="9" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="3179" fromTop="9" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="1858" fromTop="46" />
-      <File id="d:&amp;/f:AgendaController.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Controllers?AgendaController.cs" caret="166" fromTop="8" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Footer.ascx" caret="154" fromTop="3" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Footer.ascx" caret="1057" fromTop="15" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Shared/f:Navigation.ascx" caret="552" fromTop="4" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Agenda/f:Index.aspx" caret="371" fromTop="7" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:IKeyedRepository.cs" caret="87" fromTop="6" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Db.cs" caret="112" fromTop="6" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Speaker.cs" caret="0" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Agenda.cs" caret="59" fromTop="6" />
+      <File id="d:&amp;/f:Class1.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Domain?Class1.cs" caret="391" fromTop="16" />
+      <File id="d:&amp;/f:Class1.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Domain?Class1.cs" caret="201" fromTop="9" />
+      <File id="d:&amp;/f:SpeakerRepository.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Domain?SpeakerRepository.cs" caret="505" fromTop="19" />
+      <File id="d:&amp;/f:SpeakerRepository.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Domain?SpeakerRepository.cs" caret="490" fromTop="17" />
+      <File id="d:&amp;/f:Class1.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Domain?Class1.cs" caret="476" fromTop="18" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="1461" fromTop="23" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="1461" fromTop="26" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="1461" fromTop="33" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="1461" fromTop="25" />
+      <File id="d:&amp;/f:SpeakerRepository.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Domain?SpeakerRepository.cs" caret="78" fromTop="6" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="1456" fromTop="14" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="1461" fromTop="4" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="1461" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Role.cs" caret="20" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Links.cs" caret="72" fromTop="3" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:LinkItem.cs" caret="20" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Agenda.cs" caret="20" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Links.cs" caret="660" fromTop="30" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Room.cs" caret="166" fromTop="8" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Links.cs" caret="146" fromTop="8" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Session.cs" caret="205" fromTop="9" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:Speaker.cs" caret="226" fromTop="11" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:RoomFacts.cs" caret="215" fromTop="14" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:SpeakerFacts.cs" caret="258" fromTop="15" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:SessionFacts.cs" caret="258" fromTop="15" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:IKeyable.cs" caret="108" fromTop="10" />
     </RecentEdits>
   </RecentFiles>
   <UnitTestRunner>

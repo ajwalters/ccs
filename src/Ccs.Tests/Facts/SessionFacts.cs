@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using Ccs.Domain;
 using Ccs.Models;
 
 using Xunit;
