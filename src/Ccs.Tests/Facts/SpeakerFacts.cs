@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 using Ccs.Domain;
-using Ccs.Models;
+
 
 using Xunit;
 
@@ -22,7 +22,6 @@ namespace Ccs.Tests.Facts
                       //The image is the raw image name of the speakers profile picture.
                       ImageName = "penelope_hall.jpg",
                       //Sessions takes a List of Session.Id guids
-                      SessionKeys = new List<Guid>()
                     };
 
 

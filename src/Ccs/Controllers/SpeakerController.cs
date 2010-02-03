@@ -66,7 +66,7 @@ namespace Ccs.Site.Controllers
     {
       try
       {
-        repository.Update(key, viewModel);
+        repository.Update(viewModel);
 
         return RedirectToAction("Details", new {viewModel.Key});
       }

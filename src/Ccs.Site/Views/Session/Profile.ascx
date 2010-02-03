@@ -1,5 +1,6 @@
 <%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Session>" %>
-<%@ Import Namespace="Ccs.Models"%>
+<%@ Import Namespace="Ccs.Security.Models"%>
+<%@ Import Namespace="Ccs.Domain"%>
 
 <div class="container span-17">
   <%
@@ -15,5 +16,9 @@
     <h3><%=Html.Encode(Model.Name)%></h3>
         <p><%=Html.Encode(Model.Description)%></p>
     <p><%=Html.Encode(Model.Abstract)%></p>
+<%  foreach (var speaker in Model.Speakers)
+    {
+      Response.Output.WriteLine(Html.ActionLink(speaker.Name, "Details", "Speaker", new {speaker.Key}));
+    } %>
   </div>
 </div>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 using Ccs.Data;
 
@@ -9,10 +10,6 @@ namespace Ccs.Domain
 {
   public class Session : IKeyable
   {
-    [DisplayName("Speaker")]
-    [Required]
-    public List<Guid> SpeakerKeys { get; set; }
-
     [Required]
     [DisplayName("Session name")]
     public string Name { get; set; }

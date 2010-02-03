@@ -1,7 +1,6 @@
 ﻿using System;
 
 using Ccs.Domain;
-using Ccs.Models;
 
 using Xunit;
 

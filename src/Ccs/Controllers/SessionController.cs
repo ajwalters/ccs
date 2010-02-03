@@ -12,21 +12,21 @@ namespace Ccs.Controllers
   {
     public static readonly Logger log = LogManager.GetCurrentClassLogger();
 
-    readonly SessionRepository repository;
+    readonly SessionRepository sessionRepository;
 
     public SessionController()
     {
-      repository = new SessionRepository();
+      sessionRepository = new SessionRepository();
     }
 
     public ActionResult Index()
     {
-      return View(repository.FetchAll().ToList());
+      return View(sessionRepository.FetchAll().ToList());
     }
 
     public ActionResult Details(Guid key)
     {
-      return View(repository.FetchByKey(key));
+      return View(sessionRepository.FetchByKey(key));
     }
 
     public ActionResult Create()
@@ -36,7 +36,7 @@ namespace Ccs.Controllers
 
     public ActionResult Delete(Guid key)
     {
-      repository.DeleteByKey(key);
+      sessionRepository.DeleteByKey(key);
 
       return RedirectToAction("Index");
     }
@@ -46,7 +46,7 @@ namespace Ccs.Controllers
     {
       try
       {
-        repository.Add(viewModel);
+        sessionRepository.Add(viewModel);
 
         return RedirectToAction("Index");
       }
@@ -58,7 +58,7 @@ namespace Ccs.Controllers
 
     public ActionResult Edit(Guid key)
     {
-      return View(repository.FetchByKey(key));
+      return View(sessionRepository.FetchByKey(key));
     }
 
     [HttpPost]
@@ -66,7 +66,7 @@ namespace Ccs.Controllers
     {
       try
       {
-        repository.Update(key, viewModel);
+        sessionRepository.Update(viewModel);
 
         return RedirectToAction("Details", new {viewModel.Key});
       }

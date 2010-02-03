@@ -1,5 +1,6 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<Session>>" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<SessionViewModel>>" %>
 <%@ Import Namespace="Ccs.Models"%>
+
 
 <asp:Content ID="SessionTitle" ContentPlaceHolderID="TitleContent" runat="server">Sessions</asp:Content>
 

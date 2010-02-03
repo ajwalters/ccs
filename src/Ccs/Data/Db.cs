@@ -3,6 +3,7 @@ using System.IO;
 using System.Web;
 
 using Db4objects.Db4o;
+using Db4objects.Db4o.Config;
 
 namespace Ccs.Data
 {
@@ -50,7 +51,7 @@ namespace Ccs.Data
               var appDir = HttpContext.Current.Server.MapPath("~/App_Data/");
               DbPath = Path.Combine(appDir, DbPath);
             }
-
+            Db4oFactory.Configure().GenerateUUIDs(ConfigScope.Globally);
             _db = Db4oFactory.OpenFile(DbPath);
           }
           return _db;

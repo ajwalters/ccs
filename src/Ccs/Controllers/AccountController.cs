@@ -5,8 +5,9 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 
-using Ccs.Models;
-using Ccs.Site.Models;
+using Ccs.Security.Contracts;
+using Ccs.Security.Models;
+using Ccs.Services;
 
 using NLog;
 

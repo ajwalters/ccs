@@ -77,9 +77,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\SessionViewModelBuilder.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AgendaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Contracts\IMapper.cs" />
     <Compile Include="Controllers\LinkController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
     <Compile Include="Controllers\SpeakerController.cs" />
@@ -90,26 +92,28 @@
     <Compile Include="Extensions\IPagedList.cs" />
     <Compile Include="Extensions\PagedList.cs" />
     <Compile Include="Extensions\Pagination.cs" />
-    <Compile Include="Models\AccountMembershipService.cs" />
+    <Compile Include="Mappers\SessionMapper.cs" />
+    <Compile Include="Services\AccountMembershipService.cs" />
     <Compile Include="Domain\Agenda.cs" />
-    <Compile Include="Models\ChangePasswordModel.cs" />
+    <Compile Include="Security\Models\ChangePasswordModel.cs" />
     <Compile Include="Data\Db.cs" />
-    <Compile Include="Models\FormsAuthenticationService.cs" />
-    <Compile Include="Models\IFormsAuthenticationService.cs" />
+    <Compile Include="Services\FormsAuthenticationService.cs" />
+    <Compile Include="Security\Contracts\IFormsAuthenticationService.cs" />
     <Compile Include="Data\IKeyable.cs" />
-    <Compile Include="Models\IMembershipService.cs" />
-    <Compile Include="Models\IUser.cs" />
+    <Compile Include="Security\Contracts\IMembershipService.cs" />
+    <Compile Include="Security\Contracts\IUser.cs" />
     <Compile Include="Domain\LinkItem.cs" />
     <Compile Include="Domain\Links.cs" />
-    <Compile Include="Models\LogOnModel.cs" />
-    <Compile Include="Models\PropertiesMustMatchAttribute.cs" />
-    <Compile Include="Models\RegisterModel.cs" />
-    <Compile Include="Domain\Role.cs" />
+    <Compile Include="Security\Models\LogOnModel.cs" />
+    <Compile Include="Validation\PropertiesMustMatchAttribute.cs" />
+    <Compile Include="Security\Models\RegisterModel.cs" />
+    <Compile Include="Security\Models\Role.cs" />
     <Compile Include="Domain\Room.cs" />
     <Compile Include="Domain\Session.cs" />
     <Compile Include="Domain\Speaker.cs" />
-    <Compile Include="Models\ValidatePasswordLengthAttribute.cs" />
-    <Compile Include="Models\ValidationUtil.cs" />
+    <Compile Include="Validation\ValidatePasswordLengthAttribute.cs" />
+    <Compile Include="Validation\ValidationUtil.cs" />
+    <Compile Include="Models\SessionViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site\Global.cs" />
   </ItemGroup>

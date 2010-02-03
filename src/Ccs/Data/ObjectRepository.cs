@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 using Db4objects.Db4o.Linq;
@@ -20,15 +21,14 @@ namespace Ccs.Data
               select o).First();
     }
 
+    public void Delete(T entity)
+    {
+      Db.Container.Delete(Db.Container.QueryByExample(entity));
+    }
+
     public virtual void DeleteByKey(Guid key)
     {
-      var query = from T o in Db.Container
-                  where o.Key == key
-                  select o;
-      if (0 < query.Count())
-      {
-        Db.Container.Delete(query.First());
-      }
+      Db.Container.Delete(FetchByKey(key));
     }
 
     public virtual void Add(T entity)
@@ -44,6 +44,20 @@ namespace Ccs.Data
       Db.Container.Store(entity);
     }
 
-    public abstract void Update(Guid key, T entity);
+    public abstract void Update(T entity);
+
+    
+
+    public T Attach(T entity)
+    {
+      return FetchByKey(entity.Key);
+    }
+
+    public virtual IDb4oLinqQuery<T> FetchByKeys(List<Guid> keys)
+    {
+      return from T o in Db.Container
+             where keys.Contains(o.Key)
+             select o;
+    }
   }
 }

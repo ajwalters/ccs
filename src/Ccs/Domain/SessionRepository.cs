@@ -1,21 +1,18 @@
-﻿using System;
-
-using Ccs.Data;
+﻿using Ccs.Data;
 
 namespace Ccs.Domain
 {
   public class SessionRepository : ObjectRepository<Session>
   {
-    public override void Update(Guid key, Session entity)
+    public override void Update(Session entity)
     {
-      var stored = FetchByKey(key);
+      var stored = FetchByKey(entity.Key);
 
-      stored.Name = entity.Name;
       stored.Abstract = entity.Abstract;
-      stored.Room = entity.Room;
-      stored.Start = entity.Start;
+      stored.Description = entity.Description;
       stored.End = entity.End;
-      stored.SpeakerKeys = entity.SpeakerKeys;
+      stored.Name = entity.Name;
+      stored.Start = entity.Start;
 
       Db.Container.Store(stored);
     }

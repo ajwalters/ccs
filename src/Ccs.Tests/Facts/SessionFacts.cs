@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 
 using Ccs.Domain;
-using Ccs.Models;
 
 using Xunit;
 
@@ -30,7 +29,6 @@ Learn how to use db4o in a connected application and a disconnected web environm
                       //Room taks a Room.Id Guid.
                       Room = Guid.NewGuid(),
                       //Speakers takes a list of Speaker.Id Guids
-                      SpeakerKeys = new List<Guid>()
                     };
     }
   }
