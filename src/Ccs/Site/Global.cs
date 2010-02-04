@@ -31,6 +31,8 @@ namespace Ccs.Site
     /// </summary>
     protected void Application_Start()
     {
+      Bootstrapper.Configure();
+
       AreaRegistration.RegisterAllAreas();
 
       RegisterRoutes(RouteTable.Routes);

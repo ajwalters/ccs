@@ -51,6 +51,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\dependencies\NLog.dll</HintPath>
     </Reference>
+    <Reference Include="StructureMap, Version=2.5.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dependencies\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -77,22 +81,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bootstrapper.cs" />
     <Compile Include="Builders\SessionViewModelBuilder.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AgendaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Contracts\IMapper.cs" />
     <Compile Include="Controllers\LinkController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
     <Compile Include="Controllers\SpeakerController.cs" />
+    <Compile Include="Domain\IRoomRepository.cs" />
+    <Compile Include="Domain\ISessionRepository.cs" />
+    <Compile Include="Domain\RoomRepository.cs" />
     <Compile Include="Domain\SessionRepository.cs" />
-    <Compile Include="Data\IKeyedRepository.cs" />
+    <Compile Include="Data\IObjectRepository.cs" />
     <Compile Include="Data\ObjectRepository.cs" />
     <Compile Include="Domain\SpeakerRepository.cs" />
     <Compile Include="Extensions\IPagedList.cs" />
     <Compile Include="Extensions\PagedList.cs" />
     <Compile Include="Extensions\Pagination.cs" />
     <Compile Include="Mappers\SessionMapper.cs" />
+    <Compile Include="CcsRegistry.cs" />
     <Compile Include="Services\AccountMembershipService.cs" />
     <Compile Include="Domain\Agenda.cs" />
     <Compile Include="Security\Models\ChangePasswordModel.cs" />

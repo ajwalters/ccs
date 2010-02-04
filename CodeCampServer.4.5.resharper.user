@@ -12,22 +12,22 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="ItShouldSaveAnObject" priority="0" />
-      <Item value="var" priority="19" />
-      <Item value="new" priority="31" />
+      <Item value="var" priority="21" />
+      <Item value="new" priority="33" />
       <Item value="ObjectRepository" priority="2" />
       <Item value="r" priority="5" />
-      <Item value="Guid" priority="15" />
+      <Item value="Guid" priority="16" />
       <Item value="x" priority="0" />
       <Item value="Assert" priority="2" />
       <Item value="p" priority="4" />
       <Item value="using" priority="3" />
       <Item value="System" priority="1" />
       <Item value="Linq" priority="1" />
-      <Item value="public" priority="29" />
+      <Item value="public" priority="35" />
       <Item value="object" priority="5" />
       <Item value="void" priority="10" />
-      <Item value="T" priority="14" />
-      <Item value="class" priority="7" />
+      <Item value="T" priority="16" />
+      <Item value="class" priority="8" />
       <Item value="Speaker" priority="6" />
       <Item value="ObjectDatabase" priority="0" />
       <Item value="container" priority="11" />
@@ -36,7 +36,7 @@
       <Item value="select" priority="3" />
       <Item value="o" priority="8" />
       <Item value="orderby" priority="1" />
-      <Item value="where" priority="9" />
+      <Item value="where" priority="10" />
       <Item value="id" priority="0" />
       <Item value="QueryStringValueProvider" priority="1" />
       <Item value="model" priority="15" />
@@ -50,7 +50,7 @@
       <Item value="Db4objects" priority="5" />
       <Item value="Db4o" priority="6" />
       <Item value="Db4oFactory" priority="6" />
-      <Item value="string" priority="1" />
+      <Item value="string" priority="3" />
       <Item value="DbPath" priority="0" />
       <Item value="return" priority="6" />
       <Item value="connectionString" priority="0" />
@@ -73,7 +73,7 @@
       <Item value="session" priority="12" />
       <Item value="Facts" priority="1" />
       <Item value="SessionFacts" priority="0" />
-      <Item value="DateTime" priority="1" />
+      <Item value="DateTime" priority="2" />
       <Item value="ValidationUtil" priority="0" />
       <Item value="DisplayName" priority="0" />
       <Item value="List" priority="6" />
@@ -88,7 +88,7 @@
       <Item value="List&lt;Guid&gt;" priority="2" />
       <Item value="Room" priority="0" />
       <Item value="Speakers" priority="0" />
-      <Item value="interface" priority="2" />
+      <Item value="interface" priority="5" />
       <Item value="Object" priority="0" />
       <Item value="Queryable" priority="0" />
       <Item value="Query" priority="0" />
@@ -108,12 +108,12 @@
       <Item value="GetByKey" priority="1" />
       <Item value="Repository" priority="0" />
       <Item value="Func" priority="0" />
-      <Item value="abstract" priority="0" />
+      <Item value="abstract" priority="1" />
       <Item value="typeof" priority="0" />
       <Item value="override" priority="0" />
       <Item value="SessionRepository" priority="1" />
       <Item value="SessionController" priority="0" />
-      <Item value="repository" priority="2" />
+      <Item value="repository" priority="4" />
       <Item value="SpeakerRepository" priority="4" />
       <Item value="key" priority="0" />
       <Item value="stored" priority="10" />
@@ -127,15 +127,23 @@
       <Item value="join" priority="0" />
       <Item value="Int16" priority="0" />
       <Item value="keys" priority="0" />
-      <Item value="Session" priority="0" />
+      <Item value="Session" priority="2" />
       <Item value="s" priority="0" />
       <Item value="ConfigScope" priority="0" />
       <Item value="FetchByKey" priority="2" />
       <Item value="Attach" priority="0" />
-      <Item value="this" priority="0" />
+      <Item value="this" priority="1" />
       <Item value="null" priority="0" />
       <Item value="SpeakerKeys" priority="1" />
       <Item value="foreach" priority="0" />
+      <Item value="SelectList" priority="1" />
+      <Item value="IKeyedRepository" priority="0" />
+      <Item value="SessionViewModelBuilder" priority="1" />
+      <Item value="ISessionRepository" priority="0" />
+      <Item value="SessionViewModel" priority="0" />
+      <Item value="vm" priority="1" />
+      <Item value="throw" priority="0" />
+      <Item value="NotImplementedException" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Ccs.Site.Models.ObjectRepository`1">
       <Item value="Delete" priority="0" />
@@ -286,71 +294,77 @@
       <Item value="Key" priority="0" />
       <Item value="Sessions" priority="0" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Builders.SessionViewModelBuilder">
+      <Item value="repository" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ccs.Domain.ISessionRepository">
+      <Item value="FetchAll" priority="0" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Create.aspx" caret="1273" fromTop="33" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Profile.ascx" caret="769" fromTop="20" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Profile.ascx" caret="858" fromTop="22" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:AgendaController.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:AccountMembershipService.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:ValidationUtil.cs" caret="0" fromTop="0" />
+      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:SessionFacts.cs" caret="1230" fromTop="23" />
       <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Agenda.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:ChangePasswordModel.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:FormsAuthenticationService.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:IFormsAuthenticationService.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:IMembershipService.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:IUser.cs" caret="0" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:FormsAuthenticationService.cs" caret="131" fromTop="7" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:AccountMembershipService.cs" caret="2198" fromTop="14" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:PropertiesMustMatchAttribute.cs" caret="3073" fromTop="46" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:ValidatePasswordLengthAttribute.cs" caret="289" fromTop="8" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:ValidationUtil.cs" caret="605" fromTop="19" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Extensions/f:PagedList.cs" caret="0" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Extensions/f:IPagedList.cs" caret="0" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Extensions/f:Pagination.cs" caret="270" fromTop="11" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="183" fromTop="2" />
       <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:LinkItem.cs" caret="0" fromTop="0" />
       <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Links.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:LogOnModel.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:PropertiesMustMatchAttribute.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Role.cs" caret="0" fromTop="0" />
       <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Room.cs" caret="0" fromTop="0" />
       <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Session.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:SessionRepository.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:ValidatePasswordLengthAttribute.cs" caret="140" fromTop="5" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:RegisterModel.cs" caret="101" fromTop="4" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:AccountController.cs" caret="0" fromTop="0" />
-      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:RoomFacts.cs" caret="131" fromTop="11" />
-      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:SpeakerFacts.cs" caret="71" fromTop="4" />
-      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:SessionFacts.cs" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:SpeakerRepository.cs" caret="39" fromTop="2" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Speaker.cs" caret="945" fromTop="22" />
-      <File id="d:&amp;/f:SessionViewModel.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Models?SessionViewModel.cs" caret="193" fromTop="9" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Role.cs" caret="57" fromTop="2" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:RegisterModel.cs" caret="290" fromTop="9" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:LogOnModel.cs" caret="132" fromTop="5" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:ChangePasswordModel.cs" caret="297" fromTop="9" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:IFormsAuthenticationService.cs" caret="64" fromTop="2" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:IMembershipService.cs" caret="1272" fromTop="38" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:IUser.cs" caret="57" fromTop="2" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="255" fromTop="13" />
+      <File id="d:&amp;/f:SessionMapper.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Mappers?SessionMapper.cs" caret="54" fromTop="2" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Data/f:IKeyedRepository.cs" caret="135" fromTop="7" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Data/f:ObjectRepository.cs" caret="0" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:SpeakerRepository.cs" caret="165" fromTop="7" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:SessionRepository.cs" caret="114" fromTop="5" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:SessionViewModel.cs" caret="197" fromTop="11" />
+      <File id="d:&amp;/f:SessionViewModelBuilder.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Builders?SessionViewModelBuilder.cs" caret="457" fromTop="21" />
     </RecentFiles>
     <RecentEdits>
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Data/f:IKeyedRepository.cs" caret="413" fromTop="22" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SessionController.cs" caret="1349" fromTop="23" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:SpeakerController.cs" caret="1298" fromTop="23" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Session.cs" caret="1188" fromTop="4" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Session.cs" caret="1188" fromTop="14" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Session.cs" caret="389" fromTop="12" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Profile.ascx" caret="0" fromTop="0" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Index.aspx" caret="0" fromTop="0" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Edit.aspx" caret="0" fromTop="0" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Details.aspx" caret="0" fromTop="0" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Create.aspx" caret="0" fromTop="0" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Speaker.cs" caret="1109" fromTop="43" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Speaker.cs" caret="1109" fromTop="41" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Speaker.cs" caret="1109" fromTop="34" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Index.aspx" caret="888" fromTop="22" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Profile.ascx" caret="858" fromTop="5" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Profile.ascx" caret="603" fromTop="16" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Profile.ascx" caret="654" fromTop="18" />
-      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Speaker/f:Profile.ascx" caret="838" fromTop="20" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:ValidatePasswordLengthAttribute.cs" caret="120" fromTop="5" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:AccountController.cs" caret="7805" fromTop="8" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Controllers/f:AccountController.cs" caret="205" fromTop="0" />
-      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:RoomFacts.cs" caret="332" fromTop="11" />
-      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:RoomFacts.cs" caret="137" fromTop="11" />
-      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:SpeakerFacts.cs" caret="71" fromTop="4" />
-      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:SessionFacts.cs" caret="1301" fromTop="4" />
-      <File id="F37DEA9D-757B-4E40-A077-19070FE21B19/d:Facts/f:SessionFacts.cs" caret="71" fromTop="4" />
-      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Speaker.cs" caret="944" fromTop="22" />
-      <File id="d:&amp;/f:SessionViewModel.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Models?SessionViewModel.cs" caret="69" fromTop="6" />
-      <File id="d:&amp;/f:SessionViewModel.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Models?SessionViewModel.cs" caret="193" fromTop="9" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:FormsAuthenticationService.cs" caret="110" fromTop="6" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:AccountMembershipService.cs" caret="94" fromTop="5" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:PropertiesMustMatchAttribute.cs" caret="305" fromTop="8" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:ValidatePasswordLengthAttribute.cs" caret="285" fromTop="8" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:ValidationUtil.cs" caret="64" fromTop="4" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:IFormsAuthenticationService.cs" caret="368" fromTop="6" />
+      <File id="d:&amp;/f:SessionMapper.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Mappers?SessionMapper.cs" caret="0" fromTop="0" />
+      <File id="d:&amp;/f:SessionViewModelBuilder.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Builders?SessionViewModelBuilder.cs" caret="156" fromTop="7" />
+      <File id="d:&amp;/f:SessionMapper.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Mappers?SessionMapper.cs" caret="59" fromTop="3" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:SessionViewModel.cs" caret="398" fromTop="19" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:SessionViewModel.cs" caret="398" fromTop="20" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:SessionViewModel.cs" caret="398" fromTop="13" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Models/f:SessionViewModel.cs" caret="239" fromTop="13" />
+      <File id="3B09157A-6B72-433A-A82A-28EFE08E8FB0/d:Views/d:Session/f:Index.aspx" caret="183" fromTop="2" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:Role.cs" caret="48" fromTop="2" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:RegisterModel.cs" caret="309" fromTop="9" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:LogOnModel.cs" caret="123" fromTop="5" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:ChangePasswordModel.cs" caret="269" fromTop="9" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:IFormsAuthenticationService.cs" caret="55" fromTop="2" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:IMembershipService.cs" caret="94" fromTop="4" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:IUser.cs" caret="48" fromTop="2" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Data/f:ObjectRepository.cs" caret="1430" fromTop="47" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Data/f:ObjectRepository.cs" caret="1430" fromTop="9" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Data/f:ObjectRepository.cs" caret="1430" fromTop="12" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Data/f:ObjectRepository.cs" caret="277" fromTop="0" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:SessionRepository.cs" caret="535" fromTop="4" />
+      <File id="954D420F-998A-456C-9586-0F57F3A13F11/d:Domain/f:SessionRepository.cs" caret="114" fromTop="5" />
+      <File id="d:&amp;/f:SessionViewModelBuilder.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Builders?SessionViewModelBuilder.cs" caret="364" fromTop="19" />
+      <File id="d:&amp;/f:SessionViewModelBuilder.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Builders?SessionViewModelBuilder.cs" caret="374" fromTop="18" />
+      <File id="d:&amp;/f:SessionViewModelBuilder.cs/l:C!?Users?mhall?Projects?mine?ccs?src?Ccs?Builders?SessionViewModelBuilder.cs" caret="457" fromTop="21" />
     </RecentEdits>
   </RecentFiles>
   <UnitTestRunner>

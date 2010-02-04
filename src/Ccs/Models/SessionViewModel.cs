@@ -1,19 +1,27 @@
 ﻿using System;
 using System.Web.Mvc;
 
+using Ccs.Domain;
+
 namespace Ccs.Models
 {
   public class SessionViewModel
   {
-    string Name { get; set; }
+    public string Description { get; set; }
 
-    DateTime Start { get; set; }
+    public string Name { get; set; }
 
-    DateTime End { get; set; }
+    public DateTime Start { get; set; }
 
-    string Abstract { get; set; }
+    public DateTime End { get; set; }
 
-    SelectList Sessions { get; set; }
+    public string Abstract { get; set; }
+
+    public SelectList Sessions { get; set; }
+
+    public Guid Key { get; set; }
+
+    public Room Room { get; set; }
   }
 
   public class SessionListItemModel

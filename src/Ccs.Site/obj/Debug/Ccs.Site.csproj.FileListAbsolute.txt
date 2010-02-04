@@ -14,3 +14,5 @@ C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\NLog.dll
 C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Cecil.FlowAnalysis.dll
 C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Ccs.dll
 C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Ccs.pdb
+C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\StructureMap.dll
+C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\StructureMap.xml

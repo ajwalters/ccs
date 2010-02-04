@@ -6,7 +6,7 @@ using Db4objects.Db4o.Linq;
 
 namespace Ccs.Data
 {
-  public abstract class ObjectRepository<T> : IKeyedRepository<T> where T : IKeyable
+  public abstract class ObjectRepository<T> : IObjectRepository<T> where T : IKeyable
   {
     public virtual IDb4oLinqQuery<T> FetchAll()
     {
@@ -45,8 +45,6 @@ namespace Ccs.Data
     }
 
     public abstract void Update(T entity);
-
-    
 
     public T Attach(T entity)
     {

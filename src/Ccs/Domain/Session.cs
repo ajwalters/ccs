@@ -32,5 +32,7 @@ namespace Ccs.Domain
 
     [Required]
     public Guid Key { get; set; }
+
+    public List<Guid> SpeakerKeys { get; set; }
   }
 }

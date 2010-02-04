@@ -2,8 +2,12 @@
 
 namespace Ccs.Domain
 {
+  public interface ISpeakerRepository : IObjectRepository<Speaker> { }
+
   public class SpeakerRepository : ObjectRepository<Speaker>
   {
+
+
     public override void Update(Speaker entity)
     {
       var stored = FetchByKey(entity.Key);
