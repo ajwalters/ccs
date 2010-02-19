@@ -1,5 +1,5 @@
 <%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Links>" %>
-<%@ Import Namespace="Ccs.Models"%>
+
 
     <ul>
         

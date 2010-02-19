@@ -22,5 +22,7 @@ namespace Ccs.Data
     void Update(T entity);
 
     T Attach(T entity);
+
+    bool Exists(T entity);
   }
 }

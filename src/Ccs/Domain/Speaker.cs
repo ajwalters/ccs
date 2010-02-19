@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -30,6 +31,8 @@ namespace Ccs.Domain
     [DisplayName("Image link for speaker.")]
     [DefaultValue("default_image.jpg")]
     public string ImageName { get; set; }
+
+    public List<Guid> SessionKeys { get; set; }
 
     /// <summary>
     /// Gets or sets the key.

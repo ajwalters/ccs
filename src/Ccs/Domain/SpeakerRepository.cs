@@ -2,12 +2,8 @@
 
 namespace Ccs.Domain
 {
-  public interface ISpeakerRepository : IObjectRepository<Speaker> { }
-
-  public class SpeakerRepository : ObjectRepository<Speaker>
+  public class SpeakerRepository : ObjectRepository<Speaker>, ISpeakerRepository
   {
-
-
     public override void Update(Speaker entity)
     {
       var stored = FetchByKey(entity.Key);
@@ -15,7 +11,6 @@ namespace Ccs.Domain
       stored.Name = entity.Name;
       stored.Biography = entity.Biography;
       stored.ImageName = entity.ImageName;
-      
 
       Db.Container.Store(stored);
     }

@@ -51,6 +51,14 @@ namespace Ccs.Data
       return FetchByKey(entity.Key);
     }
 
+    public bool Exists(T entity)
+    {
+      return 0< (from T o in Db.Container
+              where o.Key == entity.Key
+              select o).Count();
+
+    }
+
     public virtual IDb4oLinqQuery<T> FetchByKeys(List<Guid> keys)
     {
       return from T o in Db.Container

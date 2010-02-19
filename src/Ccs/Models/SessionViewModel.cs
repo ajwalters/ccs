@@ -5,6 +5,10 @@ using Ccs.Domain;
 
 namespace Ccs.Models
 {
+  public class SpeakerViewModel
+  {
+  }
+
   public class SessionViewModel
   {
     public string Description { get; set; }

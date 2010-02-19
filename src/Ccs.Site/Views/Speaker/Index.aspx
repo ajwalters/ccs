@@ -1,7 +1,8 @@
-<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<Speaker>>" %>
-<%@ Import Namespace="Ccs.Security.Models"%>
-<%@ Import Namespace="Ccs.Domain"%>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<SpeakerViewModel>>" %>
 <%@ Import Namespace="Ccs.Models"%>
+<%@ Import Namespace="Ccs.Security.Models"%>
+
+
 
 <asp:Content ID="SpeakerTitle" ContentPlaceHolderID="TitleContent" runat="server">Speakers</asp:Content>
 

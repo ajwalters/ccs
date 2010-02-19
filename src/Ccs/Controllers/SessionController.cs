@@ -1,10 +1,12 @@
 using System;
-using System.Linq;
 using System.Web.Mvc;
 
+using Ccs.Builders;
 using Ccs.Domain;
 
 using NLog;
+
+using StructureMap;
 
 namespace Ccs.Controllers
 {
@@ -12,21 +14,27 @@ namespace Ccs.Controllers
   {
     public static readonly Logger log = LogManager.GetCurrentClassLogger();
 
-    readonly SessionRepository sessionRepository;
+    readonly SessionRepository _sessionRepository;
 
     public SessionController()
     {
-      sessionRepository = new SessionRepository();
+      _sessionRepository = new SessionRepository();
     }
 
     public ActionResult Index()
     {
-      return View(sessionRepository.FetchAll().ToList());
+      var builder = new SessionViewModelBuilder(
+        (SessionRepository) ObjectFactory.GetInstance(typeof (ISessionRepository)),
+        (RoomRepository) ObjectFactory.GetInstance(typeof (IRoomRepository)),
+        (SpeakerRepository) ObjectFactory.GetInstance(typeof (ISpeakerRepository))
+        );
+
+      return View(builder.Build());
     }
 
     public ActionResult Details(Guid key)
     {
-      return View(sessionRepository.FetchByKey(key));
+      return View(_sessionRepository.FetchByKey(key));
     }
 
     public ActionResult Create()
@@ -36,7 +44,7 @@ namespace Ccs.Controllers
 
     public ActionResult Delete(Guid key)
     {
-      sessionRepository.DeleteByKey(key);
+      _sessionRepository.DeleteByKey(key);
 
       return RedirectToAction("Index");
     }
@@ -46,7 +54,7 @@ namespace Ccs.Controllers
     {
       try
       {
-        sessionRepository.Add(viewModel);
+        _sessionRepository.Add(viewModel);
 
         return RedirectToAction("Index");
       }
@@ -58,7 +66,7 @@ namespace Ccs.Controllers
 
     public ActionResult Edit(Guid key)
     {
-      return View(sessionRepository.FetchByKey(key));
+      return View(_sessionRepository.FetchByKey(key));
     }
 
     [HttpPost]
@@ -66,7 +74,7 @@ namespace Ccs.Controllers
     {
       try
       {
-        sessionRepository.Update(viewModel);
+        _sessionRepository.Update(viewModel);
 
         return RedirectToAction("Details", new {viewModel.Key});
       }

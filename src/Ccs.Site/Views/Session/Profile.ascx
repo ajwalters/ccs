@@ -1,6 +1,7 @@
-<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Session>" %>
+<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<SessionViewModel>" %>
+<%@ Import Namespace="Ccs.Models"%>
 <%@ Import Namespace="Ccs.Security.Models"%>
-<%@ Import Namespace="Ccs.Domain"%>
+
 
 <div class="container span-17">
   <%

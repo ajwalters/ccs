@@ -2,7 +2,7 @@
 
 namespace Ccs.Domain
 {
-  public class SessionRepository : ObjectRepository<Session>
+  public class SessionRepository : ObjectRepository<Session>, ISessionRepository
   {
     public override void Update(Session entity)
     {

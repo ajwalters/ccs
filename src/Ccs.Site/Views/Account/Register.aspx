@@ -1,5 +1,6 @@
 <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<RegisterModel>" %>
-<%@ Import Namespace="Ccs.Models"%>
+<%@ Import Namespace="Ccs.Security.Models"%>
+
 
 <asp:Content ID="registerTitle" ContentPlaceHolderID="TitleContent" runat="server">
     Register

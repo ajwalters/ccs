@@ -2,7 +2,7 @@ using Ccs.Data;
 
 namespace Ccs.Domain
 {
-  public class RoomRepository : ObjectRepository<Room>
+  public class RoomRepository : ObjectRepository<Room>, IRoomRepository
   {
     public override void Update(Room entity)
     {

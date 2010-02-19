@@ -1,6 +1,7 @@
-<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<Speaker>" %>
+<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<SpeakerViewModel>" %>
+<%@ Import Namespace="Ccs.Models"%>
 <%@ Import Namespace="Ccs.Security.Models"%>
-<%@ Import Namespace="Ccs.Domain"%>
+
 
 <div class="container span-17">
   <div class="span-3"><img src="../../Content/Images/Speakers/<%=Model.ImageName%>" style="width: 100%;" />&nbsp;</div>
