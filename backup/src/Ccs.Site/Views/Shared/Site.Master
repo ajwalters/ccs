@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Chicago Code Camp 2 :: <asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+<link rel="stylesheet" href="../../Content/Stylesheets/blueprint/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="../../Content/Stylesheets/blueprint/print.css" type="text/css" media="print">
+<!--[if lt IE 8]>
+  <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+<![endif]-->
+<link rel="stylesheet" href="../../Content/Stylesheets/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+<style type="text/css">
+  body {background-color: #CFB9A8;}
+  #masterContainer {background-color: white; padding: 8px 8px 8px 8px;}
+</style>
+</head>
+<body>
+<hr class="space"/>
+<div class="container /*showgrid*/" id="masterContainer">
+  <!-- header -->
+  <div class="span-12"><img alt="Chicago Code Camp 2: By Chicagoland developers, for Chicagoland developers." src="../../Content/Images/logo.png"/></div>
+  <div class="container span-12 last" style="text-align: right;"><% Html.RenderPartial("LogOnUserControl"); %></div>
+  <% Html.RenderPartial("Navigation"); %>
+  <hr class="space"/>
+  <div class="container span-16 colborder" id="content">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+  </div>
+  <div class="container span-7 last">
+    <% Html.RenderPartial("Links"); %>
+  </div>
+  <!-- footer -->
+  <hr class="space"/>
+  <% Html.RenderPartial("Footer"); %>
+</div>
+</body>
+</html>

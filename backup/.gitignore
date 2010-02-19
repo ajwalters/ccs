@@ -1,0 +1,6 @@
+*/src/**/bin
+*/src/**/obj
+*/**/*.user
+*/**/*.cache
+*/**/*.suo
+build
