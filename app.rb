@@ -3,7 +3,7 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  :home
+  "Hello, world #{params[:name]}".strip
 end
 
 __END__

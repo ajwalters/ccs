@@ -5,13 +5,13 @@
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Extensions\PagedList.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Facts\SpeakerFacts.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\MicrosoftMvcAjax.debug.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Db4objects.Db4o.Linq.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\gems.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Contracts\IUser.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Db4objects.Db4o.Linq.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\ISpeaker.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Contracts\IUser.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\IUser.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\SessionModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Controllers\HomeController.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\SessionModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Speaker.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\dependencies\StructureMap.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\App.config" afterPath="" />
@@ -21,8 +21,9 @@
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\LogOnModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\dependencies\SubSonic.Core.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Controllers\AgendaController.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Extensions\IPagedList.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\features\home.feature" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\src\ie.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Extensions\IPagedList.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\unobtrusive.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\ILink.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\CcsRegistry.cs" afterPath="" />
@@ -30,221 +31,225 @@
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\Session.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Agenda.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\dependencies\Db4objects.Db4o.dll" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\specs\objectdatabase_spec.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\features\step_definitions\page_navigation.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ILinkItem.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\obj\Debug\Ccs.Tests.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\SubSonic.Core.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Home\About.aspx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\SubSonic.Core.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\print.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\h3_bg_tall.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Account\ChangePassword.aspx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Shared\Navigation.ascx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\docs\ccc-old.zip" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/step_definitions/home_steps.rb" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\FormsAuthenticationService.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Bootstrapper.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\web.config" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Admin\Console.aspx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\web.config" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\ValidationUtil.cs" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ccs.iml" afterPath="$PROJECT_DIR$/.idea/ccs.iml" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Session\Edit.aspx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\jquery.validate.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\css_go.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Room.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\plugins\link-icons\icons\external.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\left_nav_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Validation\ValidatePasswordLengthAttribute.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\NLog.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Validation\ValidatePasswordLengthAttribute.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\Room.cs" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/app.feature" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\plugins\buttons\icons\key.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Shared\Site.Master" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Db4objects.Db4o.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Global.asax.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Db4objects.Db4o.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/app_test.rb" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Session\Agenda.aspx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\obj\Debug\Ccs.Tests.csproj.FileListAbsolute.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\Role.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\features\admin.feature" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Models\Role.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ILink.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Acceptance\SessionTests.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\docs\eco_business.zip" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Contracts\IMembershipService.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Acceptance\SessionTests.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ILink.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Models\Role.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\IFormsAuthenticationService.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Contracts\IMembershipService.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\LogOnModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\CodeCampServer.4.5.resharper.user" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/support/env.rb" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Home\Index.aspx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\IRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\App_Data\ASPNETDB.MDF" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\IRepository.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\specs\agenda_specs.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\features\guest_user_viewing_speakers.feature" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\SessionViewModel.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Facts\SessionFacts.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\jquery.validate.min-vsdoc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Facts\SessionFacts.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\SessionViewModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Validation\ValidationUtil.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Models\ChangePasswordModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\RoomRepository.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Models\ChangePasswordModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\NLog.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Facts\ObjectRepositoryFacts.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Ccs.Tests.csproj" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Acceptance\SpeakerTests.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Ccs.Tests.csproj" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Facts\ObjectRepositoryFacts.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\TestDoubles\StubRequest.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\MicrosoftMvcValidation.debug.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\features\guest_user_viewing_sessions.feature" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Controllers\SpeakerController.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Controllers\SessionController.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Speaker\Profile.ascx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\IMembershipService.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\StructureMap.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Speaker\Profile.ascx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\LinkItem.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\Ccs.Tests.pdb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\StructureMap.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\admin.feature" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\Ccs.Tests.pdb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\src\grid.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Extensions\PagedList.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Builders\SessionViewModelBuilder.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\ChangePasswordModel.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Acceptance\AgendaTests.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Builders\SessionViewModelBuilder.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Speaker\Create.aspx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Acceptance\AgendaTests.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\CodeCampServer.sln" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\obj\Debug\Ccs.Tests.pdb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\Db4objects.Db4o.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Global.asax" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\Db4objects.Db4o.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Controllers\HomeControllerFacts.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\features\guest_user_viewing_sessions.feature" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Mappers\SessionMapper.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\features\step_definitions\page_navigation.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\IRoomRepository.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\jquery-1.3.2.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\Speakers\default_image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\Role.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\Sponsor.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\jquery-1.3.2.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\src\print.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\obj\Debug\Ccs.Site.pdb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\Sponsor.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\Role.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\building.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\obj\Debug\Ccs.Site.pdb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Ccs.Site.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Site\Global.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\features\admin_user_managing_speakers.feature" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\obj\Debug\Ccs.csproj.FileListAbsolute.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Site\Global.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\Ccs.Tests.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\obj\Debug\Ccs.csproj.FileListAbsolute.txt" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\IUser.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\features\admin_user_managing_sessions.feature" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Home\Contact.aspx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\features\guest_user_viewing_speakers.feature" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Home\Contact.aspx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Speaker\Index.aspx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ChangePasswordModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Session\Index.aspx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ChangePasswordModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\MicrosoftAjax.debug.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Services\FormsAuthenticationService.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\Links.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Session.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\steps.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\Cecil.FlowAnalysis.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\steps.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ObjectDatabase.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\jquery-1.3.2.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\src\forms.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Speaker\Edit.aspx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\features\admin_user_managing_sessions.feature" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Controllers\LinkController.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Controllers\AccountController.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\footer_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\ISession.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Controllers\AccountController.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Controllers\LinkController.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Controllers\SessionController.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\ISession.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\features\step_definitions\login.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\RegisterModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\Db4objects.Db4o.Linq.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ISession.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Agenda\Index.aspx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\LinkItem.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ISession.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\plugins\fancy-type\screen.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\LinkItem.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Shared\LogOnUserControl.ascx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\SessionRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\Ccs.Site.pdb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\SessionRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\Agenda.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\css_tabs.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\reset-min.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\obj\Debug\Ccs.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Shared\Error.aspx" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/home.feature" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\plugins\link-icons\icons\doc.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\3rdParty\xunit.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Account\LogOn.aspx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\3rdParty\xunit.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Db.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\features\admin.feature" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Db.cs" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/specs/app_spec.rb" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\rakefile.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Session\Details.aspx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Acceptance\Do.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\Speaker.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Acceptance\Do.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\screen.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\FormsAuthenticationService.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Data\ObjectRepository.cs" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/person_test.rb" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Contracts\IMapper.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\ISpeakerRepository.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\mvc-logo-landing-page.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\logo_right.gif" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\dependencies\NLog.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\Speakers\michaeldhall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\logo_right.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\mvc-logo-landing-page.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\App_Data\desktop.ini" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.rb" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\Speakers\michaeldhall.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\App_Data\ObjectStore.yap" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\SpeakerRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\Ccs.Site.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\SpeakerRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Shared\Footer.ascx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\Session.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\PropertiesMustMatchAttribute.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Models\RegisterModel.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Controllers\AccountController.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Extensions\Pagination.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Controllers\AccountController.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Account\Register.aspx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Acceptance\Go.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\unobtrusive.tables.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Sponsor.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\PropertiesMustMatchAttribute.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\Speaker.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\jquery-1.3.2-vsdoc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\Speaker.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\PropertiesMustMatchAttribute.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Sponsor.cs" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/person.rb" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Session\Create.aspx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\ISessionModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\ie.css" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\ILinkItem.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Controllers\SpeakerController.cs" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\mhall\Projects\mine\ccs\specs\agenda_specs.rb" afterPath="$PROJECT_DIR$/db/migrate/001_init.rb" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Acceptance\LogOnTest.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\ISessionRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\src\reset.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\ISessionRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Extensions\IPagedList.cs" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rakefile" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\AccountMembershipService.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\TODO" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\AccountMembershipService.cs" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/home_steps.rb" afterPath="$PROJECT_DIR$/features/step_definitions/home_steps.rb" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ObjectRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\ObjectRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Validation\PropertiesMustMatchAttribute.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\IMembershipService.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\top_bg.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\obj\Debug\Ccs.Site.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Extensions\Pagination.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Ccs.csproj" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\App_Data\CodeCampDb.mdf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Ccs.csproj" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Extensions\Pagination.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\.gitignore" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\AccountMembershipService.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Web.config" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\dependencies\WatiN.Core.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Data\IKeyable.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\dependencies\StructureMap.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Data\IKeyable.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Data\IKeyedRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Controllers\LinkController.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Shared\LinkList.ascx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Data\Db.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Speaker\Details.aspx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\IRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\App_Data\aspnetdb_log.ldf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\LinkItem.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\TestDoubles\StubContext.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\IRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\somerights20.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\TestDoubles\StubContext.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\LinkItem.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Services\AccountMembershipService.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Properties\AssemblyInfo.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\common.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Properties\AssemblyInfo.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Links.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\src\grid.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\CodeCampServer.suo" afterPath="" />
@@ -257,23 +262,23 @@
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\dependencies\AutoMapper.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\jquery.validate.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\plugins\buttons\icons\cross.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ValidationUtil.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Controllers\HomeController.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ValidationUtil.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Stylesheets\blueprint\plugins\fancy-type\readme.txt" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\logo.gif" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\dependencies\WatiN.Core.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Models\LogOnModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\features\admin_user_managing_speakers.feature" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Models\LogOnModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Shared\Links.ascx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\DependencyRegistry.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\bin\Debug\xunit.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Ccs.pdb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ISpeaker.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\ValidatePasswordLengthAttribute.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\ISpeaker.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\IFormsAuthenticationService.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\obj\Debug\Ccs.Site.csproj.FileListAbsolute.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\RegisterModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\dependencies\Cecil.FlowAnalysis.dll" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\RegisterModel.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\jquery.validate-vsdoc.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\obj\Debug\ResolveAssemblyReference.cache" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" afterPath="" />
@@ -282,34 +287,35 @@
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\jquery-1.3.2.min-vsdoc.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Data\IObjectRepository.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Routes\RouteFacts.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\obj\Debug\Ccs.pdb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Account\ChangePasswordSuccess.aspx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\product.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Account\ChangePasswordSuccess.aspx" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\obj\Debug\Ccs.pdb" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\MicrosoftAjax.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\IDb.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Session\Profile.ascx" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/env.rb" afterPath="$PROJECT_DIR$/features/support/env.rb" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\AccountModels.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Properties\AssemblyInfo.cs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Views\Session\Profile.ascx" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\MicrosoftMvcValidation.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Properties\AssemblyInfo.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Tests\Facts\RoomFacts.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Domain\Links.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\App_Data\CodeCampDb_log.LDF" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\logo_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Role.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\.rakefile.rb.swp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\Role.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\dependencies\Db4objects.Db4o.Linq.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\bin\Ccs.dll" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\obj\Debug\ResolveAssemblyReference.cache" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Models\IKeyable.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Contracts\IFormsAuthenticationService.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\rightbox_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs\Security\Contracts\IFormsAuthenticationService.cs" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Scripts\MicrosoftMvcAjax.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\footer_list.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Ccs.Site.csproj" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Content\Images\footer_list.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\mhall\Projects\mine\ccs\src\Ccs.Site\Models\Agenda.cs" afterPath="" />
     </list>
-    <ignored path="ccs.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="ccs.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,37 +336,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.ru" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.ru">
+      <file leaf-file-name="app.feature" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/app.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="7" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+            <state line="4" column="23" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rakefile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rakefile">
+      <file leaf-file-name="person.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/person.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="35" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="001_init.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/001_init.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.feature" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/home.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="5" selection-start="79" selection-end="92" vertical-scroll-proportion="0.0">
+            <state line="4" column="3" selection-start="95" selection-end="95" vertical-scroll-proportion="0.14285715">
               <folding />
             </state>
           </provider>
@@ -369,25 +357,7 @@
       <file leaf-file-name="home_steps.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/home_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="42" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="env.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/support/env.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="106" selection-end="106" vertical-scroll-proportion="0.37037036">
+            <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -407,10 +377,15 @@
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/rakefile" />
         <option value="$PROJECT_DIR$/features/home.feature" />
-        <option value="$PROJECT_DIR$/features/step_definitions/home_steps.rb" />
-        <option value="$PROJECT_DIR$/features/support/env.rb" />
-        <option value="$PROJECT_DIR$/app.rb" />
         <option value="$PROJECT_DIR$/index.rb" />
+        <option value="$PROJECT_DIR$/app.rb" />
+        <option value="$PROJECT_DIR$/app_test.rb" />
+        <option value="$PROJECT_DIR$/app_spec.rb" />
+        <option value="$PROJECT_DIR$/models/person.rb" />
+        <option value="$PROJECT_DIR$/tests/person_test.rb" />
+        <option value="$PROJECT_DIR$/features/support/env.rb" />
+        <option value="$PROJECT_DIR$/features/app.feature" />
+        <option value="$PROJECT_DIR$/features/step_definitions/home_steps.rb" />
       </list>
     </option>
   </component>
@@ -440,7 +415,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
@@ -460,60 +434,121 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ccs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ccs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ccs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ccs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Ruby.index">
-    <configuration default="false" name="index" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+  <component name="RunManager" selected="Cucumber.app">
+    <configuration default="false" name="app_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="ccs" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/site" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/site/index.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/app_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="[none]" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PersonTest" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="ccs" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/tests" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/tests/person_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_CLASS_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="person_test" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="ccs" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/tests" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/tests/person_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_CLASS_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_save_and_retrieve_person_from_supermodel" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="ccs" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/tests" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/tests/person_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_CLASS_NAME" VALUE="PersonTest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_save_and_retrieve_person_from_supermodel" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="app" type="CucumberRunConfigurationType" factoryName="Cucumber" temporary="true">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="ccs" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/features/app.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -590,8 +625,49 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.index" />
+    <configuration default="false" name="All features in: models" type="CucumberRunConfigurationType" factoryName="Cucumber">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="ccs" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$/models" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="person" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="ccs" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/models" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/models/person.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="RSpec.app_spec" />
+      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda.PersonTest" />
+      <item index="2" class="java.lang.String" itemvalue="Cucumber.All features in: models" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.person" />
+      <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda.person_test" />
+      <item index="5" class="java.lang.String" itemvalue="Test::Unit/Shoulda.test_save_and_retrieve_person_from_supermodel" />
+      <item index="6" class="java.lang.String" itemvalue="Cucumber.app" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -613,20 +689,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="960" height="1032" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32897604" sideWeight="0.32733408" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23856209" sideWeight="0.66254216" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32897604" sideWeight="0.32733408" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -663,49 +739,73 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/db/migrate/001_init.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/home.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="79" selection-end="92" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/home_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="42" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="35" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+        <state line="10" column="35" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/specs/app_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="6" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/app_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="162" selection-end="162" vertical-scroll-proportion="0.32142857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/person_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="28" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/support/env.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+        <state line="26" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="7" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+        <state line="1" column="27" selection-start="21" selection-end="21" vertical-scroll-proportion="0.035714287">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="106" selection-end="106" vertical-scroll-proportion="0.37037036">
+        <state line="8" column="0" selection-start="103" selection-end="109" vertical-scroll-proportion="0.2857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/home_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/app.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/person.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="95" selection-end="95" vertical-scroll-proportion="0.14285715">
           <folding />
         </state>
       </provider>

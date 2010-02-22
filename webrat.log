@@ -1,0 +1,4 @@
+# Logfile created on Mon Feb 22 08:44:07 -0600 2010 by logger.rb/22285
+D, [2010-02-22T08:44:07.115189 #5564] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2010-02-22T08:44:30.910550 #2848] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2010-02-22T08:44:39.189023 #1264] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}

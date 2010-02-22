@@ -12,6 +12,14 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.3, C:/Ruby/lib/ruby/gems/1.8/gems/rack-test-0.5.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.1, C:/Ruby/lib/ruby/gems/1.8/gems/nokogiri-1.4.1-x86-mingw32)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec (v1.3.0, C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] cucumber (v0.6.2, C:/Ruby/lib/ruby/gems/1.8/gems/cucumber-0.6.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] supermodel (v0.1.0, C:/Ruby/lib/ruby/gems/1.8/gems/supermodel-0.1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.3.3, C:/Ruby/lib/ruby/gems/1.8/gems/i18n-0.3.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] memcache-client (v1.7.8, C:/Ruby/lib/ruby/gems/1.8/gems/memcache-client-1.7.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, C:/Ruby/lib/ruby/gems/1.8/gems/builder-2.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.0.0.beta, C:/Ruby/lib/ruby/gems/1.8/gems/activemodel-3.0.0.beta)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.16, C:/Ruby/lib/ruby/gems/1.8/gems/tzinfo-0.3.16)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.0.0.beta, C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-3.0.0.beta)" level="application" />
   </component>
 </module>
 

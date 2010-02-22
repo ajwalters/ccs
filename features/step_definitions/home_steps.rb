@@ -1,4 +1,4 @@
-Given /^I am view "(.+)"$/ do |url|
+Given /^I request the url "(.+)"$/ do |url|
   visit(url)
 end
 
