@@ -7,24 +7,24 @@ require 'rubygems'
 require 'spec'
 
 describe "ObjectRepository needs to support CRUD operations" do
-	it "should save an object" do
-		r = Ccs::Site::Models::ObjectRepository[Person].new
-		p = Person.new
-		p.name = "Penelope Hall"
-		r.Save(p)
-	end
-	
-	it "should delete an object" do
-	end
-	
-	it "should update an object" do
-	end
-	
-	it "should find an object by id" do
-	end
+  it "should save an object" do
+    r = Ccs::Site::Models::ObjectRepository[Person].new
+    p = Person.new
+    p.name = "Penelope Hall"
+    r.Save(p)
+  end
+
+  it "should delete an object" do
+  end
+
+  it "should update an object" do
+  end
+
+  it "should find an object by id" do
+  end
 end
 
 
 class Person
-	attr_accessor :name
+  attr_accessor :name
 end
