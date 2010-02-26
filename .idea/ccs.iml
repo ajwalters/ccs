@@ -20,6 +20,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.0.0.beta, C:/Ruby/lib/ruby/gems/1.8/gems/activemodel-3.0.0.beta)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.16, C:/Ruby/lib/ruby/gems/1.8/gems/tzinfo-0.3.16)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.0.0.beta, C:/Ruby/lib/ruby/gems/1.8/gems/activesupport-3.0.0.beta)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mongo (v0.18.3, C:/Ruby/lib/ruby/gems/1.8/gems/mongo-0.18.3)" level="application" />
   </component>
 </module>
 
