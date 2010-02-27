@@ -13,10 +13,3 @@ end
 task :environment do
   puts "configure environment"
 end
-
-namespace :s do
-  task :run do
-    sh "cls & ruby app.rb -s webrick"
-  end
-end
-

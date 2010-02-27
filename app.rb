@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
+require 'sass'
 require 'mongo'
 
 use Rack::Reloader
@@ -76,6 +77,11 @@ get '/admin/db/:action' do
   end
 end
 
+get '/css/application.css' do
+  header 'Content-Type' => 'text/css; charset=utf8'
+  sass :style
+end
+
 helpers do
   def protected!
     unless authorized?
@@ -88,60 +94,61 @@ helpers do
     @auth ||=  Rack::Auth::Basic::Request.new(request.env)
     @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['admin', 'secret']
   end
-
-  def initialize_database
-    puts "Initializing \"#{DB_NAME}\"."
-
-    event = {:name => "Chicago Code Camp 2"}
-
-    speakers = [{:full_name=>"Sergio Pereira", :handle=>"spereira", :biography => "Sergio is an avid JavaScripter and runs the Chicago Alt.NET developer group."},
-                {:full_name=>"Scott Seely", :handle=>"sseely", :biography => "Scott is a frequent speaker and author on all things .NET. He also runs the LCNUG in Grayslake, IL."},
-                {:full_name=>"Michael D. Hall", :handle=>"just3ws"},]
-
-    sessions = [{:title=>"Alt.NET", :description => "Learn everything about the Alt.NET and the community surrounding the movement."},
-                {:title=>"All.NET"},
-                {:title=>"Not.NET"},]
-
-    slots = [{:time=>"9-9:45"},
-             {:time=>"10-10:45"},
-             {:time=>"11-11:45"},
-             {:time=>"1:00-1:45"}]
-
-    agenda = [{:slots => [slots[0]],
-               :session => sessions.select{|s| s[:title]=="Not.NET"},
-               :speakers => [speakers.select{|s| s[:handle]=="just3ws"}]},
-
-              {:slots => [slots[1]],
-               :session => sessions.select{|s| s[:title]=="Alt.NET"},
-               :speakers => [speakers.select{|s| s[:handle]=="spereira"}]},
+end
 
 
-              {:slots => [slots[2], slots[3]],
-               :session => sessions.select{|s| s[:title]=="All.NET"},
-               :speakers => [speakers.select{|s| s[:handle]=="sseely"}]},]
+def initialize_database
+  puts "Initializing \"#{DB_NAME}\"."
+
+  event = {:name => "Chicago Code Camp 2"}
+
+  speakers = [{:full_name=>"Sergio Pereira", :handle=>"spereira", :biography => "Sergio is an avid JavaScripter and runs the Chicago Alt.NET developer group."},
+              {:full_name=>"Scott Seely", :handle=>"sseely", :biography => "Scott is a frequent speaker and author on all things .NET. He also runs the LCNUG in Grayslake, IL."},
+              {:full_name=>"Michael D. Hall", :handle=>"just3ws"},]
+
+  sessions = [{:title=>"Alt.NET", :description => "Learn everything about the Alt.NET and the community surrounding the movement."},
+              {:title=>"All.NET"},
+              {:title=>"Not.NET"},]
+
+  slots = [{:time=>"9-9:45"},
+           {:time=>"10-10:45"},
+           {:time=>"11-11:45"},
+           {:time=>"1:00-1:45"}]
+
+  agenda = [{:slots => [slots[0]],
+             :session => sessions.select{|s| s[:title]=="Not.NET"},
+             :speakers => [speakers.select{|s| s[:handle]=="just3ws"}]},
+
+            {:slots => [slots[1]],
+             :session => sessions.select{|s| s[:title]=="Alt.NET"},
+             :speakers => [speakers.select{|s| s[:handle]=="spereira"}]},
 
 
-    DB['event'].insert(event)
-    puts "Added #{DB['event'].count()} event(s)."
+            {:slots => [slots[2], slots[3]],
+             :session => sessions.select{|s| s[:title]=="All.NET"},
+             :speakers => [speakers.select{|s| s[:handle]=="sseely"}]},]
 
-    speakers.each {|i| DB['speaker'].insert(i) }
-    puts "Added #{DB['speaker'].count()} speaker(s)."
 
-    sessions.each {|i| DB['session'].insert(i) }
-    puts "Added #{DB['session'].count()} session(s)."
+  DB['event'].insert(event)
+  puts "Added #{DB['event'].count()} event(s)."
 
-    slots.each {|i| DB['slot'].insert(i) }
-    puts "Added #{DB['slot'].count()} slot(s)."
+  speakers.each {|i| DB['speaker'].insert(i) }
+  puts "Added #{DB['speaker'].count()} speaker(s)."
 
-    agenda.each {|i| DB['agenda'].insert(i) }
-    puts "Added #{DB['agenda'].count()} agenda(s)."
+  sessions.each {|i| DB['session'].insert(i) }
+  puts "Added #{DB['session'].count()} session(s)."
 
-    puts "Initialized \"#{DB_NAME}\"."
-  end
+  slots.each {|i| DB['slot'].insert(i) }
+  puts "Added #{DB['slot'].count()} slot(s)."
 
-  def drop_database
-    m = Mongo::Connection.new
-    m.drop_database(DB_NAME)
-    "Dropped database \"#{DB_NAME}\"."
-  end
+  agenda.each {|i| DB['agenda'].insert(i) }
+  puts "Added #{DB['agenda'].count()} agenda(s)."
+
+  puts "Initialized \"#{DB_NAME}\"."
+end
+
+def drop_database
+  m = Mongo::Connection.new
+  m.drop_database(DB_NAME)
+  "Dropped database \"#{DB_NAME}\"."
 end
