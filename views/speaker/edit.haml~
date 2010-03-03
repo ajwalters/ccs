@@ -1,4 +1,0 @@
-%form{:method => "POST", :action => "/speaker/#{@model['handle']}"}
-  %input{:type => "text", :id => "full_name", :value => @model['full_name']}
-  %textarea{:id => "biograpy"}= @model['biography']
-  %input{:type => "submit"}
