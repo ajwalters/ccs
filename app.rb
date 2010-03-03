@@ -35,7 +35,7 @@ end
 get '/slots?/:time' do
   @time = params[:time]
   @model = DB['slot'].find_one({:time => @time})
-  haml :slot
+  haml :slo
 end
 
 get '/speakers?' do
@@ -50,12 +50,14 @@ get '/speakers?/:handle' do
 end
 
 get '/speakers?/edit/:handle' do
+  puts "getting the edit form for #{params[:handle]}"
   @handle = params[:handle]
   @model = DB['speaker'].find_one({:handle => @handle})
   haml :'speaker/edit'
 end
 
-post '/speakers?/:handle' do
+post '/speakers?/update/:handle' do
+  puts "posting the updated data for #{params[:handle]}"
   puts params[:handle]
   puts params[:full_name]
   puts params[:biography]
@@ -71,6 +73,7 @@ get '/admin/db/:action' do
   protected!
   @action = params[:action]
   if @action == "initialize"
+    drop_database
     initialize_database
   elsif @action == "drop"
     drop_database
@@ -84,10 +87,9 @@ end
 
 helpers do
   def protected!
-    unless authorized?
-      response['WWW-Authenticate'] = %(Basic realm="Testing HTTP Auth")
-      throw(:halt, [401, "Not authorized\n"])
-    end
+    #unless authorized?  response['WWW-Authenticate'] = %(Basic realm="Testing HTTP Auth") throw(:halt, [401, "Not authorized\n"])
+    #end
+    true
   end
 
   def authorized?
@@ -144,11 +146,15 @@ def initialize_database
   agenda.each {|i| DB['agenda'].insert(i) }
   puts "Added #{DB['agenda'].count()} agenda(s)."
 
-  puts "Initialized \"#{DB_NAME}\"."
+  message = "Initialized \"#{DB_NAME}\"."
+  puts message
+  message
 end
 
 def drop_database
   m = Mongo::Connection.new
   m.drop_database(DB_NAME)
-  "Dropped database \"#{DB_NAME}\"."
+  message = "Dropped database \"#{DB_NAME}\"."
+  puts message
+  message
 end

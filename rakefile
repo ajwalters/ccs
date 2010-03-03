@@ -15,6 +15,7 @@ task :environment do
 end
 
 namespace :s do
+  desc "start and run the application webserver."  
   task :run do
     sh "cls & ruby app.rb -s webrick"
   end

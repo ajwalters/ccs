@@ -1,0 +1,3 @@
+db\:migrate=Migrate the database.
+environment=
+s\:run=start and run the application webserver.
