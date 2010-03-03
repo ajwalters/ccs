@@ -1,2 +1,2 @@
-require 'app'
+require 'site/app'
 run App

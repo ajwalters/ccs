@@ -1,0 +1,11 @@
+!!! 1.1
+%html
+  %head
+    %link{:rel => "stylesheet", :href => "../css/screen.css", :type => "text/css", :media => "screen, projection"}
+    %link{:rel => "stylesheet", :href => "../css/print.css", :type => "text/css", :media => "print"}
+    /[if lt IE 8]
+      %link{:rel => "stylesheet", :href => "/css/ie.css", :type => "text/css", :media => "screen, projection"}
+    %link{:rel => "stylesheet", :href => "../css/application.css", :type => "text/css", :media => "screen, projection"}
+  %body
+    .container
+      = yield

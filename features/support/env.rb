@@ -1,4 +1,4 @@
-app_file = File.join(File.dirname(__FILE__), *%w[.. .. app.rb])
+app_file = File.join(File.dirname(__FILE__), *%w[.. .. site app.rb])
 require app_file
 # Force the application name because polyglot breaks the auto-detection logic.
 Sinatra::Application.app_file = app_file

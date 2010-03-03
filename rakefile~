@@ -17,7 +17,7 @@ end
 namespace :s do
   desc "start and run the application webserver."  
   task :run do
-    sh "cls & ruby site/app.rb -s webrick"
+    sh "cls & ruby app/handlers/app.rb -s webrick"
   end
 end
 

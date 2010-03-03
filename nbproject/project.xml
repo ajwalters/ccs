@@ -5,11 +5,11 @@
         <data xmlns="http://www.netbeans.org/ns/ruby-project/1">
             <name>ccs</name>
             <source-roots>
-                <root id="src.dir"/>
+                <root id="src.site.dir"/>
             </source-roots>
             <test-roots>
+                <root id="test.src.dir"/>
                 <root id="test.tests.dir"/>
-                <root id="test.specs.dir"/>
                 <root id="test.features.dir"/>
             </test-roots>
         </data>
