@@ -15,4 +15,4 @@ Feature: View CCS Application
 
 	Scenario: I want to see a Sessions information
 		Given I request the url "/session/Alt.NET"
-		Then I should see the description of the "Alt.NET" session
+		Then I should see the "Code Camp Server::Alt.NET" page

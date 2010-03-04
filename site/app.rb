@@ -10,33 +10,33 @@ DB_NAME = "ccs"
 DB = Mongo::Connection.new.db(DB_NAME)
 
 get '/?' do
+	@page_title = "Code Camp Server"
   haml :index
 end
 
 get '/sessions?' do
   @model = DB['session'].find()
+	@page_title = "Code Camp Server::Sessions"
   haml :'session/index'
-end
-
-post '/sessions?/:title' do
 end
 
 get '/sessions?/:title' do
   @title = params[:title]
   @model = DB['session'].find_one({:title => @title}) #.select{|s| s[:title] == @title }.first
-  haml :'session/detail'
+	@page_title = "Code Camp Server::#{@model['title']}"
+	haml :'session/detail'
 end
 
-get '/slots?' do
-  @model = DB['slot'].find()
-  haml :slots
-end
+#get '/slots?' do
+#  @model = DB['slot'].find()
+#  haml :slots
+#end
 
-get '/slots?/:time' do
-  @time = params[:time]
-  @model = DB['slot'].find_one({:time => @time})
-  haml :slo
-end
+#get '/slots?/:time' do
+#  @time = params[:time]
+#  @model = DB['slot'].find_one({:time => @time})
+#  haml :slo
+#end
 
 get '/speakers?' do
   @model = DB['speaker'].find()

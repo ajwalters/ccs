@@ -4,7 +4,6 @@ require 'mongo'
 
 DB_NAME = "ccs"
 
-
 namespace :db do
 	desc "Migrate the database."
 	task(:migrate => :environment) do
