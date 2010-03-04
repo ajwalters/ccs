@@ -56,30 +56,6 @@ get '/speakers?/edit/:handle' do
   haml :'speaker/edit'
 end
 
-post '/speakers?/update/:handle' do
-  puts "posting the updated data for #{params[:handle]}"
-  puts params[:handle]
-  puts params[:full_name]
-  puts params[:biography]
-end
-
-# administration section
-get '/admin' do
-  protected!
-  "you must be an admin!"
-end
-
-get '/admin/db/:action' do
-  protected!
-  @action = params[:action]
-  if @action == "initialize"
-    drop_database
-    initialize_database
-  elsif @action == "drop"
-    drop_database
-  end
-end
-
 get '/css/application.css' do
   header 'Content-Type' => 'text/css; charset=utf8'
   sass :style
@@ -99,62 +75,3 @@ helpers do
 end
 
 
-def initialize_database
-  puts "Initializing \"#{DB_NAME}\"."
-
-  event = {:name => "Chicago Code Camp 2"}
-
-  speakers = [{:full_name=>"Sergio Pereira", :handle=>"spereira", :biography => "Sergio is an avid JavaScripter and runs the Chicago Alt.NET developer group."},
-              {:full_name=>"Scott Seely", :handle=>"sseely", :biography => "Scott is a frequent speaker and author on all things .NET. He also runs the LCNUG in Grayslake, IL."},
-              {:full_name=>"Michael D. Hall", :handle=>"just3ws"},]
-
-  sessions = [{:title=>"Alt.NET", :description => "Learn everything about the Alt.NET and the community surrounding the movement."},
-              {:title=>"All.NET"},
-              {:title=>"Not.NET"},]
-
-  slots = [{:time=>"9-9:45"},
-           {:time=>"10-10:45"},
-           {:time=>"11-11:45"},
-           {:time=>"1:00-1:45"}]
-
-  agenda = [{:slots => [slots[0]],
-             :session => sessions.select{|s| s[:title]=="Not.NET"},
-             :speakers => [speakers.select{|s| s[:handle]=="just3ws"}]},
-
-            {:slots => [slots[1]],
-             :session => sessions.select{|s| s[:title]=="Alt.NET"},
-             :speakers => [speakers.select{|s| s[:handle]=="spereira"}]},
-
-
-            {:slots => [slots[2], slots[3]],
-             :session => sessions.select{|s| s[:title]=="All.NET"},
-             :speakers => [speakers.select{|s| s[:handle]=="sseely"}]},]
-
-
-  DB['event'].insert(event)
-  puts "Added #{DB['event'].count()} event(s)."
-
-  speakers.each {|i| DB['speaker'].insert(i) }
-  puts "Added #{DB['speaker'].count()} speaker(s)."
-
-  sessions.each {|i| DB['session'].insert(i) }
-  puts "Added #{DB['session'].count()} session(s)."
-
-  slots.each {|i| DB['slot'].insert(i) }
-  puts "Added #{DB['slot'].count()} slot(s)."
-
-  agenda.each {|i| DB['agenda'].insert(i) }
-  puts "Added #{DB['agenda'].count()} agenda(s)."
-
-  message = "Initialized \"#{DB_NAME}\"."
-  puts message
-  message
-end
-
-def drop_database
-  m = Mongo::Connection.new
-  m.drop_database(DB_NAME)
-  message = "Dropped database \"#{DB_NAME}\"."
-  puts message
-  message
-end
