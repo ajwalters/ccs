@@ -15,4 +15,11 @@ Feature: View CCS Application
 
 	Scenario: I want to see a Sessions information
 		Given I request the url "/session/Alt.NET"
-		Then I should see the "Code Camp Server::Alt.NET" page
+		Then I should see the "Chicago Code Camp => Alt.NET" page
+		
+  Scenario: I want to see a list of Speakers
+    Given I request the url "/speakers"
+    Then I should see a list of "Speakers"
+      |sseely|Scott Seely|
+      |spereira|Sergio Pereira|
+      |just3ws|Michael D. Hall|

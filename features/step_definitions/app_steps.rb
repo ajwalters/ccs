@@ -2,21 +2,25 @@ require 'rubygems'
 require 'watir'
 
 URL = "http://localhost:4567"
-PAGE_TITLE = "Code Camp Server"
+PAGE_TITLE = "Chicago Code Camp"
 
 DATA = {
-  "/" => {:url => URL + "/", :title => "#{PAGE_TITLE}"},
-  "/sessions" => {:url => URL + "/sessions", :title => "#{PAGE_TITLE}::Sessions"},
-	"/session/Alt.NET" => {:url => URL + "/session/Alt.NET", :title => "#{PAGE_TITLE}::Alt.NET"},
-}
+  "/" => {:url => "#{URL}/", :title => "#{PAGE_TITLE} => Home"},
+  "/sessions" => {:url => "#{URL}/sessions", :title => "#{PAGE_TITLE} => Sessions"},
+	"/session/Alt.NET" => {:url => "#{URL}/session/Alt.NET", :title => "#{PAGE_TITLE} => Alt.NET"},
+	"/speakers" => {:url => "#{URL}/speakers", :title => "#{PAGE_TITLE} => Speakers"},
+	"/speaker/sseely" => {:url => "#{URL}/speaker/sseely", :title => "#{PAGE_TITLE} => Scott Seely"},
+} 
 
 def visit (url)
+  puts DATA[url][:url]
   @browser.goto DATA[url][:url]
 end
 
 Given /^I request the url "(.+)"$/ do |url|
   #visit url
   visit url
+  puts DATA[url][:title]
   @browser.title.should == DATA[url][:title]
 end
 
