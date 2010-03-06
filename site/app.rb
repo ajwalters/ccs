@@ -9,10 +9,17 @@ use Rack::Reloader
 DB_NAME = "ccs"
 DB = Mongo::Connection.new.db(DB_NAME)
 
+# 
+# Home
+#
 get '/?' do
 	@page_title = build_title "Home"
   haml :index
 end
+
+#
+# Sessions
+#
 
 get '/sessions?' do
   @model = DB['session'].find()
@@ -26,6 +33,10 @@ get '/sessions?/:title' do
 	@page_title = build_title [@model['title'].to_s]
 	haml :'session/detail' 
 end
+
+#
+# Speakers
+#
 
 get '/speakers?' do
   @model = DB['speaker'].find()  
@@ -48,8 +59,12 @@ get '/speakers?/edit/:handle' do
   haml :'speaker/edit'
 end 
 
+#
+# Misc
+#
+
 get '/css/application.css' do
-  header 'Content-Type' => 'text/css; charset=utf8'
+  content_type 'text/css', :charset => 'utf-8'
   sass :style
 end
 
