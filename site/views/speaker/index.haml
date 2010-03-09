@@ -2,4 +2,4 @@
   %ul
     - @model.each do |i|
       %li
-        %a{:href => "speaker/#{i['handle']}"}= i['full_name']
+        %a{:href => "speaker/#{i[:handle]}"}= i[:full_name]

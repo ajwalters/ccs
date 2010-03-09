@@ -23,3 +23,14 @@ Feature: View CCS Application
       |sseely|Scott Seely|
       |spereira|Sergio Pereira|
       |just3ws|Michael D. Hall|
+
+  Scenario: I want to see a navigation bar.
+    Given I request the url "/"
+    Then I should see a list of navigation options
+     |Home|
+     |Speakers|
+     |Sessions|
+     
+  Scenario: I want to edit a speaker
+    Given I request the url "/speaker/sseely"
+    Then I should see an "edit" link

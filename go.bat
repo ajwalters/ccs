@@ -1,2 +1,2 @@
 cls
-rake db:reinit go
+rake db:reset go

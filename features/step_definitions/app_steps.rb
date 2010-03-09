@@ -32,3 +32,12 @@ end
 Then /^I should see the "([^\"]*)" page$/ do |title|
 	@browser.title.should == title
 end
+
+Then /^I should see a list of navigation options$/ do |list|
+  # table is a Cucumber::Ast::Table
+  list.raw.each {|i| @browser.div(:id, "navigation").link(:text, i.to_s).nil?.should == false }
+end
+
+Then /^I should see an "([^\"]*)" link$/ do |id|
+  @browser.link(:id, id).nil?.should == false
+end

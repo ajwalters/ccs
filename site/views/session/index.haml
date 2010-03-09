@@ -2,4 +2,4 @@
   %ul
     - @model.each do |i|
       %li
-        %a{:href => "session/#{i['title']}"}= i['title']
+        %a{:href => "session/#{i[:title]}"}= i[:title]

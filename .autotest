@@ -1,4 +1,5 @@
 Autotest.add_hook :initialize do |at|
   #ignore log files
   at.add_exception %r%^\./log%
+  at.add_exception %r%^\./db%
 end

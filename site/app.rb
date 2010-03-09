@@ -2,12 +2,20 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'sass'
-require 'mongo'
+require 'sequel'
 
 use Rack::Reloader
+use Rack::CommonLogger
+use Rack::ShowExceptions
 
-DB_NAME = "ccs"
-DB = Mongo::Connection.new.db(DB_NAME)
+DB_NAME = "ccs.db"
+DB = Sequel.sqlite("#{DB_NAME}")
+
+class Speaker < Sequel::Model  
+end
+
+class Session < Sequel::Model
+end
 
 # 
 # Home
@@ -22,15 +30,15 @@ end
 #
 
 get '/sessions?' do
-  @model = DB['session'].find()
+  @model = DB[:sessions].all
 	@page_title = build_title ["Sessions"]
   haml :'session/index'
 end
 
 get '/sessions?/:title' do
   @title = params[:title]
-  @model = DB['session'].find_one({:title => @title}) #.select{|s| s[:title] == @title }.first
-	@page_title = build_title [@model['title'].to_s]
+  @model = DB[:sessions].filter(:title => @title)
+  @page_title = build_title ["Session", @model[:title].to_s]
 	haml :'session/detail' 
 end
 
@@ -39,25 +47,25 @@ end
 #
 
 get '/speakers?' do
-  @model = DB['speaker'].find()  
+  @model = DB[:speakers].all
   @page_title = build_title ["Speakers"]
   haml :'speaker/index'
 end
 
 get '/speakers?/:handle' do 
   @handle = params[:handle]
-  @model = DB['speaker'].find_one({:handle => @handle})
-  @page_title = build_title 
+  @model = DB[:speakers].filter(:handle => @handle)
+  @page_title = build_title ["Speaker", @model['full_name'].to_s]
   haml :'speaker/detail'
 end
 
 get '/speakers?/edit/:handle' do
   puts "getting the edit form for #{params[:handle]}"
   @handle = params[:handle]
-  @model = DB['speaker'].find_one({:handle => @handle}) 
-  @page_title = build_title [@model['full_name']]
+  @model = DB[:speakers].filter(:handle => @handle) 
+  @page_title = build_title [@model['full_name'].to_s]
   haml :'speaker/edit'
-end 
+end
 
 #
 # Misc
