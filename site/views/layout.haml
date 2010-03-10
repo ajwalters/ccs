@@ -9,11 +9,8 @@
     %link{:rel => "stylesheet", :href => "../css/application.css", :type => "text/css", :media => "screen, projection"}
   %body
     %hr.space
-    .container
-      .span-12
-        %img{:alt => "Chicago Code Camp 2", :src => "../images/logo.png"}
-        .container.span-12.last{:style => "text-align: right;"}
+    .container{:style => "text-align: center;"}
+      %img{:alt => "Chicago Code Camp 2", :src => "../images/logo.png"}
       %hr.space
-      = haml :navbar, {:layout => false}
       = yield
  
