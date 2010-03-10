@@ -1,1 +1,1 @@
-load "site/app.rb"
+load "app.rb"
