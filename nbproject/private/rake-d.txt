@@ -1,6 +1,0 @@
-db\:drop=drop the database
-db\:init=initialize the database.
-db\:migrate=Migrate the database.
-db\:reinit=drop and re-initialize the database
-environment=
-go=start and run the application webserver.

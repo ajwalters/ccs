@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'watir'
 
 URL = "http://localhost:4567"
@@ -18,7 +17,6 @@ def visit (url)
 end
 
 Given /^I request the url "(.+)"$/ do |url|
-  #visit url
   visit url
   puts DATA[url][:title]
   @browser.title.should == DATA[url][:title]

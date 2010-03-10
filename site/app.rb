@@ -6,13 +6,20 @@ require 'logger'
 require 'haml'
 require 'sass'
 
+#ROUTES = [
+#  (r'/resources/new', New),
+#  (r'/resources/(\w+?)/(show|edit|delete)', Show),
+#  (r'/resources/(\w+?)', UpdateOrDestroy),
+#  (r'/resources', IndexOrCreate),
+#  (r'/(.*)', DefaultHandler),
+#  ]
 
 # 
 # Home
 #
 
 get '/?' do
-	@page_title = build_title "Home"
+	@title = build_title "Home"
   haml :index
 end
 
@@ -21,42 +28,62 @@ end
 #
 
 get '/sessions?' do
-  @model = database[:sessions].all
-	@page_title = build_title ["Sessions"]
+  @sessions = Session.all
+  @title = build_title ["Sessions"]
   haml :'session/index'
 end
 
 get '/sessions?/:title' do
-  @title = params[:title]
-  @model = database[:sessions].filter(:title => @title)
-  @page_title = build_title ["Session", @model[:title].to_s]
-	haml :'session/detail' 
+  show_session params[:title].to_s
 end
 
+get '/sessions?/:title/show' do
+  show_session params[:title].to_s
+end
+
+def show_session(title)
+  @session = Session.filter(:title => title).first
+  @title = build_title ["Session", title]
+	haml :'session/detail'
+end
+
+get '/sessions?/:title/edit' do
+  @session = Session.filter(:title => params[:title].to_s).first
+  @title = build_title ["Session", params[:title].to_s, "Edit"]
+end
+  
+get '/sessions?/:title/delete' do
+  @session = Session.filter(:title => params[:title].to_s).first
+  @title = build_title ["Session", params[:title].to_s, "Delete"]
+  
+end
 #
 # Speakers
 #
 
 get '/speakers?' do
-  @model = database[:speakers].all
-  @page_title = build_title ["Speakers"]
+  @speakers = Speaker.all
+  @title = build_title(["Speakers"])
   haml :'speaker/index'
 end
 
 get '/speakers?/:handle' do 
-  @handle = params[:handle]
-  @model = database[:speakers].filter(:handle => @handle)
-  @page_title = build_title ["Speaker", @model['full_name'].to_s]
+  @speaker = Speaker.filter(:handle => params[:handle].to_s).first
+  @title = build_title ["Speaker", @speaker.full_name]
   haml :'speaker/detail'
 end
 
 get '/speakers?/edit/:handle' do
-  puts "getting the edit form for #{params[:handle]}"
-  @handle = params[:handle]
-  @model = database[:speakers].filter(:handle => @handle) 
-  @page_title = build_title [@model['full_name'].to_s]
+  @speaker = Speaker.filter(:handle => params[:handle].to_s)
+  @title = build_title [@speaker.full_name]
   haml :'speaker/edit'
 end
+
+post '/speakers?/:handle' do
+  puts "posted to speakers"
+end
+
+
 
 #
 # Misc
@@ -103,8 +130,6 @@ migration "create sessions table" do
     String :title, :null => false
     String :description
   end
-  
-  
 end
 
 migration "create speakers table" do
@@ -114,8 +139,6 @@ migration "create speakers table" do
     String :full_name, :null => false
     String :biography
   end
-  
-
 end
 
 #
