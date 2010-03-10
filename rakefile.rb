@@ -27,7 +27,7 @@ end
 
 desc "start and run the application webserver."  
 task :go do
-	sh "cls & ruby site/app.rb -s webrick"
+	sh "cls & ruby app.rb -s webrick"
 end
 
 #def initialize_database
