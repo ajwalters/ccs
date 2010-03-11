@@ -62,12 +62,14 @@ body {
   font-size: 75%;
   color: #222;
   background: #fff;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: #111;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  
 }
 
 h1 {
@@ -173,7 +175,7 @@ pre {
 }
 
 pre, code, tt {
-  font: 1em 'andale mono', 'lucida console', monospace;
+  font: 1em "Droid Sans Mono", Consolas, 'andale mono', 'lucida console', monospace;
   line-height: 1.5;
 }
 
@@ -329,6 +331,12 @@ input.text, input.title {
 
 input.title {
   font-size: 1.5em;
+  
+  background-color: #FCFCFC; 
+  border-bottom: solid 2px black; 
+  border-top: 0;
+  border-right: 0; 
+  border-left: 0;
 }
 
 textarea {

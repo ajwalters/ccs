@@ -1,3 +1,14 @@
 %hr.space
-%div.container{:style => "width: 250px; text-align: center;"}
-  %iframe{:name => "countdown", :id => "mgframe", :src => "http://www.eventbrite.com/countdown-widget?eid=604712712", :width => "250", :height => "343", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :frameborder => "0"}
+.span-15.colborder
+  = haml (:speaker_submission_form, :layout => false)
+.container.span-8.last
+  %iframe{:name => "countdown", 
+          :id => "mgframe",
+          :style => "width: 250px",
+          :src => "http://www.eventbrite.com/countdown-widget?eid=604712712",
+          :width => "250",
+          :height => "343",
+          :marginheight => "0",
+          :marginwidth => "0",
+          :scrolling => "no",
+          :frameborder => "0"}

@@ -11,6 +11,10 @@ end
 require 'sinatra'
 require 'haml'
 require 'sass'
+require 'rack'
+
+
+use Rack::Reloader
 
 # 
 # Home

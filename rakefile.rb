@@ -3,6 +3,13 @@ require 'sequel'
 
 DB_NAME = "ccs.db"
 
+task :environment
+
+desc "start and run the application webserver."  
+task :go do
+	sh "cls & rackup -s webrick -p 4567"
+end
+
 namespace :db do
 	desc "initialize the database."
 	task :init do
@@ -21,39 +28,3 @@ namespace :db do
     end
 	end
 end
-
-task :environment do
-end
-
-desc "start and run the application webserver."  
-task :go do
-	sh "cls & rackup -s webrick -p 4567 -d"
-end
-
-#def initialize_database
-#	puts "Initializing \"#{DB_NAME}\"."
-
-#	@event = {:name => "Chicago Code Camp 2"}
-
-#	@slots = [{:time => "9-9:45"},
-#		{:time => "10-10:45"},
-#		{:time => "11-11:45"},
-#		{:time => "1:00-1:45"}]
-
-#	@agenda = [{:slots => [@slots[0]],
-#			:session => @sessions.select{|s| s[:title] == "Not.NET"},
-#			:speakers => [@speakers.select{|s| s[:handle] == "just3ws"}]},
-
-#		{:slots => [@slots[1]],
-#			:session => @sessions.select{|s| s[:title] == "Alt.NET"},
-#			:speakers => [@speakers.select{|s| s[:handle] == "spereira"}]},
-
-
-#		{:slots => [@slots[2], @slots[3]],
-#			:session => @sessions.select{|s| s[:title] == "All.NET"},
-#			:speakers => [@speakers.select{|s| s[:handle] == "sseely"}]},]
-						
-#  initialize_sequel_db  
-#end
-
-

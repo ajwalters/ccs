@@ -14,7 +14,7 @@
 /* print.css */
 body {
   line-height: 1.5;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
   color: #000;
   background: none;
   font-size: 10pt;
@@ -41,11 +41,11 @@ hr.space {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 }
 
 code {
-  font: .9em "Courier New", Monaco, Courier, monospace;
+  font: .9em "Droid Sans Mono", Consolas, "Courier New", Monaco, Courier, monospace;
 }
 
 a img {
