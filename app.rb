@@ -24,6 +24,11 @@ get '/?' do
   haml :index
 end
 
+post '/submit/?' do
+  haml :speaker_submission_result
+end
+
+
 #
 # Misc
 #
