@@ -62,7 +62,7 @@ post '/submit/?' do
   
   begin
     Pony.mail(:via => :smtp,
-              :to => 'mhall@leapfrogonline.com',
+              :to => 'Michael D. Hall <mhall@leapfrogonline.com>',
               :from => 'submissions@chicagocodecamp.com',
               :subject => 'New Speaker Submission.',
               :body => message,
