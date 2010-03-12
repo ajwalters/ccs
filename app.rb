@@ -65,7 +65,7 @@ post '/submit/?' do
     puts "ENV['SENDGRID_PASSWORD'] => #{ENV['SENDGRID_PASSWORD']}"
     puts "ENV['SENDGRID_DOMAIN'] => #{ENV['SENDGRID_DOMAIN']}"
     Pony.mail(:via => :smtp,
-              :to => 'Michael D. Hall <mhall@leapfrogonline.com>',
+              :to => 'mhall@just3ws.com',
               :from => 'submissions@chicagocodecamp.com',
               :subject => 'New Speaker Submission.',
               :body => message,
