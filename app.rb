@@ -57,7 +57,7 @@ post '/submit/?' do
     params.each {|k,v| message += ":#{k} => '#{v}',"}
     message += '}'
   rescue
-    puts "error loading message; message currently holds '#{message}'"
+    puts "error loading message; message currently holds '#{message}'; Error #{$!}"
   end    
   
   begin
@@ -72,7 +72,7 @@ post '/submit/?' do
                         :password => ENV['SENDGRID_PASSWORD'],
                         :domain => ENV['SENDGRID_DOMAIN'],})
   rescue
-    puts "error sending email; message currently holds '#{message}'"
+    puts "Error sending email; message currently holds '#{message}'; Error #{$!}"
   end
   
   begin
@@ -87,7 +87,7 @@ post '/submit/?' do
     
     haml :speaker_submission_result
   rescue
-    puts "error inserting record; message currently holds '#{message}'"
+    puts "error inserting record; message currently holds '#{message}'; Error #{$!}"
     "<html><head><title>Chicago Code Camp - Error</title></head><body>Whoops! We had a slight error.</body></html>"  
   end
   
