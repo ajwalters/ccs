@@ -70,7 +70,7 @@ post '/submit/?' do
                         :port => "25",
                         :auth => :plain,
                         :user => ENV['SENDGRID_USERNAME'],
-                        :password => ENV['SENDGRID_PASSWORD'],
+                        :pass => ENV['SENDGRID_PASSWORD'],
                         :domain => ENV['SENDGRID_DOMAIN'],})
   rescue
     puts "error sending email; message currently holds '#{message}'"
