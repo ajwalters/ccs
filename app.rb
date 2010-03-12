@@ -1,4 +1,4 @@
-gem 'pony', '0.7'
+gem 'pony', '0.6'
 
 begin
   # Require the preresolved locked set of gems.
