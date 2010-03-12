@@ -66,11 +66,10 @@ post '/submit/?' do
               :from => "submissions@chicagocodecamp.com",
               :subject => "New Speaker Submission.",
               :body => message,
-              :smtp => {:host => "smtp.sendgrid.net",
-                        :port => "25",
-                        :auth => :plain,
+              :smtp => {:host => 'smtp.sendgrid.net',
+                        :auth => 'plain',
                         :user => ENV['SENDGRID_USERNAME'],
-                        :pass => ENV['SENDGRID_PASSWORD'],
+                        :password => ENV['SENDGRID_PASSWORD'],
                         :domain => ENV['SENDGRID_DOMAIN'],})
   rescue
     puts "error sending email; message currently holds '#{message}'"
