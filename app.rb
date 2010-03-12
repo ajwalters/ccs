@@ -61,8 +61,10 @@ post '/submit/?' do
   end    
   
   begin
-    Pony.send(:to => "ccc2@just3ws.com", :via => :smtp,
-              :subject => "New Speaker Submissions: '#{params[:title]}'",
+    Pony.mail(:via => :smtp,
+              :to => "ccc2@just3ws.com",
+              :from => "submissions@chicagocodecamp.com",
+              :subject => "New Speaker Submission.",
               :body => message,
               :smtp => {:host => "smtp.sendgrid.net",
                         :port => "25",
