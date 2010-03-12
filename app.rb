@@ -14,6 +14,7 @@ require 'sequel'
 require 'haml'
 require 'sass'
 require 'rack'
+require 'pony'
 
 configure :development do
   use Rack::Reloader
@@ -48,6 +49,31 @@ get '/?' do
 end
 
 post '/submit/?' do
+  
+  message = ""
+  
+  begin
+    message += "{"
+    params.each {|k,v| message += ":#{k} => '#{v}',"}
+    message += '}'
+  rescue
+    puts "error loading message; message currently holds '#{message}'"
+  end    
+  
+  begin
+    Pony.send(:to => "ccc2@gmail.com", :via => :smtp,
+              :subject => "New Speaker Submissions: '#{params[:title]}'",
+              :body => message,
+              :smtp => {:host => "smtp.sendgrid.net",
+                        :port => "25",
+                        :auth => :plain,
+                        :user => ENV['SENDGRID_USERNAME'],
+                        :password => ENV['SENDGRID_PASSWORD'],
+                        :domain => ENV['SENDGRID_DOMAIN'],})
+  rescue
+    puts "error sending email; message currently holds '#{message}'"
+  end
+  
   begin
     Submission.insert(:full_name => params[:full_name].to_s,
                       :title => params[:title].to_s,
@@ -60,6 +86,7 @@ post '/submit/?' do
     
     haml :speaker_submission_result
   rescue
+    puts "error inserting record; message currently holds '#{message}'"
     "<html><head><title>Chicago Code Camp - Error</title></head><body>Whoops! We had a slight error.</body></html>"  
   end
   
