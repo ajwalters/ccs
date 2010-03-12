@@ -1,19 +1,25 @@
 %form.big_fun_form{:method => "post", :action => ""}
   %h2
     Calling all Chicago-land developers and speakers!
-  %p
+  %p.light
     Are you a developer with a passion for your craft? We want to hear your voice! Give us a little information on the talk you're planning and how to contact you.
   %label{:for => "name"} Hi, my name is
-  %input.title{:id => "full_name", :name => "full_name", :type => "text", :maxlength => 24}
+  %input.title#full_name{:name => "full_name", :type => "text", :maxlength => 24}
   %hr.space
-  %label{:for => "title"} I'm interested in coming out to the Chicago Code Camp and talking about 
-  %input.title{:id => "title", :name => "title", :type => "text", :maxlength => 48}
+  %label{:for => "title"} I'm interested in coming out and giving a presentation under the working title   
+  %input.title#title{:name => "title", :type => "text", :maxlength => 48}
   %hr.space
   %label{:for => "description"} In <= 500 characters I'd describe my talk as being about
-  %textarea{:id => "description", :name => "description", :style => "width: 100%;"}
+  %textarea#description{:name => "description", :style => "width: 100%;"}
   %hr.space
-  %label{:for => "email"} You can email me at
-  %input.title{:id => "email", :name => "email", :type => "text"}
+  %label{:for => "email"} You can email me at 
+  %input.title#email{:name => "email", :type => "text"}
+  %hr.space
+  %label{:for => "link"} My home page or blog is at 
+  %input.title#link{:name => "link", :type => "text", :value => "http://"}
+  %hr.space
+  %label{:for => "biography"} My biography in 500 characters or less is
+  %textarea#biography{:name => "biography", :style => "width: 100%;"}
   %hr.space
   %p{:style => "text-align: center;"}
     %input{:type => "submit",
