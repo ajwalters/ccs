@@ -1,3 +1,4 @@
+# Pony 0.6 is required due to incompatibilities on Heroku/Sendgrid
 gem 'pony', '0.6'
 
 begin
@@ -50,10 +51,8 @@ get '/?' do
   haml :index
 end
 
-post '/submit/?' do
-  
+post '/submit/?' do  
   message = ""
-  
   begin
     message += "{"
     params.each {|k,v| message += ":#{k} => '#{v}',"}
@@ -63,9 +62,6 @@ post '/submit/?' do
   end    
   
   begin
-    puts "ENV['SENDGRID_USERNAME'] => #{ENV['SENDGRID_USERNAME']}" 
-    puts "ENV['SENDGRID_PASSWORD'] => #{ENV['SENDGRID_PASSWORD']}"
-    puts "ENV['SENDGRID_DOMAIN'] => #{ENV['SENDGRID_DOMAIN']}"
     Pony.mail(:via => :smtp,
               :to => 'ccc2@just3ws.com',
               :from => 'submissions@chicagocodecamp.com',
@@ -95,8 +91,9 @@ post '/submit/?' do
     puts "error inserting record; message currently holds '#{message}'; Error #{$!}"
     "<html><head><title>Chicago Code Camp - Error</title></head><body>Whoops! We had a slight error.</body></html>"  
   end
-  
 end
+
+
 
 
 #
