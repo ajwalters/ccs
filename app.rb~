@@ -81,7 +81,7 @@ post '/submit/?' do
               :to => 'ccc2@just3ws.com',
               :from => 'submissions@chicagocodecamp.com',
               :subject => 'New Speaker Submission.',
-              :body => haml(:speaker_submission_result), 
+              :body => haml :speaker_submission_result, 
               :smtp => {:host => 'smtp.sendgrid.net',
                         :auth => 'plain',
                         :user => ENV['SENDGRID_USERNAME'],
