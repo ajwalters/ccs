@@ -1,0 +1,7 @@
+# Logfile created on Sat Mar 20 14:37:03 -0500 2010 by logger.rb/22285
+F, [2010-03-20T14:48:48.152610 #4624] FATAL -- : Error sending email; message currently holds '{:title => 'and',:submit => 'That's about it, let me know what you think.',:full_name => 'hello',:homepage => 'http://www.just3ws.com',:description => 'And I said, “hello, world!”
+And she said, “meh.”
+',:email => 'asdjf@lakdf.com',:biography => 'And I said, “hello, world!”
+And she said, “meh.”
+',}'; Error 501 Syntax: HELO hostname
+

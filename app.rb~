@@ -21,7 +21,7 @@ require 'logger'
 require 'pony'
 
 configure :development do
-#  LOGGER = Logger.new("logs\sinatra.log")
+  LOGGER = Logger.new("logs\sinatra.log")
   use Rack::Reloader
 end
 
@@ -60,7 +60,7 @@ post '/submit/?' do
     params.each {|k,v| message += ":#{k} => '#{v}',"}
     message += '}'
   rescue
-    puts "error loading message; message currently holds '#{message}'; Error #{$!}"
+    logger.fatal "error loading message; message currently holds '#{message}'; Error #{$!}"
   end    
   
   begin
@@ -75,7 +75,7 @@ post '/submit/?' do
                         :password => ENV['SENDGRID_PASSWORD'],
                         :domain => ENV['SENDGRID_DOMAIN'],})
   rescue
-    puts "Error sending email; message currently holds '#{message}'; Error #{$!}"
+    logger.fatal "Error sending email; message currently holds '#{message}'; Error #{$!}"
   end
   
   begin
@@ -90,7 +90,7 @@ post '/submit/?' do
     
     haml :speaker_submission_result
   rescue
-    puts "error inserting record; message currently holds '#{message}'; Error #{$!}"
+    logger.fatal "error inserting record; message currently holds '#{message}'; Error #{$!}"
     "<html><head><title>Chicago Code Camp - Error</title></head><body>Whoops! We had a slight error.</body></html>"  
   end
 end
@@ -108,7 +108,7 @@ get '/css/application.css' do
 end
 
 helpers do
-#  def logger
-#    LOGGER
-#  end
+  def logger
+    LOGGER
+  end
 end
