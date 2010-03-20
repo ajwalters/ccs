@@ -62,26 +62,13 @@ post '/submit/?' do
   rescue
     puts "error loading message; message currently holds '#{message}'; Error #{$!}"
   end    
-
-  
-    submission = Submission.new
-    submission.full_name = params[:full_name].to_s
-    submission.title = params[:title].to_s
-    submission.description = params[:description].to_s
-    submission.email = params[:email].to_s
-    submission.homepage = params[:homepage].to_s
-    submission.biography = params[:biography].to_s
-    submission.created_at = Time.now
-    submission.updated_at = Time.now
-
-    @model = submission
   
   begin
     Pony.mail(:via => :smtp,
               :to => 'ccc2@just3ws.com',
               :from => 'submissions@chicagocodecamp.com',
               :subject => 'New Speaker Submission.',
-              :body => haml :speaker_submission_result, 
+              :body => message,
               :smtp => {:host => 'smtp.sendgrid.net',
                         :auth => 'plain',
                         :user => ENV['SENDGRID_USERNAME'],
@@ -92,7 +79,18 @@ post '/submit/?' do
   end
   
   begin
+    submission = Submission.new
+    submission.full_name = params[:full_name].to_s
+    submission.title = params[:title].to_s
+    submission.description = params[:description].to_s
+    submission.email = params[:email].to_s
+    submission.homepage = params[:homepage].to_s
+    submission.biography = params[:biography].to_s
+    submission.created_at = Time.now
+    submission.updated_at = Time.now
     submission.save
+
+    @model = submission
 
     haml :speaker_submission_result
   rescue
