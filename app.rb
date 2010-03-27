@@ -75,6 +75,17 @@ migration "create the sessions table" do
   end
 end
 
+migration "create a user table" do
+  database.create_table :users do
+    primary_key :id
+    text :handle
+    text :password
+    timestamp :created_at
+    timestamp :updated_at
+
+  end
+end
+
 class Submission < Sequel::Model
   def validate
     errors[:full_name] << "can't be empty" if full_name.empty?
@@ -110,6 +121,9 @@ class Speaker < Sequel::Model
     errors[:biography] << "can't be empty" if biography.empty?
     errors[:email] << "can't be empty" if email.empty?
   end
+end
+
+class User < Sequel::Model
 end
 
 # 
@@ -200,7 +214,7 @@ end
 
 # GET    /sessions           index
 get '/sessions' do
-  @sessions = Session.eager(:sessions).all()
+  @sessions = Session.all
   haml "
 %table
   - @sessions.each do |s|
@@ -212,7 +226,7 @@ end
 
 # GET    /speakers           index
 get '/speakers' do
-  @speakers = Speaker.eager(:speakers).all
+  @speakers = Speaker.all
   haml "
 %table
   - @speakers.each do |s|
@@ -270,6 +284,16 @@ end
 
 helpers do
   def protected!
-    true
+    unless authorized?
+      response['WWW-Authenticate'] = %(Basic realm="Testing HTTP Auth")
+      throw(:halt, [401, "Not authorized\n"])
+    end
   end
+
+  def authorized?
+    @auth ||=  Rack::Auth::Basic::Request.new(request.env)
+
+    @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == ['admin', 'nimda']
+  end
+
 end
