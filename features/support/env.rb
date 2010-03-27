@@ -1,39 +1,12 @@
-app_file = File.join(File.dirname(__FILE__), *%w[.. .. site app.rb])
-require app_file
-# Force the application name because polyglot breaks the auto-detection logic.
-Sinatra::Application.app_file = app_file
+gem 'mechanize', '=0.9.0'
 
-require 'spec/expectations'
-require 'rack/test'
+require 'webrat'
 
-# Webrat configuration
-#require 'webrat'
-#Webrat.configure do |config|
-#  config.mode = :rack
-#end
-
-#class MyWorld
-#  include Rack::Test::Methods
-#  include Webrat::Methods
-#  include Webrat::Matchers
-# 
-#  Webrat::Methods.delegate_to_session :response_code, :response_body
-#
-#  def app
-#    Sinatra::Application
-#  end
-#end
-
-#World{MyWorld.new}
-
-# WatiR configuration
-require 'watir'
-browser = Watir::Browser.new
-
-Before do
-  @browser = browser
+# Webrat/Mechanize
+Webrat.configure do |config|
+  config.mode = :mechanize
 end
 
-at_exit do
-  browser.close
-end
+World(Webrat::Methods)
+World(Webrat::Matchers)
+

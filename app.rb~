@@ -17,18 +17,17 @@ require 'sequel'
 require 'haml'
 require 'sass'
 require 'rack'
-require 'logger'
 require 'pony'
+require 'logger'
 
-configure :development do
-#  LOGGER = Logger.new("logs\sinatra.log")
-  use Rack::Reloader
-end
+#configure :development do
+use Rack::Reloader
+#end
 
 set :database, ENV['DATABASE_URL'] || 'sqlite://ccs.db'
 
-puts "the submissions table doesn't exist."
 migration "create the submissions table" do
+  puts "the submissions table doesn't exist."
   database.create_table :submissions do
     primary_key :id
     text :full_name
@@ -39,10 +38,78 @@ migration "create the submissions table" do
     text :biography
     timestamp :created_at
     timestamp :updated_at
+
+  end
+end
+
+migration "add accept, reject and deleted columns to submissions table" do
+  puts "adding columns to submissions table"
+  database.alter_table :submissions do
+    add_column :rejected, :bool, :default => false
+    add_column :accepted, :bool, :default => false
+    add_column :deleted, :bool, :default => false
+  end
+end
+
+migration "create the speakers table" do
+  puts "the speakers table doesn't exist"
+  database.create_table :speakers do
+    primary_key :id
+    text :full_name
+    text :biography
+    text :email
+    text :homepage
+    timestamp :created_at
+    timestamp :updated_at
+  end
+end
+
+migration "create the sessions table" do
+  puts "the sessions table doesn't exist"
+  database.create_table :sessions do
+    primary_key :id
+    text :title
+    text :description
+    timestamp :created_at
+    timestamp :updated_at
   end
 end
 
 class Submission < Sequel::Model
+  def validate
+    errors[:full_name] << "can't be empty" if full_name.empty?
+    errors[:biography] << "can't be empty" if biography.empty?
+    errors[:email] << "can't be empty" if email.empty?
+    errors[:title] << "con't be empty" if title.empty?
+  end
+
+  def before_save
+    begin
+      Pony.mail(:via => :smtp,
+                :to => 'ccc2@just3ws.com',
+                :from => 'submissions@chicagocodecamp.com',
+                :subject => 'New Speaker Submission.',
+                :body => self.to_yaml,
+                :smtp => {:host => 'smtp.sendgrid.net',
+                  :auth => 'plain',
+                  :user => ENV['SENDGRID_USERNAME'],
+                  :password => ENV['SENDGRID_PASSWORD'],
+                  :domain => ENV['SENDGRID_DOMAIN'],})
+    rescue
+      puts "Error sending email; Error #{$!}"
+    end
+  end
+end
+
+class Session < Sequel::Model
+end
+
+class Speaker < Sequel::Model
+  def validate
+    errors[:full_name] << "can't be empty" if full_name.empty?
+    errors[:biography] << "can't be empty" if biography.empty?
+    errors[:email] << "can't be empty" if email.empty?
+  end
 end
 
 # 
@@ -50,20 +117,11 @@ end
 #
 
 get '/?' do
-  haml :index
+  haml :'index'
 end
 
-post '/submit/?' do  
-  message = ""
+post '/submit/?' do
   begin
-    message += "{"
-    params.each {|k,v| message += ":#{k} => '#{v}',"}
-    message += '}'
-  rescue
-    puts "error loading message; message currently holds '#{message}'; Error #{$!}"
-  end    
-
-  
     submission = Submission.new
     submission.full_name = params[:full_name].to_s
     submission.title = params[:title].to_s
@@ -75,34 +133,135 @@ post '/submit/?' do
     submission.updated_at = Time.now
 
     @model = submission
-  
-  begin
-    Pony.mail(:via => :smtp,
-              :to => 'ccc2@just3ws.com',
-              :from => 'submissions@chicagocodecamp.com',
-              :subject => 'New Speaker Submission.',
-              :body => haml :speaker_submission_result, 
-              :smtp => {:host => 'smtp.sendgrid.net',
-                        :auth => 'plain',
-                        :user => ENV['SENDGRID_USERNAME'],
-                        :password => ENV['SENDGRID_PASSWORD'],
-                        :domain => ENV['SENDGRID_DOMAIN'],})
-  rescue
-    puts "Error sending email; message currently holds '#{message}'; Error #{$!}"
-  end
-  
-  begin
+
     submission.save
 
-    haml :speaker_submission_result
+    haml :'submissions/show'
   rescue
-    puts "error inserting record; message currently holds '#{message}'; Error #{$!}"
+    puts "error inserting record; Error #{$!}"
     "<html><head><title>Chicago Code Camp - Error</title></head><body>Whoops! We had a slight error.</body></html>"  
   end
 end
 
+get '/submissions' do
+  protected!
+  @submissions = Submission.filter(:deleted => false, :accepted => false, :rejected => false)
+  haml "
+%table
+  - @submissions.each do |s|
+    %tr
+      %td
+        %a{:href => \"/submission/#\{s.id\}/delete\" } delete
+      %td
+        %a{:href => \"/submission/#\{s.id\}/accept\"} accept
+      %td
+        %a{:href => \"/submission/#\{s.id\}/reject\"} reject
+      %td= s.title
+      %td= s.full_name
+      %td= s.description
+      %td= s.email
+      %td= s.homepage
+      %td= s.biography
+  "
+end
 
+get "/submission/:id/:action" do
+  protected!
 
+  puts params[:id]
+
+  s = Submission[params[:id]]
+
+  puts s.to_yaml
+
+  @title = s.title
+  if params[:action].downcase == 'delete'
+    s.deleted = true;
+    s.save
+    haml :'submissions/delete'
+  elsif params[:action].downcase == 'accept'
+
+    spkr = Speaker.new
+    spkr.full_name = s.full_name
+    spkr.email = s.email
+    spkr.homepage = s.homepage
+    spkr.biography = s.biography
+    spkr.save
+
+    sssn = Session.new
+    sssn.title = s.title
+    sssn.description = s.description
+    sssn.save
+    s.accepted = true
+
+    haml :'submissions/accept'
+  elsif params[:action].downcase == 'reject'
+    s.rejected = true
+    haml :'submissions/reject'
+  end
+  s.save
+end
+
+# GET    /sessions           index
+get '/sessions' do
+  @sessions = Session.eager(:sessions).all()
+  haml "
+%table
+  - @sessions.each do |s|
+    %tr
+      %td= s.title
+      %td= s.description
+  "
+end
+
+# GET    /speakers           index
+get '/speakers' do
+  @speakers = Speaker.eager(:speakers).all
+  haml "
+%table
+  - @speakers.each do |s|
+    %tr
+      %td= s.full_name
+      %td= s.biography
+      %td= s.email
+      %td= s.homepage
+  "
+end
+
+# GET    /speaker/create     create
+get '/speaker/create' do
+  haml "
+%form{:method=>'post', :action=>'/speaker/new'}
+  %input{:type=>'text', :id=>'id'}
+  %input{:type=>'submit'}
+  "
+end
+# POST   /speaker/new        new
+post '/speaker/new' do
+  'posted a new speaker'
+  redirect '/speaker/4'
+end
+
+# GET    /speaker/:id        show
+get '/speaker/:id' do
+  "show #{params[:id]}"
+end
+
+# GET    /speaker/:id/edit   edit
+get '/speaker/:id/edit' do
+  "edit #{params[:id]}"
+end
+# PUT    /speaker/:id/update update
+# POST   /speaker/:id/update update
+update = lambda {'update :#{params[:id]}'}
+put  '/speaker/:id/update', &update
+post '/speaker/:id/update', &update
+
+# DELETE /speaker/:id/delete destroy
+# POST   /speaker/:id/delete destroy
+destroy = lambda {'destroy #{params[:id]}'}
+delete '/speaker/:id/delete', &destroy
+post   '/speaker/:id/delete', &destroy
 
 #
 # Misc
@@ -114,7 +273,7 @@ get '/css/application.css' do
 end
 
 helpers do
-#  def logger
-#    LOGGER
-#  end
+  def protected!
+    true
+  end
 end

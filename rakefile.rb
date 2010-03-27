@@ -7,7 +7,7 @@ task :environment
 
 desc "start and run the application webserver."  
 task :go do
-	sh "cls & rackup -s webrick -p 4567"
+	sh "cls & rackup -s thin -p 4567"
 end
 
 namespace :db do

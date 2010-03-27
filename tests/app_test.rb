@@ -11,14 +11,11 @@ class AppTest < Test::Unit::TestCase
     Sinatra::Application
   end
 
-  def test_it_says_hello_world
+  def test_it_shows_the_proposal_form do
     get '/'
     assert last_response.ok?
-    assert_equal 'Hello, world', last_response.body
+
+    assert last_response.body.include?('Calling all Chicago-land developers')
   end
 
-  def test_it_says_hello_to_a_person
-    get '/', :name => "Penelope"
-    assert last_response.body.include?('Penelope')
-  end
 end
