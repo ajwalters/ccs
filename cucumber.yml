@@ -1,3 +1,0 @@
-default: -r features/support/env.rb -r features/step_definitions features/submission.feature --no-color
-
-trace: -r features/support/env.rb -r features/step_definitions features/submission.feature --no-color -b
