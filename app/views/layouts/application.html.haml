@@ -1,0 +1,24 @@
+!!! 5 utf-8
+%html
+  %head
+    %meta{:charset => "UTF-8"}
+    %title Chicago Code Camp 2
+    = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'print.css', :media => 'print'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'application.css', :media => 'screen, projection'
+    = yield :head 
+  %body
+    .container.MAIN
+      = render :partial => "shared/navbar"
+      %hr.space
+      .span-24{:style => "text-align: center;"}
+        %img{:alt => "Chicago Code Camp 2", :src => "../../../images/logo.png"}
+      %hr.space
+      #flash.container.span-24{:style => "text-align: center;"}
+        - flash.each do |key, value|
+          %div{:id => "flash_#{key}"}= h value
+      = yield
+  = yield :after_body
+  = render :partial => "shared/getsatisfaction"

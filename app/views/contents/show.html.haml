@@ -1,0 +1,12 @@
+%p
+  %b Name:
+  = h @content.name
+%p
+  %b Value:
+  = h @content.value
+%p
+  %b Category:
+  = h @content.category
+= link_to 'Edit', edit_content_path(@content)
+|
+\#{link_to 'Back', contents_path}

@@ -1,0 +1,16 @@
+%h1 Editing sponsor
+- form_for(@sponsor) do |f|
+  = f.error_messages
+  %p
+    = f.label :name
+    %br/
+    = f.text_field :name
+  %p
+    = f.label :note
+    %br/
+    = f.text_field :note
+  %p
+    = f.submit 'Update'
+= link_to 'Show', @sponsor
+|
+\#{link_to 'Back', sponsors_path}

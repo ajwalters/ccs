@@ -1,0 +1,8 @@
+*.log
+*.db
+*~
+*.*~
+quick
+*.db
+*.sqlite3
+*.*sw*
