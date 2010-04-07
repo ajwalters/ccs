@@ -1,0 +1,15 @@
+%p
+  %b Full name:
+  = h @speaker.full_name
+%p
+  %b Email:
+  = h @speaker.email
+%p
+  %b Homepage:
+  = h @speaker.homepage
+%p
+  %b Biography:
+  = h @speaker.biography
+= link_to 'Edit', edit_speaker_path(@speaker)
+|
+\#{link_to 'Back', speakers_path}

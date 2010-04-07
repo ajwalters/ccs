@@ -1,0 +1,10 @@
+%h1 New slot
+- form_for(@slot) do |f|
+  = f.error_messages
+  %p
+    = f.label :time
+    %br/
+    = f.datetime_select :time
+  %p
+    = f.submit 'Create'
+= link_to 'Back', slots_path

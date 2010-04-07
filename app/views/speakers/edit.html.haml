@@ -1,0 +1,24 @@
+%h1 Editing speaker
+- form_for(@speaker) do |f|
+  = f.error_messages
+  %p
+    = f.label :full_name
+    %br/
+    = f.text_field :full_name
+  %p
+    = f.label :email
+    %br/
+    = f.text_field :email
+  %p
+    = f.label :homepage
+    %br/
+    = f.text_field :homepage
+  %p
+    = f.label :biography
+    %br/
+    = f.text_field :biography
+  %p
+    = f.submit 'Update'
+= link_to 'Show', @speaker
+|
+\#{link_to 'Back', speakers_path}

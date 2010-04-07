@@ -1,0 +1,13 @@
+%p
+  %b Full name:
+  = h @volunteer.full_name
+%p
+  %b Email:
+  = h @volunteer.email
+%p
+  %b Preferences:
+  = h @volunteer.preferences
+- if signed_in? && current_user.admin?
+  = link_to 'Edit', edit_volunteer_path(@volunteer)
+  |
+  \#{link_to 'Back', volunteers_path}

@@ -1,0 +1,8 @@
+%h1 Editing agenda
+- form_for(@agenda) do |f|
+  = f.error_messages
+  %p
+    = f.submit 'Update'
+= link_to 'Show', @agenda
+|
+\#{link_to 'Back', agendas_path}
