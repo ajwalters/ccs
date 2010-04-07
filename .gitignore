@@ -1,8 +1,10 @@
-*.log
-*.db
+log/*.log
+tmp/*
+tmp/**/*
+doc/api
+doc/app
+db/*.sqlite3
+*.swp
 *~
-*.*~
-quick
-*.db
-*.sqlite3
-*.*sw*
+.DS_Store
+.idea
