@@ -3,7 +3,7 @@ class CreateVolunteers < ActiveRecord::Migration
     create_table :volunteers do |t|
       t.string :full_name
       t.string :email
-      t.string :preferences
+      t.string :preferences, :allow_nil => true
 
       t.timestamps
     end

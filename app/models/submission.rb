@@ -1,4 +1,4 @@
-class Submission < ActiveRecord::Base
+c/lass Submission < ActiveRecord::Base
   include Permissions
   validates_presence_of :full_name, :biography, :email, :title, :description
 
