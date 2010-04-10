@@ -1,7 +1,7 @@
 class VolunteersController < ApplicationController
 
   before_filter :authenticate, :except => [:show, :new, :create]
-  
+
 
   # GET /volunteers
   # GET /volunteers.xml

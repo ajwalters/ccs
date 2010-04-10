@@ -3,8 +3,9 @@ class CreateVolunteers < ActiveRecord::Migration
     create_table :volunteers do |t|
       t.string :full_name
       t.string :email
-      t.string :preferences, :allow_nil => true
+      t.text :preferences, :allow_nil => true
 
+      t.userstamps
       t.timestamps
     end
   end

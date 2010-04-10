@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @contents = Content.find(:all, :order => "sequence")
-
+    @contents = Content.all(:conditions => {:display => true}, :order => "sequence")
     respond_to do |format|
       format.html # index.html.haml
       format.xml  { render :xml => @contents }

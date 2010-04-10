@@ -6,7 +6,7 @@ class ContentsController < ApplicationController
   # GET /contents.xml
   def index
     @contents = Content.all
-
+    enforce_view_permission(@contents)
     respond_to do |format|
       format.html # index.html.haml
       format.xml  { render :xml => @contents }
@@ -86,7 +86,4 @@ class ContentsController < ApplicationController
     end
   end
 
-  private
-  def authorize
-  end
 end

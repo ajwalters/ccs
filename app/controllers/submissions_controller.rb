@@ -1,17 +1,21 @@
 class SubmissionsController < ApplicationController
 
-  before_filter :authenticate, :except => [:show, :new, :create]
-  before_filter :authorize, :only => [:edit, :update, :destroy]
-
+  before_filter :authenticate, :except => [:closed ] #:show, :new, :create
 
   # GET /submissions
   # GET /submissions.xml
   def index
     @submissions = Submission.all
-
+    enforce_view_permission(@submissions)
     respond_to do |format|
       format.html # index.html.haml
       format.xml  { render :xml => @submissions }
+    end
+  end
+
+  def closed
+    respond_to do |format|
+      format.html
     end
   end
 
@@ -91,10 +95,5 @@ class SubmissionsController < ApplicationController
       format.html { redirect_to(submissions_url) }
       format.xml  { head :ok }
     end
-  end
-
-  private
-  def authorize
-    puts "try to authorize the current user #{user}"
   end
 end

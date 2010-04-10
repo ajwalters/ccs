@@ -1,0 +1,130 @@
+--- !ruby/object:Gem::Specification 
+name: userstamp
+version: !ruby/object:Gem::Version 
+  prerelease: false
+  segments: 
+  - 2
+  - 0
+  - 0
+  version: 2.0.0
+platform: ruby
+authors: 
+- DeLynn Berry
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-11-17 00:00:00 -06:00
+default_executable: 
+dependencies: []
+
+description: 
+email: delynn@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- LICENSE
+- README
+files: 
+- .gitignore
+- CHANGELOG
+- LICENSE
+- README
+- Rakefile
+- VERSION
+- init.rb
+- lib/migration_helper.rb
+- lib/stampable.rb
+- lib/stamper.rb
+- lib/userstamp.rb
+- rdoc/classes/Ddb/Controller.html
+- rdoc/classes/Ddb/Controller/Userstamp.html
+- rdoc/classes/Ddb/Controller/Userstamp/InstanceMethods.html
+- rdoc/classes/Ddb/Userstamp.html
+- rdoc/classes/Ddb/Userstamp/MigrationHelper.html
+- rdoc/classes/Ddb/Userstamp/MigrationHelper/InstanceMethods.html
+- rdoc/classes/Ddb/Userstamp/Stampable.html
+- rdoc/classes/Ddb/Userstamp/Stampable/ClassMethods.html
+- rdoc/classes/Ddb/Userstamp/Stamper.html
+- rdoc/classes/Ddb/Userstamp/Stamper/ClassMethods.html
+- rdoc/classes/Ddb/Userstamp/Stamper/InstanceMethods.html
+- rdoc/created.rid
+- rdoc/files/CHANGELOG.html
+- rdoc/files/LICENSE.html
+- rdoc/files/README.html
+- rdoc/files/lib/migration_helper_rb.html
+- rdoc/files/lib/stampable_rb.html
+- rdoc/files/lib/stamper_rb.html
+- rdoc/files/lib/userstamp_rb.html
+- rdoc/fr_class_index.html
+- rdoc/fr_file_index.html
+- rdoc/fr_method_index.html
+- rdoc/index.html
+- rdoc/rdoc-style.css
+- test/compatibility_stamping_test.rb
+- test/controllers/posts_controller.rb
+- test/controllers/users_controller.rb
+- test/controllers/userstamp_controller.rb
+- test/database.yml
+- test/fixtures/comments.yml
+- test/fixtures/people.yml
+- test/fixtures/posts.yml
+- test/fixtures/users.yml
+- test/helpers/functional_test_helper.rb
+- test/helpers/unit_test_helper.rb
+- test/models/comment.rb
+- test/models/person.rb
+- test/models/ping.rb
+- test/models/post.rb
+- test/models/user.rb
+- test/schema.rb
+- test/stamping_test.rb
+- test/userstamp_controller_test.rb
+- userstamp.gemspec
+has_rdoc: true
+homepage: http://github.com/delynn/userstamp
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.6
+signing_key: 
+specification_version: 3
+summary: This Rails plugin extends ActiveRecord::Base to add automatic updating of created_by and updated_by attributes of your models in much the same way that the ActiveRecord::Timestamp module updates created_(at/on) and updated_(at/on) attributes.
+test_files: 
+- test/helpers/unit_test_helper.rb
+- test/helpers/functional_test_helper.rb
+- test/schema.rb
+- test/userstamp_controller_test.rb
+- test/compatibility_stamping_test.rb
+- test/controllers/userstamp_controller.rb
+- test/controllers/posts_controller.rb
+- test/controllers/users_controller.rb
+- test/models/ping.rb
+- test/models/person.rb
+- test/models/user.rb
+- test/models/post.rb
+- test/models/comment.rb
+- test/stamping_test.rb

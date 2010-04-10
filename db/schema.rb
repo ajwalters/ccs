@@ -9,24 +9,40 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100407025954) do
+ActiveRecord::Schema.define(:version => 20100410213751) do
 
   create_table "agendas", :force => true do |t|
+    t.integer  "creator_id"
+    t.integer  "updater_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "configurations", :force => true do |t|
+    t.string   "key"
+    t.string   "value"
+    t.integer  "creator_id"
+    t.integer  "updater_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "contents", :force => true do |t|
     t.string   "name"
-    t.string   "value"
+    t.text     "value"
     t.string   "category"
     t.integer  "sequence",   :default => 0
+    t.boolean  "display",    :default => false
+    t.integer  "creator_id"
+    t.integer  "updater_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "slots", :force => true do |t|
     t.time     "time"
+    t.integer  "creator_id"
+    t.integer  "updater_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,24 +52,30 @@ ActiveRecord::Schema.define(:version => 20100407025954) do
     t.string   "email"
     t.string   "homepage"
     t.string   "biography"
+    t.integer  "creator_id"
+    t.integer  "updater_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "sponsors", :force => true do |t|
     t.string   "name"
-    t.string   "note"
+    t.text     "note"
+    t.integer  "creator_id"
+    t.integer  "updater_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "submissions", :force => true do |t|
     t.string   "full_name"
-    t.string   "biography"
+    t.text     "biography"
     t.string   "email"
     t.string   "homepage"
     t.string   "title"
-    t.string   "description"
+    t.text     "description"
+    t.integer  "creator_id"
+    t.integer  "updater_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -66,6 +88,8 @@ ActiveRecord::Schema.define(:version => 20100407025954) do
     t.string   "remember_token",     :limit => 128
     t.boolean  "email_confirmed",                   :default => false, :null => false
     t.boolean  "admin",                             :default => false, :null => false
+    t.integer  "creator_id"
+    t.integer  "updater_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -77,7 +101,9 @@ ActiveRecord::Schema.define(:version => 20100407025954) do
   create_table "volunteers", :force => true do |t|
     t.string   "full_name"
     t.string   "email"
-    t.string   "preferences"
+    t.text     "preferences"
+    t.integer  "creator_id"
+    t.integer  "updater_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

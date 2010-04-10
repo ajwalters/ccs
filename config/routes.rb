@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :configurations
+
 
   map.resources :volunteers
   map.volunteer "volunteers", :controller => "volunteers", :action => :new

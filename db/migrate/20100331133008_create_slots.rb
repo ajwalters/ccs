@@ -3,6 +3,7 @@ class CreateSlots < ActiveRecord::Migration
     create_table :slots do |t|
       t.time :time
 
+      t.userstamps
       t.timestamps
     end
   end

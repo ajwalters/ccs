@@ -8,6 +8,8 @@ class ClearanceCreateUsers < ActiveRecord::Migration
       t.string   :remember_token, :limit => 128
       t.boolean  :email_confirmed, :default => false, :null => false
       t.boolean :admin, :default => false, :null => false
+
+      t.userstamps
       t.timestamps
     end
 

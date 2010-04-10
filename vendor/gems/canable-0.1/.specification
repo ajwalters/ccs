@@ -1,0 +1,129 @@
+--- !ruby/object:Gem::Specification 
+name: canable
+version: !ruby/object:Gem::Version 
+  prerelease: false
+  segments: 
+  - 0
+  - 1
+  version: "0.1"
+platform: ruby
+authors: 
+- John Nunemaker
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2010-02-26 00:00:00 -06:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: shoulda
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        segments: 
+        - 2
+        - 10
+        - 2
+        version: 2.10.2
+  type: :development
+  version_requirements: *id001
+- !ruby/object:Gem::Dependency 
+  name: mongo_mapper
+  prerelease: false
+  requirement: &id002 !ruby/object:Gem::Requirement 
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        segments: 
+        - 0
+        - 7
+        version: "0.7"
+  type: :development
+  version_requirements: *id002
+- !ruby/object:Gem::Dependency 
+  name: mocha
+  prerelease: false
+  requirement: &id003 !ruby/object:Gem::Requirement 
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        segments: 
+        - 0
+        - 9
+        - 8
+        version: 0.9.8
+  type: :development
+  version_requirements: *id003
+- !ruby/object:Gem::Dependency 
+  name: yard
+  prerelease: false
+  requirement: &id004 !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        segments: 
+        - 0
+        version: "0"
+  type: :development
+  version_requirements: *id004
+description: Simple permissions that I have used on my last several projects so I figured it was time to abstract and wrap up into something more easily reusable.
+email: nunemaker@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- LICENSE
+- README.rdoc
+files: 
+- .document
+- .gitignore
+- LICENSE
+- README.rdoc
+- Rakefile
+- lib/canable.rb
+- specs.watchr
+- test/helper.rb
+- test/test_ables.rb
+- test/test_canable.rb
+- test/test_cans.rb
+- test/test_enforcers.rb
+has_rdoc: true
+homepage: http://github.com/jnunemaker/canable
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.6
+signing_key: 
+specification_version: 3
+summary: Simple permissions that I have used on my last several projects so I figured it was time to abstract and wrap up into something more easily reusable.
+test_files: 
+- test/helper.rb
+- test/test_ables.rb
+- test/test_canable.rb
+- test/test_cans.rb
+- test/test_enforcers.rb

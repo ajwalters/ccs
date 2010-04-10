@@ -1,5 +1,7 @@
 class Volunteer < ActiveRecord::Base
-  include Permissions
+  include Canable::Ables
+  stampable
+
   validates_presence_of :full_name, :email
 
   validates_length_of :preferences,

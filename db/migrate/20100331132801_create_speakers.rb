@@ -6,6 +6,7 @@ class CreateSpeakers < ActiveRecord::Migration
       t.string :homepage
       t.string :biography
 
+      t.userstamps
       t.timestamps
     end
   end
