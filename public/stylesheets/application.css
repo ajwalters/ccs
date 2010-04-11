@@ -2,6 +2,11 @@ body {
   font-size: 1em;  
 }
 
+a {
+  color: #8A1F11;
+
+}
+
 .MAIN {
   border-right: solid 1px #FCFCFC;  
   border-left: solid 1px #FCFCFC;  

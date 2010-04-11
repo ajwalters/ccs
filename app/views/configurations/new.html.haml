@@ -1,0 +1,14 @@
+%h1 New configuration
+- form_for(@configuration) do |f|
+  = f.error_messages
+  %p
+    = f.label :key
+    %br/
+    = f.text_field :key
+  %p
+    = f.label :value
+    %br/
+    = f.text_field :value
+  %p
+    = f.submit 'Create'
+= link_to 'Back', configurations_path

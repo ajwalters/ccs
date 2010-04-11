@@ -1,0 +1,9 @@
+%p
+  %b Key:
+  = h @configuration.key
+%p
+  %b Value:
+  = h @configuration.value
+= link_to 'Edit', edit_configuration_path(@configuration)
+|
+\#{link_to 'Back', configurations_path}
