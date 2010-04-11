@@ -12,12 +12,12 @@ Content.create([
         {:display => true, :sequence => 1, :name => "<b>.NET Rocks!</b> is coming to Chicago Code Camp!",
          :value => "<p>
 We're honored to have the guys from the <b>.NET Rocks!</b> internet audio
-talks show join us for a great day of fun and learning for developers
+talk show join us for a great day of fun and learning for developers
 of all platforms.
 </p>
 <p>The <b>.NET Rocks!</b> crew is on a roadtrip throughout the nation and
-will be stopping Chicago, along with a mystery guest Rockstar from
-the Microsoft platform. We can't wait to learn who for outselves!</p>
+will be stopping in Chicago, along with a mystery guest rockstar from
+the Microsoft platform. We can't wait to learn who for ourselves!</p>
 <p><a href='http://www.dotnetrocks.com/roadtrip.aspx'>The <b>.NET Rocks!</b> Visual Studio 2010 Road Trip</a></p>
 
 ", :category => "home"},
