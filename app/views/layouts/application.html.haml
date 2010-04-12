@@ -13,59 +13,25 @@
     = stylesheet_link_tag 'application.css', :media => 'screen, projection'
     = yield :head 
   %body
-    /
-      So, you're checking out the source code for the site? Cool, glad to know you care. :) 
-      If you're interested, we could really use your help. 
-      \
-      This site is actually a Rails 2.3.5 application running on Heroku. We're using Blueprint for the layout and HAML 
-      for the markup. The source is hosted on GitHub and is licensed under the GPL. Does that sound like something you'd 
-      like to help out on?
-      \
-      Still with me? Okay, good. I'd really like your help. Basically, this site is intended to become a template that 
-      can be used to help other code camp (or similar) events get up and running quickly with a site that can ...
-      \
-      1. Get a blurb site up and running quickly and cheaply. 
-      2. Allow for submitting presentations for your event in a fun and easy way. 
-      3. Allow for the event organizers to load up and populate the events info 
-      4. Present a list of speakers, once they are ready. 
-      5. Present a list of sessions, once they too are ready. 
-      6. Anything else that we may not have thought about yet but would be nice for organizers and attendees. 
-      \
-      All that is cool and all, but what do we *really* need? (In no particular order) 
-      \
-      \# Design = we need someone who can make this site BEAUTIFUL but easily customizable. Not everyone shares my design
-      aesthetic. 
-      \# Interactivity = the scripting on the site is very rudimentary right now. If we could give the site a bit of PIZAZZ
-      KERBLAM-WOW type effects that would be great. But also subtle things like Ajax-ified forms and nice validation. 
-      \
-      What is the site not really intended for? 
-      \
-      \# Multi-tenant application = this is really just intended to be a simple application for hosting a single event.
-      There's nothing preventing the same installation being used year-to-year but it's not really intended to simultaneously 
-      be used for multiple events. 
-      \# User-group Management = there's a subtle but significant difference between a single event that may even span
-      multiple days and an ongoing series of events. To make this the best possible option for singular events I want 
-      to just focus on that. There is too much complexity in ongoing events and that will just be a distraction from 
-      this applications goal. 
-      \
-      Given all that, are you still interested in helping? Do you have ideas? 
-      \
-      http://github.com/just3ws/ccs 
-      \
-      Sincerely, 
-      Mike Hall 
-      mdh@just3ws.com
-
+    = render :partial => "shared/calltoaction"
     .container.MAIN
       = render :partial => "shared/navbar"
       %hr.space
       .span-24{:style => "text-align: center;"}
-        %img{:alt => "Chicago Code Camp 2", :src => "../../../images/logo.png"}
+        %img{:alt => "Chicago Code Camp 2", :src => "../../../images/masthead.png"}
       %hr.space
       #flash.container.span-24{:style => "text-align: center;"}
         - flash.each do |key, value|
           %div{:id => "flash_#{key}"}= h value
-      = yield
+      %hr.space
+      .span-15.colborder
+        = yield
+      .container.span-8.last
+        = render :partial => "shared/countdown"
+        %hr.space
+        = render :partial => "shared/sponsors"
+        %hr.space
+        = render :partial => "shared/twitter"
       %hr.space
       .container.span-24.last.quiet{:style => "font-size: .78em"}
         %span{:style => "display: inline-block; vertical-align: text-bottom;"}

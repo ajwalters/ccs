@@ -1,12 +1,3 @@
-%hr.space
-.span-15.colborder
-  - @contents.each do |content|
-    %h2.content_name= content.name
-    .content_value= content.value
-
-.container.span-8.last
-  = render :partial => "shared/countdown"
-  %hr.space
-  = render :partial => "shared/sponsors"
-  %hr.space
-  = render :partial => "shared/twitter"
+- @contents.each do |content|
+  %h2.content_name= content.name
+  .content_value= content.value
