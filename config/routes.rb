@@ -1,11 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :configurations
-
-
-  map.resources :volunteers
-  map.volunteer "volunteers", :controller => "volunteers", :action => :new
 
   Clearance::Routes.draw(map)
+
+  map.resources :configurations
+
+  map.resources :volunteers
 
   map.resources :contents
 
@@ -22,8 +21,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :home
   map.directions 'directions', :controller => "home", :action => "directions"
-  map.info "info", :controller => "home", :action => "info"
-  map.info "about", :controller => "home", :action => "about"
+  map.info       "info",       :controller => "home", :action => "info"
+  map.about      "about",      :controller => "home", :action => "about"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,8 @@
+/
+  = signed_in?
+  = admin?
+  - admin_only! do
+    Only administrators should see this.
+  - signed_in_only! do
+    Only signed_in users should see this.
+

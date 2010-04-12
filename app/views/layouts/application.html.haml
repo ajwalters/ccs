@@ -39,6 +39,7 @@
             %img{:width => 88, :height => 31, :style => "border: medium none;", :alt => "Creative Commons License", :src => "http://i.creativecommons.org/l/by/3.0/88x31.png"}
         %span{:style => "display: inline-block;"}
           Except where otherwise <a class="subfoot" href="/about#license">noted</a>, content on this site is<br/>licensed under a <a class="subfoot" href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons Attribution 3.0 License</a>
+      = render :partial => "shared/logon" 
   = yield :after_body
   = render :partial => "shared/getsatisfaction"
   = render :partial => "shared/ganalytics"
