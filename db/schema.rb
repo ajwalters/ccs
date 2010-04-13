@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100410213751) do
+ActiveRecord::Schema.define(:version => 20100412220328) do
 
   create_table "agendas", :force => true do |t|
     t.integer  "creator_id"
@@ -31,8 +31,8 @@ ActiveRecord::Schema.define(:version => 20100410213751) do
     t.string   "name"
     t.text     "value"
     t.string   "category"
-    t.integer  "sequence", :default => 0
-    t.boolean  "display", :default => false
+    t.integer  "sequence",   :default => 0
+    t.boolean  "display",    :default => false
     t.integer  "creator_id"
     t.integer  "updater_id"
     t.datetime "created_at"
@@ -83,11 +83,11 @@ ActiveRecord::Schema.define(:version => 20100410213751) do
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "encrypted_password", :limit => 128
-    t.string   "salt", :limit => 128
+    t.string   "salt",               :limit => 128
     t.string   "confirmation_token", :limit => 128
-    t.string   "remember_token", :limit => 128
-    t.boolean  "email_confirmed", :default => false, :null => false
-    t.boolean  "admin", :default => false, :null => false
+    t.string   "remember_token",     :limit => 128
+    t.boolean  "email_confirmed",                   :default => false, :null => false
+    t.boolean  "admin",                             :default => false, :null => false
     t.integer  "creator_id"
     t.integer  "updater_id"
     t.datetime "created_at"
