@@ -1,3 +1,0 @@
-module Permissions
-
-end
