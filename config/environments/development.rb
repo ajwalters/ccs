@@ -18,3 +18,7 @@ config.action_mailer.raise_delivery_errors = false
 
 #Mail
 config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+# Cucumber
+config.gem "cucumber"
+config.gem "cucumber-rails"

@@ -1,4 +1,8 @@
-Feature: People want to be able to submit their talks to the code camp
+Feature:   People want to be able to submit their talks to the code camp
+  In order to have my talk considered for the code camp
+  As a prospective speaker
+  I want to be able to submit my talk for review
+
 
   Scenario: The site is currently accepting submissions.
     When I go to the submission page
