@@ -26,6 +26,7 @@ Rails::Initializer.run do |config|
   config.gem "canable"
   config.gem "userstamp"
   config.gem "haml"
+  config.gem "compass"
   config.gem "formtastic",
     :lib     => 'formtastic', 
     :source  => 'http://gems.github.com'
