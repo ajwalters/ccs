@@ -11,15 +11,14 @@
     /[if lt IE 8]
       = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
     = stylesheet_link_tag 'application.css', :media => 'screen, projection'
-    = yield :head 
+    = yield :head
   %body
     = render :partial => "shared/calltoaction"
     .container.MAIN
       = render :partial => "shared/navbar"
       %hr.space
-      .span-24{:style => "text-align: center;"}
+      .span-24.last{:style => "text-align: center;"}
         %img{:alt => "Chicago Code Camp 2", :src => "../../../images/masthead.png"}
-      %hr.space
       #flash.container.span-24{:style => "text-align: center;"}
         - flash.each do |key, value|
           %div{:id => "flash_#{key}"}= h value
@@ -34,12 +33,14 @@
         = render :partial => "shared/twitter"
       %hr.space
       .container.span-24.last.quiet{:style => "font-size: .78em"}
-        %span{:style => "display: inline-block; vertical-align: text-bottom;"}
-          %a{:href=>"http://creativecommons.org/licenses/by/3.0/", :rel => "license"}
-            %img{:width => 88, :height => 31, :style => "border: medium none;", :alt => "Creative Commons License", :src => "http://i.creativecommons.org/l/by/3.0/88x31.png"}
-        %span{:style => "display: inline-block;"}
-          Except where otherwise <a class="subfoot" href="/about#license">noted</a>, content on this site is<br/>licensed under a <a class="subfoot" href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons Attribution 3.0 License</a>
-      = render :partial => "shared/logon" 
+        .span-10
+          %span{:style => "display: inline-block; vertical-align: text-bottom;"}
+            %a{:href=>"http://creativecommons.org/licenses/by/3.0/", :rel => "license"}
+              %img{:width => 88, :height => 31, :style => "border: medium none;", :alt => "Creative Commons License", :src => "http://i.creativecommons.org/l/by/3.0/88x31.png"}
+          %span{:style => "display: inline-block;"}
+            Except where otherwise <a class="subfoot" href="/about#license">noted</a>, content on this site is<br/>licensed under a <a class="subfoot" href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons Attribution 3.0 License</a>
+        .span-13{:style => "text-align: right; font-size: .78em;"}
+          = render :partial => "shared/logon"
   = yield :after_body
   = render :partial => "shared/getsatisfaction"
   = render :partial => "shared/ganalytics"

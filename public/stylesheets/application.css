@@ -1,5 +1,5 @@
 body {
-  font-size: 1em;  
+  font-size: 1em;
 }
 
 a {
@@ -8,8 +8,8 @@ a {
 }
 
 .MAIN {
-  border-right: solid 1px #FCFCFC;  
-  border-left: solid 1px #FCFCFC;  
+  border-right: solid 1px #FCFCFC;
+  border-left: solid 1px #FCFCFC;
 }
 
 .content_name {
@@ -17,7 +17,7 @@ a {
 }
 
 .content_value {
-  margin-bottom: 18px;  
+  margin-bottom: 18px;
   padding-left: 9px;
   font-size: 1.25em;
 }
@@ -29,6 +29,14 @@ a {
 #menu.item {
   text-align: center;
 }
+
 #menu.home {
   font-weight: bolder;
+}
+
+.logon_bar {
+  font-size: .75em;
+  text-align: right;
+  width: 100%;
+  vertical-align: top;
 }

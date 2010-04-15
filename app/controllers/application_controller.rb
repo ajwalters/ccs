@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   include Clearance::Authentication
   include Canable::Enforcers
   include Userstamp
-  include Permissions
+  #include Permissions
 
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details

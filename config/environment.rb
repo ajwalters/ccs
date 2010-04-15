@@ -23,6 +23,7 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "clearance"
+  config.gem "compass"
   config.gem "canable"
   config.gem "userstamp"
   config.gem "haml"

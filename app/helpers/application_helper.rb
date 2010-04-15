@@ -14,7 +14,9 @@ module ApplicationHelper
   end
 
   def admin?
+
     return false if current_user.nil?
+    Rails.logger.debug "Is #{current_user} an #{current_user.admin?}?"
     current_user.admin?
   end
 
@@ -30,9 +32,18 @@ module ApplicationHelper
   def signed_in_only!(&block)
     #todo check if the currently logged in user is signed in
     #if so, display the block, otherwise hide it
-    if not signed_in? then
+    if not(signed_in?)
       match, file, line = caller.first.match(/([^:]+):(\d+).+/).to_a
       Rails.logger.debug " *** hiding sign_in required content. #{line} in #{file}"
+    end
+  end
+
+ def visitors_only!(&block)
+    #todo check if the currently logged in user is not signed in
+    #if so, display the block, otherwise hide it
+    if signed_in?
+      match, file, line = caller.first.match(/([^:]+):(\d+).+/).to_a
+      Rails.logger.debug " *** hiding visitor only content. #{line} in #{file}"
     end
   end
 end

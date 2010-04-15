@@ -12,16 +12,16 @@ end
 
 Given /^I signed up with "(.*)\/(.*)"$/ do |email, password|
   user = Factory :user,
-    :email                 => email,
-    :password              => password,
-    :password_confirmation => password
-end 
+                 :email                 => email,
+                 :password              => password,
+                 :password_confirmation => password
+end
 
 Given /^I am signed up and confirmed as "(.*)\/(.*)"$/ do |email, password|
   user = Factory :email_confirmed_user,
-    :email                 => email,
-    :password              => password,
-    :password_confirmation => password
+                 :email                 => email,
+                 :password              => password,
+                 :password_confirmation => password
 end
 
 # Session
@@ -52,8 +52,8 @@ Then /^a confirmation message should be sent to "(.*)"$/ do |email|
   assert !ActionMailer::Base.deliveries.empty?
   result = ActionMailer::Base.deliveries.any? do |email|
     email.to == [user.email] &&
-    email.subject =~ /confirm/i &&
-    email.body =~ /#{user.confirmation_token}/
+            email.subject =~ /confirm/i &&
+            email.body =~ /#{user.confirmation_token}/
   end
   assert result
 end
@@ -70,8 +70,8 @@ Then /^a password reset message should be sent to "(.*)"$/ do |email|
   assert !ActionMailer::Base.deliveries.empty?
   result = ActionMailer::Base.deliveries.any? do |email|
     email.to == [user.email] &&
-    email.subject =~ /password/i &&
-    email.body =~ /#{user.confirmation_token}/
+            email.subject =~ /password/i &&
+            email.body =~ /#{user.confirmation_token}/
   end
   assert result
 end

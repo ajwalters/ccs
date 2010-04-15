@@ -18,9 +18,7 @@ of all platforms.
 <p>The <b>.NET Rocks!</b> crew is on a roadtrip throughout the nation and
 will be stopping in Chicago, along with a mystery guest rockstar from
 the Microsoft platform. We can't wait to learn who for ourselves!</p>
-<p><a href='http://www.dotnetrocks.com/roadtrip.aspx'>The <b>.NET Rocks!</b> Visual Studio 2010 Road Trip</a></p>
-
-", :category => "home"},
+<p><a href='http://www.dotnetrocks.com/roadtrip.aspx'>The <b>.NET Rocks!</b> Visual Studio 2010 Road Trip</a></p>", :category => "home"},
         {:display => true, :name => "Call for <b>Volunteers</b>!", :value => 'Want to participate in the Chicago Code Camp 2 but without the pressure of presenting? We have plenty that needs to be done and need YOUR help. Sign up to volunteer <a href="/volunteers/new">here</a>', :category => "home", :sequence => 1},
 
         {:display => true, :name => 'What is a "Code Camp" anyway?', :value => '"<a href="http://www.thedevcommunity.org/codecamps/manifesto.aspx">The Code Camp Manifesto</a>" declares a simple idea to bring developers from disparate platforms and languages together into one software community.
@@ -40,5 +38,4 @@ the Microsoft platform. We can't wait to learn who for ourselves!</p>
 Configuration.create([
         {:key => "open_call_for_speakers", :value=>false},
         {:key => "open_call_for_volunteers", :value=>true},
-
 ])
