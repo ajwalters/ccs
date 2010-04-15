@@ -28,5 +28,5 @@ config.action_mailer.delivery_method = :test
 # config.active_record.schema_format = :sql
 config.gem "cucumber"
 config.gem "webrat"
-config.gem "cucumber-rails"
+config.gem "cucumber-rails", :lib => false
 config.gem "database_cleaner"
